@@ -28,7 +28,7 @@ const BlogDetailsInner = () => {
             <div className='bg-main-25 rounded-16 p-12 border border-neutral-30'>
               <div className='rounded-12 overflow-hidden position-relative'>
                 <img
-                  src='assets/images/thumbs/blog-details-img.png'
+                  src='assets/images/thumbs/blog-details-img.webp'
                   alt='Course Image'
                   className='rounded-12 cover-img transition-2'
                 />
@@ -241,7 +241,7 @@ const BlogDetailsInner = () => {
                 <span className='d-block border border-neutral-30 my-24 border-dashed' />
                 <div className='flex-align gap-24'>
                   <img
-                    src='assets/images/thumbs/reviewer-img1.png'
+                    src='assets/images/thumbs/blog-two-img2 (2).webp'
                     alt=''
                     className='w-60 h-60 rounded-circle cover-img'
                   />
@@ -273,7 +273,7 @@ const BlogDetailsInner = () => {
                 </div>
                 <div className='flex-align gap-20 mt-24'>
                   <img
-                    src='assets/images/thumbs/reviewer-img2.png'
+                    src='assets/images/thumbs/blog-two-img1.webp'
                     alt=''
                     className='w-60 h-60 rounded-circle cover-img'
                   />
@@ -312,7 +312,7 @@ const BlogDetailsInner = () => {
                 <span className='d-block border border-neutral-30 my-24 border-dashed' />
                 <div className='flex-align gap-24'>
                   <img
-                    src='assets/images/thumbs/reviewer-img2.png'
+                    src='assets/images/thumbs/brand-img4.webp'
                     alt=''
                     className='w-60 h-60 rounded-circle cover-img'
                   />
@@ -371,7 +371,7 @@ const BlogDetailsInner = () => {
                 <span className='d-block border border-neutral-30 my-24 border-dashed' />
                 <div className='flex-align gap-24'>
                   <img
-                    src='assets/images/thumbs/reviewer-img3.png'
+                    src='assets/images/thumbs/brand-img7.webp'
                     alt=''
                     className='w-60 h-60 rounded-circle cover-img'
                   />
@@ -661,7 +661,7 @@ const BlogDetailsInner = () => {
               <div className='flex-align gap-16'>
                 <Link href='/blog' className='flex-shrink-0'>
                   <img
-                    src='assets/images/thumbs/blog-two-img1.png'
+                    src='assets/images/thumbs/brand-img7.webp'
                     alt=''
                     className='w-80 h-80 rounded-8 object-fit-cover'
                   />
@@ -682,7 +682,7 @@ const BlogDetailsInner = () => {
               <div className='flex-align gap-16'>
                 <Link href='/blog' className='flex-shrink-0'>
                   <img
-                    src='assets/images/thumbs/blog-two-img2.png'
+                    src='assets/images/thumbs/blog-two-img2 (2).webp'
                     alt=''
                     className='w-80 h-80 rounded-8 object-fit-cover'
                   />
@@ -703,7 +703,7 @@ const BlogDetailsInner = () => {
               <div className='flex-align gap-16'>
                 <Link href='/blog' className='flex-shrink-0'>
                   <img
-                    src='assets/images/thumbs/blog-two-img3.png'
+                    src='assets/images/thumbs/blog-two-img1.webp'
                     alt=''
                     className='w-80 h-80 rounded-8 object-fit-cover'
                   />
@@ -724,7 +724,7 @@ const BlogDetailsInner = () => {
               <div className='flex-align gap-16'>
                 <Link href='/blog' className='flex-shrink-0'>
                   <img
-                    src='assets/images/thumbs/blog-two-img4.png'
+                    src='assets/images/thumbs/brand-img6.webp'
                     alt=''
                     className='w-80 h-80 rounded-8 object-fit-cover'
                   />
@@ -745,7 +745,7 @@ const BlogDetailsInner = () => {
               <div className='flex-align gap-16'>
                 <Link href='/blog' className='flex-shrink-0'>
                   <img
-                    src='assets/images/thumbs/blog-two-img5.png'
+                    src='assets/images/thumbs/course-imag3.webp'
                     alt=''
                     className='w-80 h-80 rounded-8 object-fit-cover'
                   />

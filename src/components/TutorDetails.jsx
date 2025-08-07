@@ -9,7 +9,7 @@ const TutorDetails = () => {
                 <div className='p-16 border border-neutral-50 rounded-circle aspect-ratio-1 max-w-150 max-h-150 mx-auto'>
                   <div className='position-relative'>
                     <img
-                      src='assets/images/thumbs/instructor-img1.png'
+                      src='assets/images/thumbs/instructor-img1.webp'
                       alt=''
                       className='rounded-circle bg-dark-yellow aspect-ratio-1 cover-img'
                     />

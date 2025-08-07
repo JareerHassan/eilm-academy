@@ -87,15 +87,15 @@ const HeaderOne = () => {
       label: "Pages",
       links: [
         { href: "/about", label: "About" },
-        { href: "/about-two", label: "About Two" },
-        { href: "/about-three", label: "About Three" },
-        { href: "/about-four", label: "About Four" },
-        { href: "/product", label: "Product" },
-        { href: "/product-details", label: "Product Details" },
-        { href: "/cart", label: "Cart" },
-        { href: "/checkout", label: "Checkout" },
-        { href: "/pricing-plan", label: "Pricing Plan" },
-        { href: "/instructor", label: "Instructor" },
+        // { href: "/about-two", label: "About Two" },
+        // { href: "/about-three", label: "About Three" },
+        // { href: "/about-four", label: "About Four" },
+        // { href: "/product", label: "Product" },
+        // { href: "/product-details", label: "Product Details" },
+        // { href: "/cart", label: "Cart" },
+        // { href: "/checkout", label: "Checkout" },
+        // { href: "/pricing-plan", label: "Pricing Plan" },
+        // { href: "/instructor", label: "Instructor" },
         { href: "/instructor-two", label: "Instructor Two" },
         { href: "/instructor-details", label: "Instructor Details" },
         { href: "/tutor", label: "Premium Tutors" },
@@ -113,14 +113,27 @@ const HeaderOne = () => {
       ],
     },
 
-    {
+    // {
+    //   label: "Blog",
+    //   links: [
+    //     { href: "/blog", label: "Blog Grid" },
+    //     // { href: "/blog-list", label: "Blog List" },
+    //     // { href: "/blog-classic", label: "Blog Classic" },
+    //     // { href: "/blog-details", label: "Blog Details" },
+    //   ],
+    // },
+       {
       label: "Blog",
-      links: [
-        { href: "/blog", label: "Blog Grid" },
-        { href: "/blog-list", label: "Blog List" },
-        { href: "/blog-classic", label: "Blog Classic" },
-        { href: "/blog-details", label: "Blog Details" },
-      ],
+      href: "/blog", 
+         icon: true,
+      // links: [
+      //   { href: "/", label: "Home University" },
+      //   //# { href: "/index-2", label: "Home Online Course" },
+      //   // { href: "/index-3", label: "Home LMS" },
+      //   // { href: "/index-4", label: "Home Tutor" },
+      //   // { href: "/index-5", label: "Home Kindergarten" },
+      //   // { href: "/index-6", label: " Home Kindergarten two" },
+      // ],
     },
     { href: "/contact", label: "Contact" },
   ];
@@ -135,7 +148,7 @@ const HeaderOne = () => {
               {/* Logo Start */}
               <div className='logo'>
                 <Link href='/' className='link'>
-                  <img src='assets/images/logo/logo.png' alt='Logo' />
+                  <img src='assets/images/logo/logo3.png' alt='Logo' style={{height:'100px'}} />
                 </Link>
               </div>
               {/* Logo End  */}

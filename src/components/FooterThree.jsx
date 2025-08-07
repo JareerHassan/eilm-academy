@@ -223,7 +223,7 @@ const FooterThree = () => {
               <div className='footer-item__logo mb-0' data-aos='zoom-in-right'>
                 <Link href='/'>
                   {" "}
-                  <img src='assets/images/logo/logo-white.png' alt='' />
+                  <img src='assets/images/logo/logo2.png' alt='' />
                 </Link>
               </div>
               <p

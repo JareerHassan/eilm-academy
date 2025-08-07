@@ -92,83 +92,83 @@ const GallerySection = () => {
                 <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img1.png'
+                    href='assets/images/thumbs/gallery-img1.webp'
                   >
                     <img
                       alt='img1'
-                      src='assets/images/thumbs/gallery-img1.png'
+                      src='assets/images/thumbs/gallery-img1.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img2.png'
+                    href='assets/images/thumbs/gallery-img2.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img2.png'
+                      src='assets/images/thumbs/gallery-img2.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img3.png'
+                    href='assets/images/thumbs/gallery-img3.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img3.png'
+                      src='assets/images/thumbs/gallery-img3.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img4.png'
+                    href='assets/images/thumbs/gallery-img4.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img4.png'
+                      src='assets/images/thumbs/gallery-img4.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img5.png'
+                    href='assets/images/thumbs/gallery-img5.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img5.png'
+                      src='assets/images/thumbs/gallery-img5.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img6.png'
+                    href='assets/images/thumbs/gallery-img6.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img6.png'
+                      src='assets/images/thumbs/gallery-img6.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img7.png'
+                    href='assets/images/thumbs/gallery-img7.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img7.png'
+                      src='assets/images/thumbs/gallery-img7.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img8.png'
+                    href='assets/images/thumbs/gallery-img8.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img8.png'
+                      src='assets/images/thumbs/gallery-img8.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img9.png'
+                    href='assets/images/thumbs/gallery-img9.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img9.png'
+                      src='assets/images/thumbs/gallery-img9.webp'
                     />
                   </a>
                 </LightGallery>
@@ -187,83 +187,83 @@ const GallerySection = () => {
                 <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img1.png'
+                    href='assets/images/thumbs/gallery-img1.webp'
                   >
                     <img
                       alt='img1'
-                      src='assets/images/thumbs/gallery-img1.png'
+                      src='assets/images/thumbs/gallery-img1.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img2.png'
+                    href='assets/images/thumbs/gallery-img2.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img2.png'
+                      src='assets/images/thumbs/gallery-img2.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img3.png'
+                    href='assets/images/thumbs/gallery-img3.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img3.png'
+                      src='assets/images/thumbs/gallery-img3.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img4.png'
+                    href='assets/images/thumbs/gallery-img4.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img4.png'
+                      src='assets/images/thumbs/gallery-img4.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img5.png'
+                    href='assets/images/thumbs/gallery-img5.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img5.png'
+                      src='assets/images/thumbs/gallery-img5.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img6.png'
+                    href='assets/images/thumbs/gallery-img6.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img6.png'
+                      src='assets/images/thumbs/gallery-img6.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img7.png'
+                    href='assets/images/thumbs/gallery-img7.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img7.png'
+                      src='assets/images/thumbs/gallery-img7.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img8.png'
+                    href='assets/images/thumbs/gallery-img8.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img8.png'
+                      src='assets/images/thumbs/gallery-img8.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img9.png'
+                    href='assets/images/thumbs/gallery-img9.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img9.png'
+                      src='assets/images/thumbs/gallery-img9.webp'
                     />
                   </a>
                 </LightGallery>
@@ -280,85 +280,85 @@ const GallerySection = () => {
               {/* Masonry Start */}
               <div className='masonry'>
                 <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-                  <a
+                 <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img1.png'
+                    href='assets/images/thumbs/gallery-img1.webp'
                   >
                     <img
                       alt='img1'
-                      src='assets/images/thumbs/gallery-img1.png'
+                      src='assets/images/thumbs/gallery-img1.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img2.png'
+                    href='assets/images/thumbs/gallery-img2.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img2.png'
+                      src='assets/images/thumbs/gallery-img2.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img3.png'
+                    href='assets/images/thumbs/gallery-img3.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img3.png'
+                      src='assets/images/thumbs/gallery-img3.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img4.png'
+                    href='assets/images/thumbs/gallery-img4.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img4.png'
+                      src='assets/images/thumbs/gallery-img4.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img5.png'
+                    href='assets/images/thumbs/gallery-img5.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img5.png'
+                      src='assets/images/thumbs/gallery-img5.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img6.png'
+                    href='assets/images/thumbs/gallery-img6.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img6.png'
+                      src='assets/images/thumbs/gallery-img6.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img7.png'
+                    href='assets/images/thumbs/gallery-img7.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img7.png'
+                      src='assets/images/thumbs/gallery-img7.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img8.png'
+                    href='assets/images/thumbs/gallery-img8.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img8.png'
+                      src='assets/images/thumbs/gallery-img8.webp'
                     />
                   </a>
                   <a
                     className='masonry__item position-relative rounded-12 overflow-hidden'
-                    href='assets/images/thumbs/gallery-img9.png'
+                    href='assets/images/thumbs/gallery-img9.webp'
                   >
                     <img
                       alt='img2'
-                      src='assets/images/thumbs/gallery-img9.png'
+                      src='assets/images/thumbs/gallery-img9.webp'
                     />
                   </a>
                 </LightGallery>

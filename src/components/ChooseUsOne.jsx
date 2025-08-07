@@ -140,7 +140,7 @@ const ChooseUsOne = () => {
               <div className='text-end' data-aos='zoom-out'>
                 <div className='d-sm-inline-block d-block position-relative'>
                   <img
-                    src='assets/images/thumbs/choose-us-img1.png'
+                    src='assets/images/thumbs/about-three-img2.webp'
                     alt=''
                     className='choose-us__img rounded-12'
                     data-tilt=''
@@ -156,7 +156,7 @@ const ChooseUsOne = () => {
               </div>
               <div className='animation-video' data-aos='zoom-in'>
                 <img
-                  src='assets/images/thumbs/choose-us-img2.png'
+                  src='assets/images/thumbs/testimonials-three-img2.webp'
                   alt=''
                   className='border border-white rounded-circle border-3'
                   data-tilt=''
@@ -172,14 +172,14 @@ const ChooseUsOne = () => {
           </div>
         </div>
       </div>
-      <ModalVideo
+      {/* <ModalVideo
         channel='youtube'
         autoplay
         isOpen={isOpen}
         videoId='XxVg_s8xAms'
         onClose={() => setIsOpen(false)}
         allowFullScreen
-      />
+      /> */}
     </section>
   );
 };

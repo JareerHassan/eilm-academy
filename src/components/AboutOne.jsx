@@ -38,7 +38,7 @@ const AboutOne = () => {
                 <div className='row gy-4'>
                   <div className='col-sm-6'>
                     <img
-                      src='assets/images/thumbs/about-img1.png'
+                      src='assets/images/thumbs/about-three-img1.webp'
                       alt=''
                       className='rounded-12 w-100'
                       data-tilt=''
@@ -84,7 +84,7 @@ const AboutOne = () => {
                       </div>
                     </div>
                     <img
-                      src='assets/images/thumbs/about-img2.png'
+                      src='assets/images/thumbs/about-three-img2.webp'
                       alt=''
                       className='rounded-12 w-100'
                       data-tilt=''
@@ -159,7 +159,7 @@ const AboutOne = () => {
                   </Link>
                   <div className='flex-align gap-20'>
                     <img
-                      src='assets/images/thumbs/ceo-img.png'
+                      src='assets/images/thumbs/enroll-student-img1.webp'
                       alt=''
                       className='w-52 h-52 rounded-circle object-fit-cover flex-shrink-0'
                     />

@@ -1,6 +1,6 @@
 const CertificateOne = () => {
   return (
-    <div className='certificate'>
+    <div className='certificate mb-90'>
       <div className='container container--lg'>
         <div className='certificate-box px-16 bg-main-600 rounded-16'>
           <div className='container'>
@@ -25,12 +25,12 @@ const CertificateOne = () => {
                   </div>
                 </div>
                 <div className='col-xl-6 d-xl-block d-none'>
-                  <div className='certificate__thumb' data-aos='fade-up-left'>
+                  <div className='certificate__thumb' data-aos='fade-up-left' >
                     <img
-                      src='assets/images/thumbs/certificate-img.png'
+                      src='assets/images/thumbs/certificate-img.webp'
                       alt=''
                       data-tilt=''
-                      data-tilt-max={8}
+                      data-tilt-max={7}
                       data-tilt-speed={500}
                       data-tilt-perspective={5000}
                       data-tilt-full-page-listening=''

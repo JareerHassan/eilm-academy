@@ -72,7 +72,7 @@ const TestimonialsOne = () => {
                 data-tilt-perspective={5000}
                 data-tilt-full-page-listening=''
               >
-                <img src='assets/images/thumbs/testimonial-img1.png' alt='' />
+                <img src='assets/images/thumbs/testimonial-img1.webp' alt='' />
               </div>
               <div
                 className='testimonials__thumbs wow bounceIn'
@@ -82,7 +82,7 @@ const TestimonialsOne = () => {
                 data-tilt-perspective={5000}
                 data-tilt-full-page-listening=''
               >
-                <img src='assets/images/thumbs/testimonial-img2.png' alt='' />
+                <img src='assets/images/thumbs/testimonial-img1.webp' alt='' />
               </div>
             </div>
           </div>

@@ -79,7 +79,7 @@ const TestimonialsTwo = () => {
             <div className='flex-between gap-24 flex-wrap pt-28 mt-28 border-top border-neutral-50 mt-28 border-dashed border-0'>
               <div className='flex-align gap-24 '>
                 <img
-                  src='assets/images/thumbs/testi-img1.png'
+                  src='assets/images/thumbs/testimonials-three-img2.webp'
                   alt=''
                   className='w-60 h-60 object-fit-cover rounded-circle'
                 />
@@ -123,7 +123,7 @@ const TestimonialsTwo = () => {
             <div className='flex-between gap-24 flex-wrap pt-28 mt-28 border-top border-neutral-50 mt-28 border-dashed border-0'>
               <div className='flex-align gap-24 '>
                 <img
-                  src='assets/images/thumbs/testi-img2.png'
+                  src='assets/images/thumbs/testimonials-three-img1.webp'
                   alt=''
                   className='w-60 h-60 object-fit-cover rounded-circle'
                 />
@@ -167,7 +167,7 @@ const TestimonialsTwo = () => {
             <div className='flex-between gap-24 flex-wrap pt-28 mt-28 border-top border-neutral-50 mt-28 border-dashed border-0'>
               <div className='flex-align gap-24 '>
                 <img
-                  src='assets/images/thumbs/user-two-img3.png'
+                  src='assets/images/thumbs/testimonials-three-img1.webp'
                   alt=''
                   className='w-60 h-60 object-fit-cover rounded-circle'
                 />

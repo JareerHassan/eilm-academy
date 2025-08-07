@@ -29,7 +29,7 @@ const BlogGridInner = () => {
               <div className='course-item__thumb rounded-12 overflow-hidden position-relative'>
                 <Link href='/blog-details' className='w-100 h-100'>
                   <img
-                    src='assets/images/thumbs/blog-two-img1.png'
+                    src='assets/images/thumbs/banner-three-img1.webp'
                     alt='Course Image'
                     className='scale-hover-item__img rounded-12 cover-img transition-2'
                   />
@@ -85,7 +85,7 @@ const BlogGridInner = () => {
               <div className='course-item__thumb rounded-12 overflow-hidden position-relative'>
                 <Link href='/blog-details' className='w-100 h-100'>
                   <img
-                    src='assets/images/thumbs/blog-two-img2.png'
+                    src='assets/images/thumbs/brand-img1.webp'
                     alt='Course Image'
                     className='scale-hover-item__img rounded-12 cover-img transition-2'
                   />
@@ -141,7 +141,7 @@ const BlogGridInner = () => {
               <div className='course-item__thumb rounded-12 overflow-hidden position-relative'>
                 <Link href='/blog-details' className='w-100 h-100'>
                   <img
-                    src='assets/images/thumbs/blog-two-img3.png'
+                    src='assets/images/thumbs/brand-img3 (2).webp'
                     alt='Course Image'
                     className='scale-hover-item__img rounded-12 cover-img transition-2'
                   />
@@ -197,7 +197,7 @@ const BlogGridInner = () => {
               <div className='course-item__thumb rounded-12 overflow-hidden position-relative'>
                 <Link href='/blog-details' className='w-100 h-100'>
                   <img
-                    src='assets/images/thumbs/blog-two-img4.png'
+                    src='assets/images/thumbs/instructor-img1.webp'
                     alt='Course Image'
                     className='scale-hover-item__img rounded-12 cover-img transition-2'
                   />
@@ -253,7 +253,7 @@ const BlogGridInner = () => {
               <div className='course-item__thumb rounded-12 overflow-hidden position-relative'>
                 <Link href='/blog-details' className='w-100 h-100'>
                   <img
-                    src='assets/images/thumbs/blog-two-img5.png'
+                    src='assets/images/thumbs/faculty-img1.webp'
                     alt='Course Image'
                     className='scale-hover-item__img rounded-12 cover-img transition-2'
                   />
@@ -309,7 +309,7 @@ const BlogGridInner = () => {
               <div className='course-item__thumb rounded-12 overflow-hidden position-relative'>
                 <Link href='/blog-details' className='w-100 h-100'>
                   <img
-                    src='assets/images/thumbs/blog-two-img6.png'
+                    src='assets/images/thumbs/instructor-img1.webp'
                     alt='Course Image'
                     className='scale-hover-item__img rounded-12 cover-img transition-2'
                   />
@@ -365,7 +365,7 @@ const BlogGridInner = () => {
               <div className='course-item__thumb rounded-12 overflow-hidden position-relative'>
                 <Link href='/blog-details' className='w-100 h-100'>
                   <img
-                    src='assets/images/thumbs/blog-two-img7.png'
+                    src='assets/images/thumbs/faculty-img1.webp'
                     alt='Course Image'
                     className='scale-hover-item__img rounded-12 cover-img transition-2'
                   />
@@ -421,7 +421,7 @@ const BlogGridInner = () => {
               <div className='course-item__thumb rounded-12 overflow-hidden position-relative'>
                 <Link href='/blog-details' className='w-100 h-100'>
                   <img
-                    src='assets/images/thumbs/blog-two-img8.png'
+                    src='assets/images/thumbs/faculty-img1.webp'
                     alt='Course Image'
                     className='scale-hover-item__img rounded-12 cover-img transition-2'
                   />
@@ -477,7 +477,7 @@ const BlogGridInner = () => {
               <div className='course-item__thumb rounded-12 overflow-hidden position-relative'>
                 <Link href='/blog-details' className='w-100 h-100'>
                   <img
-                    src='assets/images/thumbs/blog-two-img9.png'
+                    src='assets/images/thumbs/instructor-img1.webp'
                     alt='Course Image'
                     className='scale-hover-item__img rounded-12 cover-img transition-2'
                   />

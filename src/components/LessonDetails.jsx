@@ -13,16 +13,16 @@ const LessonDetails = () => {
                 className='player'
                 playsInline
                 controls
-                poster='/assets/images/thumbs/course-details-img.png'
+                poster='/assets/images/thumbs/course-details-imgg.webp'
               >
-                <source
+                {/* <source
                   src='https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4'
                   type='video/mp4'
                 />
                 <source
                   src='https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4'
                   type='video/webm'
-                />
+                /> */}
               </video>
 
               <div className='p-20'>
@@ -329,7 +329,7 @@ const LessonDetails = () => {
                 <span className='d-block border border-neutral-30 my-24 border-dashed' />
                 <div className='flex-align gap-24'>
                   <img
-                    src='assets/images/thumbs/reviewer-img1.png'
+                    src='assets/images/thumbs/enroll-student-img1.webp'
                     alt=''
                     className='w-60 h-60 rounded-circle cover-img'
                   />
@@ -361,7 +361,7 @@ const LessonDetails = () => {
                 </div>
                 <div className='flex-align gap-20 mt-24'>
                   <img
-                    src='assets/images/thumbs/reviewer-img2.png'
+                    src='assets/images/thumbs/enroll-student-img3.webp'
                     alt=''
                     className='w-60 h-60 rounded-circle cover-img'
                   />
@@ -400,7 +400,7 @@ const LessonDetails = () => {
                 <span className='d-block border border-neutral-30 my-24 border-dashed' />
                 <div className='flex-align gap-24'>
                   <img
-                    src='assets/images/thumbs/reviewer-img2.png'
+                    src='assets/images/thumbs/enroll-student-img2.webp'
                     alt=''
                     className='w-60 h-60 rounded-circle cover-img'
                   />
@@ -459,7 +459,7 @@ const LessonDetails = () => {
                 <span className='d-block border border-neutral-30 my-24 border-dashed' />
                 <div className='flex-align gap-24'>
                   <img
-                    src='assets/images/thumbs/reviewer-img3.png'
+                    src='assets/images/thumbs/enroll-student-img4.webp'
                     alt=''
                     className='w-60 h-60 rounded-circle cover-img'
                   />

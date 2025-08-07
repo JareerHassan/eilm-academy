@@ -76,7 +76,7 @@ const InstructorOne = () => {
                 className='w-100 h-100 d-flex align-items-end'
               >
                 <img
-                  src='assets/images/thumbs/instructor-img1.png'
+                  src='assets/images/thumbs/faculty-img1.webp'
                   alt='Course Image'
                   className='scale-hover-item__img rounded-12 cover-img transition-2'
                 />
@@ -181,7 +181,7 @@ const InstructorOne = () => {
                 className='w-100 h-100 d-flex align-items-end'
               >
                 <img
-                  src='assets/images/thumbs/instructor-img2.png'
+                  src='assets/images/thumbs/faculty-img2.webp'
                   alt='Course Image'
                   className='scale-hover-item__img rounded-12 cover-img transition-2'
                 />
@@ -286,7 +286,7 @@ const InstructorOne = () => {
                 className='w-100 h-100 d-flex align-items-end'
               >
                 <img
-                  src='assets/images/thumbs/instructor-img3.png'
+                  src='assets/images/thumbs/faculty-img4.webp'
                   alt='Course Image'
                   className='scale-hover-item__img rounded-12 cover-img transition-2'
                 />
@@ -391,7 +391,7 @@ const InstructorOne = () => {
                 className='w-100 h-100 d-flex align-items-end'
               >
                 <img
-                  src='assets/images/thumbs/instructor-img2.png'
+                  src='assets/images/thumbs/faculty-img5.webp'
                   alt='Course Image'
                   className='scale-hover-item__img rounded-12 cover-img transition-2'
                 />

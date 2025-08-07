@@ -27,7 +27,7 @@ const EventsAllOne = () => {
                   tabIndex={0}
                 >
                   <img
-                    src='assets/images/thumbs/event-img1.png'
+                    src='assets/images/thumbs/coursee-img5.webp'
                     alt='Course Image'
                     className='scale-hover-item__img rounded-12 cover-img transition-2'
                   />
@@ -81,7 +81,7 @@ const EventsAllOne = () => {
                   tabIndex={0}
                 >
                   <img
-                    src='assets/images/thumbs/event-img2.png'
+                    src='assets/images/thumbs/course-iimg7.webp'
                     alt='Course Image'
                     className='scale-hover-item__img rounded-12 cover-img transition-2'
                   />
@@ -135,7 +135,7 @@ const EventsAllOne = () => {
                   tabIndex={0}
                 >
                   <img
-                    src='assets/images/thumbs/event-img3.png'
+                    src='assets/images/thumbs/course-imag3.webp'
                     alt='Course Image'
                     className='scale-hover-item__img rounded-12 cover-img transition-2'
                   />
@@ -189,7 +189,7 @@ const EventsAllOne = () => {
                   tabIndex={0}
                 >
                   <img
-                    src='assets/images/thumbs/event-img4.png'
+                    src='assets/images/thumbs/course-img2.webp'
                     alt='Course Image'
                     className='scale-hover-item__img rounded-12 cover-img transition-2'
                   />
@@ -243,7 +243,7 @@ const EventsAllOne = () => {
                   tabIndex={0}
                 >
                   <img
-                    src='assets/images/thumbs/event-img5.png'
+                    src='assets/images/thumbs/course-img3.webp'
                     alt='Course Image'
                     className='scale-hover-item__img rounded-12 cover-img transition-2'
                   />
@@ -297,7 +297,7 @@ const EventsAllOne = () => {
                   tabIndex={0}
                 >
                   <img
-                    src='assets/images/thumbs/event-img6.png'
+                    src='assets/images/thumbs/course-img2.webp'
                     alt='Course Image'
                     className='scale-hover-item__img rounded-12 cover-img transition-2'
                   />

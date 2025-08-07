@@ -6,7 +6,7 @@ const InstructorDetails = () => {
           <div className='col-lg-4'>
             <div className='instructor-details__thumb'>
               <img
-                src='assets/images/thumbs/instructor-details-thumb.png'
+                src='assets/images/thumbs/testimonials-three-img3.webp'
                 alt=''
                 className='max-h-416 max-w-416 cover-img rounded-circle'
               />
