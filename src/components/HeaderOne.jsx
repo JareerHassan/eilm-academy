@@ -14,7 +14,7 @@ const HeaderOne = () => {
       import("select2").then(() => {
         const selectElement = $(".js-example-basic-single");
         if (selectElement.length > 0) {
-          selectElement.select2(); 
+          selectElement.select2();
         }
       });
     }
@@ -63,8 +63,8 @@ const HeaderOne = () => {
   const menuItems = [
     {
       label: "Home",
-      href: "/", 
-         icon: true,
+      href: "/",
+      icon: true,
       // links: [
       //   { href: "/", label: "Home University" },
       //   //# { href: "/index-2", label: "Home Online Course" },
@@ -76,12 +76,14 @@ const HeaderOne = () => {
     },
     {
       label: "Courses",
-      links: [
-        { href: "/course", label: "Course Grid View" },
-        { href: "/course-list-view", label: "Course List View" },
-        { href: "/course-details", label: "Course Details" },
-        { href: "/lesson-details", label: "Lesson Details" },
-      ],
+      href: "/course",
+      icon: true,
+      // links: [
+      //   { href: "/course", label: "Course Grid View" },
+      //   { href: "/course-list-view", label: "Course List View" },
+      //   { href: "/course-details", label: "Course Details" },
+      //   { href: "/lesson-details", label: "Lesson Details" },
+      // ],
     },
     {
       label: "Pages",
@@ -122,10 +124,10 @@ const HeaderOne = () => {
     //     // { href: "/blog-details", label: "Blog Details" },
     //   ],
     // },
-       {
+    {
       label: "Blog",
-      href: "/blog", 
-         icon: true,
+      href: "/blog",
+      icon: true,
       // links: [
       //   { href: "/", label: "Home University" },
       //   //# { href: "/index-2", label: "Home Online Course" },
@@ -142,65 +144,51 @@ const HeaderOne = () => {
     <>
       <div className={`side-overlay ${isMenuActive ? "show" : ""}`}></div>
       <header className={`header ${scroll ? "fixed-header" : ""}`}>
-        <div className='container container--xl'>
-          <nav className='header-inner flex-between gap-8'>
-            <div className='header-content-wrapper flex-align flex-grow-1'>
+        <div className="container container--xl">
+          <nav className="header-inner flex-between gap-8">
+            <div className="header-content-wrapper flex-align flex-grow-1">
               {/* Logo Start */}
-              <div className='logo'>
-                <Link href='/' className='link'>
-                  <img src='assets/images/logo/logo3.png' alt='Logo' style={{height:'100px'}} />
+              <div className="logo">
+                <Link href="/" className="link">
+                  <img
+                    src="/assets/images/logo/logo3.png"
+                    alt="Logo"
+                    style={{ height: "100px" }}
+                  />
                 </Link>
               </div>
               {/* Logo End  */}
               {/* Select Start */}
-              <div className='d-sm-block d-none'>
-                <div className='header-select border border-neutral-30 bg-main-25 rounded-pill position-relative'>
-                  <span className='select-icon position-absolute top-50 translate-middle-y inset-inline-start-0 z-1  ms-8 text-xl pointer-event-none d-flex'>
-                    <i className='ph-bold ph-squares-four' />
-                  </span>
-                  <select
-                    className='js-example-basic-single border-0'
-                    name='state'
-                    defaultValue='categories'
-                  >
-                    <option value={"Categories"}>Categories</option>
-                    <option value={"Design"}>Design</option>
-                    <option value={"Development"}>Development</option>
-                    <option value={"Architecture"}>Architecture</option>
-                    <option value={"Life Style"}>Life Style</option>
-                    <option value={"Data Science"}>Data Science</option>
-                    <option value={"Marketing"}>Marketing</option>
-                    <option value={"Music"}>Music</option>
-                    <option value={"Typography"}>Typography</option>
-                    <option value={"Finance"}>Finance</option>
-                    <option value={"Motivation"}>Motivation</option>
-                  </select>
-                </div>
-              </div>
+
               {/* Select End */}
               {/* Menu Start  */}
-              <div className='header-menu d-lg-block d-none'>
-                <ul className='nav-menu flex-align'>
+              <div
+                className="header-menu d-lg-block d-none"
+                style={{ flex: 1, display: "flex", justifyContent: "center" }}
+              >
+                <ul
+                  className="nav-menu flex-align"
+                  style={{ justifyContent: "center", gap: "50px" }}
+                >
                   {menuItems.map((item, index) =>
                     item.links ? (
                       <li
                         key={`menu-item-${index}`}
-                        className='nav-menu__item has-submenu'
+                        className="nav-menu__item has-submenu"
                       >
-                        <Link href='#' className='nav-menu__link'>
+                        <Link href="#" className="nav-menu__link">
                           {item.label}
                         </Link>
                         <ul className={`nav-submenu scroll-sm`}>
                           {item.links.map((link, linkIndex) => (
                             <li
                               key={`submenu-item-${linkIndex}`}
-                              className={`nav-submenu__item ${
-                                pathname == link.href && "activePage"
-                              }`}
+                              className={`nav-submenu__item ${pathname == link.href && "activePage"
+                                }`}
                             >
                               <Link
                                 href={link.href}
-                                className='nav-submenu__link hover-bg-neutral-30'
+                                className="nav-submenu__link hover-bg-neutral-30"
                               >
                                 {link.label}
                               </Link>
@@ -211,11 +199,10 @@ const HeaderOne = () => {
                     ) : (
                       <li
                         key={`menu-contact-${index}`}
-                        className={`nav-menu__item ${
-                          pathname == item.href && "activePage"
-                        }`}
+                        className={`nav-menu__item ${pathname == item.href && "activePage"
+                          }`}
                       >
-                        <Link href={item.href} className='nav-menu__link'>
+                        <Link href={item.href} className="nav-menu__link">
                           {item.label}
                         </Link>
                       </li>
@@ -223,38 +210,47 @@ const HeaderOne = () => {
                   )}
                 </ul>
               </div>
+
               {/* Menu End  */}
             </div>
             {/* Header Right start */}
-            <div className='header-right flex-align'>
+            <div className="header-right flex-align">
               <form
-                action='#'
-                className='search-form position-relative d-xl-block d-none'
+                action="#"
+                className="search-form position-relative d-xl-block d-none"
               >
                 <input
-                  type='text'
-                  className='common-input rounded-pill bg-main-25 pe-48 border-neutral-30'
-                  placeholder='Search...'
+                  type="text"
+                  className="common-input rounded-pill bg-main-25 pe-48 border-neutral-30"
+                  placeholder="Search..."
                 />
                 <button
-                  type='submit'
-                  className='w-36 h-36 bg-main-600 hover-bg-main-700 rounded-circle flex-center text-md text-white position-absolute top-50 translate-middle-y inset-inline-end-0 me-8'
+                  type="submit"
+                  className="w-36 h-36 bg-main-600 hover-bg-main-700 rounded-circle flex-center text-md text-white position-absolute top-50 translate-middle-y inset-inline-end-0 me-8"
                 >
-                  <i className='ph-bold ph-magnifying-glass' />
+                  <i className="ph-bold ph-magnifying-glass" />
                 </button>
               </form>
-              <Link
-                href='sign-in'
-                className='info-action w-52 h-52 bg-main-25 hover-bg-main-600 border border-neutral-30 rounded-circle flex-center text-2xl text-neutral-500 hover-text-white hover-border-main-600'
-              >
-                <i className='ph ph-user-circle' />
-              </Link>
+              {/* User Icon */}
+              <div className="flex flex-col me-2">
+                <Link
+                  href="/sign-in"
+                  className="info-action w-52 h-52 bg-main-25 hover-bg-main-600 
+    border border-neutral-30 rounded-circle flex-center text-2xl 
+    text-neutral-500 hover-text-white hover-border-main-600"
+                >
+                  <i className="ph ph-user-circle" />
+                </Link>
+              </div>
+
+
+
               <button
-                type='button'
-                className='toggle-mobileMenu d-lg-none text-neutral-200 flex-center'
+                type="button"
+                className="toggle-mobileMenu d-lg-none text-neutral-200 flex-center"
                 onClick={toggleMenu}
               >
-                <i className='ph ph-list' />
+                <i className="ph ph-list" />
               </button>
             </div>
             {/* Header Right End  */}
@@ -263,37 +259,35 @@ const HeaderOne = () => {
       </header>
 
       <div
-        className={`mobile-menu scroll-sm d-lg-none d-block ${
-          isMenuActive ? "active" : ""
-        }`}
+        className={`mobile-menu scroll-sm d-lg-none d-block ${isMenuActive ? "active" : ""
+          }`}
       >
-        <button type='button' className='close-button' onClick={closeMenu}>
-          <i className='ph ph-x' />{" "}
+        <button type="button" className="close-button" onClick={closeMenu}>
+          <i className="ph ph-x" />{" "}
         </button>
-        <div className='mobile-menu__inner'>
-          <Link href='/' className='mobile-menu__logo'>
-            <img src='assets/images/logo/logo.png' alt='Logo' />
+        <div className="mobile-menu__inner">
+          <Link href="/" className="mobile-menu__logo">
+            <img src="assets/images/logo/logo3.png" alt="Logo" />
           </Link>
-          <div className='mobile-menu__menu'>
-            <ul className='nav-menu flex-align nav-menu--mobile'>
+          <div className="mobile-menu__menu">
+            <ul className="nav-menu flex-align nav-menu--mobile">
               {menuItems.map((item, index) =>
                 item.links ? (
                   <li
                     key={`menu-item-${index}`}
-                    className={`nav-menu__item has-submenu ${
-                      activeSubmenu === index ? "activePage" : ""
-                    }`}
+                    className={`nav-menu__item has-submenu ${activeSubmenu === index ? "activePage" : ""
+                      }`}
                     onClick={() => handleSubmenuClick(index)}
                   >
-                    <Link href='#' className='nav-menu__link'>
+                    <Link href="#" className="nav-menu__link">
                       {item.label}
                     </Link>
                     <ul className={`nav-submenu scroll-sm`}>
                       {item.links.map((link, linkIndex) => (
-                        <li key={linkIndex} className='nav-submenu__item'>
+                        <li key={linkIndex} className="nav-submenu__item">
                           <Link
                             href={link.href}
-                            className='nav-submenu__link hover-bg-neutral-30'
+                            className="nav-submenu__link hover-bg-neutral-30"
                           >
                             {link.label}
                           </Link>
@@ -303,41 +297,17 @@ const HeaderOne = () => {
                   </li>
                 ) : (
                   <li
-                    className={`nav-menu__item ${
-                      pathname == item.href && "activePage"
-                    }`}
+                    className={`nav-menu__item ${pathname == item.href && "activePage"
+                      }`}
                     key={index}
                   >
-                    <Link href={item.href} className='nav-menu__link'>
+                    <Link href={item.href} className="nav-menu__link">
                       {item.label}
                     </Link>
                   </li>
                 )
               )}
             </ul>
-            <div className='d-sm-none d-block mt-24'>
-              <div className='header-select border border-neutral-30 bg-main-25 rounded-pill position-relative'>
-                <span className='select-icon position-absolute top-50 translate-middle-y inset-inline-start-0 z-1 ms-lg-4 ms-12 text-xl pointer-event-none d-flex'>
-                  <i className='ph-bold ph-squares-four' />
-                </span>
-                <select
-                  className='js-example-basic-single border-0'
-                  name='state'
-                >
-                  <option value={"Categories"}>Categories</option>
-                  <option value={"Design"}>Design</option>
-                  <option value={"Development"}>Development</option>
-                  <option value={"Architecture"}>Architecture</option>
-                  <option value={"Life Style"}>Life Style</option>
-                  <option value={"Data Science"}>Data Science</option>
-                  <option value={"Marketing"}>Marketing</option>
-                  <option value={"Music"}>Music</option>
-                  <option value={"Typography"}>Typography</option>
-                  <option value={"Finance"}>Finance</option>
-                  <option value={"Motivation"}>Motivation</option>
-                </select>
-              </div>
-            </div>
           </div>
         </div>
       </div>

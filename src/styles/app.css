@@ -1,0 +1,141 @@
+/* Dashboard layout */
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f6fa;
+}
+
+/* Content area */
+.dashboard .content {
+  flex: 1;
+  padding: 40px;
+  margin-left: 260px; /* Sidebar width */
+  transition: margin-left 0.3s;
+}
+
+/* Adjust content for mobile */
+@media (max-width: 1024px) {
+  .dashboard .content {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+
+/* Heading */
+.dashboard .content h1 {
+  color: #458EFF;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Loader */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #458EFF;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Row layout with 3 cards per row */
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+/* Course card */
+.course-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.course-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Course title */
+.course-card h5 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #458EFF;
+  font-size: 20px;
+  margin: 0;
+}
+
+/* Course description */
+.course-card p.description {
+  margin-bottom: 10px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Course duration */
+.course-card p.duration {
+ display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #888;
+  font-size: 14px;
+}
+
+.course-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-row {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-key {
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #333;
+}
+
+.detail-value {
+  color: #666;
+}

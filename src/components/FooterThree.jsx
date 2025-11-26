@@ -232,7 +232,7 @@ const FooterThree = () => {
               >
                 {" "}
                 Copyright © 2025 <span className='fw-semibold'>
-                  EduAll{" "}
+                  E-ILM-ACADEMY{" "}
                 </span>{" "}
                 All Rights Reserved.
               </p>

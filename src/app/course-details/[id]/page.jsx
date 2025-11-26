@@ -1,5 +1,4 @@
 import Breadcrumb from "@/components/Breadcrumb";
-import CertificateOne from "@/components/CertificateOne";
 import CourseDetails from "@/components/CourseDetails";
 import FooterThree from "@/components/FooterThree";
 import HeaderOne from "@/components/HeaderOne";
@@ -27,7 +26,7 @@ const page = () => {
       <CourseDetails />
 
       {/* CertificateOne */}
-      <CertificateOne />
+      {/* <CertificateOne /> */}
 
       {/* FooterOne */}
       <FooterThree />

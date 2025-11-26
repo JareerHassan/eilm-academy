@@ -1,0 +1,100 @@
+/* TeacherCourses.css */
+
+/* Layout */
+
+
+/* Main Content */
+.teacher-courses-main {
+  flex: 1;
+  padding: 40px;
+  transition: padding-left 0.3s ease;
+}
+
+.teacher-courses-title {
+  margin-bottom: 25px;
+  color: #458EFF;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Loader */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #458EFF;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Courses Grid */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+  
+}
+
+/* Course Card */
+.course-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.course-card:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+.course-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #458EFF;
+  font-size: 20px;
+  margin: 0;
+}
+
+.course-description {
+  margin-bottom: 10px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.course-duration {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #888;
+  font-size: 14px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+  .teacher-courses-main {
+    padding-left: 20px; /* Remove sidebar space on mobile */
+  }
+
+  .courses-grid {
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+}

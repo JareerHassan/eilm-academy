@@ -1,0 +1,88 @@
+
+/* sidebar */
+
+/* Main sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100vh;
+  background: #458EFF;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-left: 25px;
+  transition: 0.3s;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Sidebar closed for mobile */
+.closed {
+  left: -260px;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+/* List styling */
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.navItem {
+  margin-bottom: 30px;
+  font-size: 1.15rem;
+}
+
+/* Links */
+.navLink {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  gap: 15px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.navLink:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Logout */
+.logout {
+  margin-top: auto;
+  margin-bottom: 40px;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+/* Toggle button */
+.toggleBtn {
+  position: fixed;
+  top: 16px;
+  right: 20px;
+  font-size: 1.5rem;
+  background: #458EFF;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1001;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

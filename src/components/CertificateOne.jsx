@@ -27,7 +27,7 @@ const CertificateOne = () => {
                 <div className='col-xl-6 d-xl-block d-none'>
                   <div className='certificate__thumb' data-aos='fade-up-left' >
                     <img
-                      src='assets/images/thumbs/certificate-img.webp'
+                      src='assets/images/thumbs/about-three-img2.webp'
                       alt=''
                       data-tilt=''
                       data-tilt-max={7}

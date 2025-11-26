@@ -1,0 +1,127 @@
+/* Main Content */
+.teacher-students-main {
+  flex: 1;
+  padding: 40px;
+  transition: padding-left 0.3s ease;
+  min-height: 100vh;
+}
+
+.teacher-students-title {
+  margin-bottom: 25px;
+  color: #1a73e8;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Loader */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #1a73e8;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Students Grid */
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* Student Card */
+.student-card {
+  background: linear-gradient(135deg, #ffffff, #f9fbff);
+  border-radius: 16px;
+  padding: 25px 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #e6e9f2;
+}
+
+.student-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* Student Name */
+.student-name {
+  color: #1a73e8;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #e6e9f2;
+  padding-bottom: 6px;
+}
+
+/* Student Info Field */
+.student-field {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dashed #e6e9f2;
+  font-size: 14px;
+}
+
+.student-field strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.student-field span {
+  color: #555;
+}
+
+/* Courses Section */
+.student-courses {
+  margin-top: 10px;
+}
+
+.student-courses strong {
+  color: #333;
+  font-size: 15px;
+}
+
+.course-list {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.course-chip {
+  background: #e8f0fe;
+  color: #1a73e8;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .teacher-students-main {
+    padding-left: 20px;
+  }
+
+  .students-grid {
+    grid-template-columns: 1fr;
+  }
+}

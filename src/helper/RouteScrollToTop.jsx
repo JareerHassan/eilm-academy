@@ -11,10 +11,13 @@ const RouteScrollToTop = () => {
   }, [pathname]);
 
   useEffect(() => {
-    const progressPath = document.querySelector(".progress-wrap path");
+    const progressWrap = document.querySelector(".progress-wrap");
+    const progressPath = progressWrap?.querySelector("path");
+
+    if (!progressWrap || !progressPath) return;
+
     const pathLength = progressPath.getTotalLength();
-    progressPath.style.transition = progressPath.style.WebkitTransition =
-      "none";
+    progressPath.style.transition = progressPath.style.WebkitTransition = "none";
     progressPath.style.strokeDasharray = `${pathLength} ${pathLength}`;
     progressPath.style.strokeDashoffset = pathLength;
     progressPath.getBoundingClientRect();
@@ -28,54 +31,44 @@ const RouteScrollToTop = () => {
       progressPath.style.strokeDashoffset = progress;
     };
 
-    updateProgress();
-    window.addEventListener("scroll", updateProgress);
-
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        document
-          .querySelector(".progress-wrap")
-          .classList.add("active-progress");
+        progressWrap.classList.add("active-progress");
       } else {
-        document
-          .querySelector(".progress-wrap")
-          .classList.remove("active-progress");
+        progressWrap.classList.remove("active-progress");
       }
     };
-
-    window.addEventListener("scroll", handleScroll);
 
     const handleClick = (event) => {
       event.preventDefault();
       window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
-    document
-      .querySelector(".progress-wrap")
-      .addEventListener("click", handleClick);
+    // ✅ event listeners attach karo
+    updateProgress();
+    window.addEventListener("scroll", updateProgress);
+    window.addEventListener("scroll", handleScroll);
+    progressWrap.addEventListener("click", handleClick);
 
+    // ✅ cleanup safe banado
     return () => {
       window.removeEventListener("scroll", updateProgress);
       window.removeEventListener("scroll", handleScroll);
-      document
-        .querySelector(".progress-wrap")
-        .removeEventListener("click", handleClick);
+      progressWrap.removeEventListener("click", handleClick);
     };
   }, []);
 
   return (
-    <>
-      <div className='progress-wrap'>
-        <svg
-          className='progress-circle svg-content'
-          width='100%'
-          height='100%'
-          viewBox='-1 -1 102 102'
-        >
-          <path d='M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98' />
-        </svg>
-      </div>
-    </>
+    <div className="progress-wrap">
+      <svg
+        className="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
   );
 };
 
