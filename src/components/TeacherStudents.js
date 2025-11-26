@@ -28,7 +28,7 @@ export default function TeacherStudents() {
     const teacherId = user.teacher.id;
 
     axios
-      .get(`http://localhost:5000/api/teacher-students/${teacherId}/students`)
+      .get(`https://eilmbackend.oxmite.com/api/teacher-students/${teacherId}/students`)
       .then((res) => {
         setStudents(res.data.students || []);
         setLoading(false);

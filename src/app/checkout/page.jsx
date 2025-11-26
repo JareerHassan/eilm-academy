@@ -1,7 +1,7 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import CertificateOne from "@/components/CertificateOne";
 import CheckoutInner from "@/components/CheckoutInner";
-import FooterOne from "@/components/FooterOne";
+import FooterThree from "@/components/FooterThree";
 import HeaderOne from "@/components/HeaderOne";
 import Animation from "@/helper/Animation";
 
@@ -30,7 +30,7 @@ const page = () => {
       <CertificateOne />
 
       {/* FooterOne */}
-      <FooterOne />
+      <FooterThree />
     </>
   );
 };

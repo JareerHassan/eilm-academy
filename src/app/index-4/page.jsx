@@ -2,9 +2,9 @@ import AboutFour from "@/components/AboutFour";
 import BannerFour from "@/components/BannerFour";
 import CertificateThree from "@/components/CertificateThree";
 import CounterThree from "@/components/CounterThree";
-import FooterOne from "@/components/FooterOne";
+import FooterThree from "@/components/FooterThree";
 import FreeTrailOne from "@/components/FreeTrailOne";
-import HeaderTwo from "@/components/HeaderTwo";
+import HeaderOne from "@/components/HeaderOne";
 import HowItWorkOne from "@/components/HowItWorkOne";
 import PopularTeacherOne from "@/components/PopularTeacherOne";
 import ReviewOne from "@/components/ReviewOne";
@@ -26,7 +26,7 @@ const page = () => {
       <Animation />
 
       {/* HeaderTwo */}
-      <HeaderTwo />
+      <HeaderOne />
 
       {/* BannerFour */}
       <BannerFour />
@@ -62,7 +62,7 @@ const page = () => {
       <CertificateThree />
 
       {/* FooterOne */}
-      <FooterOne />
+      <FooterThree />
     </>
   );
 };

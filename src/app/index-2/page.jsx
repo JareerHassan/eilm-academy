@@ -5,7 +5,6 @@ import CertificateTwo from "@/components/CertificateTwo";
 import ExploreCourseTwo from "@/components/ExploreCourseTwo";
 import FaqOne from "@/components/FaqOne";
 import FeaturesTwo from "@/components/FeaturesTwo";
-import FooterTwo from "@/components/FooterTwo";
 import HeaderOne from "@/components/HeaderOne";
 import InfoSectionOne from "@/components/InfoSectionOne";
 import JoinCommunityOne from "@/components/JoinCommunityOne";
@@ -58,7 +57,6 @@ const page = () => {
       <FaqOne />
 
       {/* FooterTwo */}
-      <FooterTwo />
     </>
   );
 };

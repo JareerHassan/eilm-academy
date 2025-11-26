@@ -3,8 +3,8 @@ import BannerSix from "@/components/BannerSix";
 import ChildFuture from "@/components/ChildFuture";
 import ExploreCourseThree from "@/components/ExploreCourseThree";
 import FaqThree from "@/components/FaqThree";
-import FooterFive from "@/components/FooterFive";
-import HeaderThree from "@/components/HeaderThree";
+// import FooterOne from "@/components/FooterOne";
+import HeaderOne from "@/components/HeaderOne";
 import PopularTeacherTwo from "@/components/PopularTeacherTwo";
 import TestimonialsFive from "@/components/TestimonialsFive";
 import Animation from "@/helper/Animation";
@@ -22,7 +22,7 @@ const page = () => {
       <Animation />
 
       {/* HeaderThree */}
-      <HeaderThree />
+      <HeaderOne />
 
       {/* BannerSix */}
       <BannerSix />
@@ -46,7 +46,7 @@ const page = () => {
       <TestimonialsFive />
 
       {/* FooterFive */}
-      <FooterFive />
+      {/* <FooterOne /> */}
     </>
   );
 };

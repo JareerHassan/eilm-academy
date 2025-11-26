@@ -1,5 +1,5 @@
 import Breadcrumb from "@/components/Breadcrumb";
-// import FooterOne from "@/components/FooterOne";
+// import FooterThree from "@/components/FooterThree";
 import HeaderOne from "@/components/HeaderOne";
 import SignUpInner from "@/components/SignUpInner";
 import Animation from "@/helper/Animation";
@@ -26,7 +26,7 @@ const page = () => {
       <SignUpInner />
 
       {/* FooterOne */}
-      {/* <FooterOne /> */}
+      {/* <FooterThree /> */}
     </>
   );
 };
