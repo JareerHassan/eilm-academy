@@ -16,9 +16,9 @@ const CourseDetails = () => {
   useEffect(() => {
     const fetchCourseAndLessons = async () => {
       try {
-        const courseRes = await axios.get(`http://192.168.100.60:5000/api/courses/${id}`);
+        const courseRes = await axios.get(`https://eilmbackend.oxmite.com/api/courses/${id}`);
         setCourse(courseRes.data);
-        const lessonsRes = await axios.get(`http://192.168.100.60:5000/api/courses/${id}/lessons`);
+        const lessonsRes = await axios.get(`https://eilmbackend.oxmite.com/api/courses/${id}/lessons`);
         setLessons(lessonsRes.data);
       } catch (err) {
         console.error(err);
