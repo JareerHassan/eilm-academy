@@ -50,6 +50,7 @@ const BrandOne = () => {
             <Slider {...settings} className='brand-slider'>
               <div className='brand-slider__item px-24'>
                 <img src='assets/images/thumbs/brand-img1.png' alt='' />
+                
               </div>
               <div className='brand-slider__item px-24'>
                 <img src='assets/images/thumbs/brand-img2.png' alt='' />

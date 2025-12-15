@@ -16,31 +16,22 @@ const BlogTwo = () => {
     arrows: false,
     draggable: true,
     infinite: true,
-
     responsive: [
       {
         breakpoint: 1299,
-        settings: {
-          slidesToShow: 2,
-          arrows: false,
-        },
+        settings: { slidesToShow: 2, arrows: false },
       },
       {
         breakpoint: 767,
-        settings: {
-          slidesToShow: 2,
-          arrows: false,
-        },
+        settings: { slidesToShow: 2, arrows: false },
       },
       {
         breakpoint: 575,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
-        },
+        settings: { slidesToShow: 1, arrows: false },
       },
     ],
   };
+
   return (
     <section className='blog-two py-120 bg-main-25'>
       <div className='container'>
@@ -49,15 +40,17 @@ const BlogTwo = () => {
             <span className='text-main-600 text-2xl d-flex'>
               <i className='ph-bold ph-book-open' />
             </span>
-            <h5 className='text-main-600 mb-0'>Latest News</h5>
+            <h5 className='text-main-600 mb-0'>Latest News & Insights</h5>
           </div>
-          <h2 className='mb-24 wow bounceIn'>Stay Informed, Stay Inspired</h2>
-          <p className=' wow bounceInUp'>
-            Welcome to our blog, where we share insights, stories, and updates
-            on topics ranging from education
+          <h2 className='mb-24 wow bounceIn'>Stay Updated, Stay Empowered</h2>
+          <p className='wow bounceInUp'>
+            Explore our blog for expert advice, inspiring stories, and valuable updates on education,
+            career development, and community initiatives. Stay informed and grow with us.
           </p>
         </div>
+
         <Slider ref={sliderRef} {...settings} className='blog-two-slider'>
+          {/* Blog Item 1 */}
           <div
             className='scale-hover-item bg-white rounded-16 p-12 h-100'
             data-aos='fade-up'
@@ -67,15 +60,20 @@ const BlogTwo = () => {
               <Link href='/blog-details' className='w-100 h-100'>
                 <img
                   src='assets/images/thumbs/blog-two-img1.webp'
-                  alt='Course Image'
+                  alt='Navigating the Job Market'
                   className='scale-hover-item__img rounded-12 cover-img transition-2'
+                  style={{ width: "100%", height: "250px", objectFit: "cover", display: "block" }}
                 />
               </Link>
-              <div className='position-absolute inset-inline-end-0 inset-block-end-0 me-16 mb-16 py-12 px-24 rounded-8 bg-main-three-600 text-white fw-medium'>
+              <div
+                className='position-absolute inset-inline-end-0 inset-block-end-0 me-16 mb-16 py-12 px-24 rounded-8 text-white fw-medium'
+                style={{ backgroundColor: "#002366" }}
+              >
                 <h3 className='mb-0 text-white fw-medium'>21</h3>
                 DEC
               </div>
             </div>
+
             <div className='pt-32 pb-24 px-16 position-relative'>
               <h4 className='mb-28'>
                 <Link href='/blog-details' className='link text-line-2'>
@@ -104,11 +102,11 @@ const BlogTwo = () => {
                   <span className='text-neutral-500 text-lg'>24</span>
                 </div>
               </div>
+
               <div className='flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0'>
                 <Link
                   href='/blog-details'
                   className='flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold'
-                  tabIndex={0}
                 >
                   Read More
                   <i className='ph ph-arrow-right' />
@@ -116,6 +114,8 @@ const BlogTwo = () => {
               </div>
             </div>
           </div>
+
+          {/* Blog Item 2 */}
           <div
             className='scale-hover-item bg-white rounded-16 p-12 h-100'
             data-aos='fade-up'
@@ -125,15 +125,20 @@ const BlogTwo = () => {
               <Link href='/blog-details' className='w-100 h-100'>
                 <img
                   src='assets/images/thumbs/blog-two-img2.webp'
-                  alt='Course Image'
+                  alt='Diversity in Education'
                   className='scale-hover-item__img rounded-12 cover-img transition-2'
+                  style={{ width: "100%", height: "250px", objectFit: "cover", display: "block" }}
                 />
               </Link>
-              <div className='position-absolute inset-inline-end-0 inset-block-end-0 me-16 mb-16 py-12 px-24 rounded-8 bg-main-three-600 text-white fw-medium'>
-                <h3 className='mb-0 text-white fw-medium'>21</h3>
-                DEC
+              <div
+                className='position-absolute inset-inline-end-0 inset-block-end-0 me-16 mb-16 py-12 px-24 rounded-8 text-white fw-medium'
+                style={{ backgroundColor: "#002366" }}
+              >
+                <h3 className='mb-0 text-white fw-medium'>15</h3>
+                JAN
               </div>
             </div>
+
             <div className='pt-32 pb-24 px-16 position-relative'>
               <h4 className='mb-28'>
                 <Link href='/blog-details' className='link text-line-2'>
@@ -152,21 +157,21 @@ const BlogTwo = () => {
                   <span className='text-neutral-500 text-2xl d-flex'>
                     <i className='ph-bold ph-eye' />
                   </span>
-                  <span className='text-neutral-500 text-lg'>1.6k</span>
+                  <span className='text-neutral-500 text-lg'>1.2k</span>
                 </div>
                 <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
                 <div className='flex-align gap-8'>
                   <span className='text-neutral-500 text-2xl d-flex'>
                     <i className='ph ph-chat-dots' />
                   </span>
-                  <span className='text-neutral-500 text-lg'>24</span>
+                  <span className='text-neutral-500 text-lg'>18</span>
                 </div>
               </div>
+
               <div className='flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0'>
                 <Link
                   href='/blog-details'
                   className='flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold'
-                  tabIndex={0}
                 >
                   Read More
                   <i className='ph ph-arrow-right' />
@@ -174,6 +179,8 @@ const BlogTwo = () => {
               </div>
             </div>
           </div>
+
+          {/* Blog Item 3 */}
           <div
             className='scale-hover-item bg-white rounded-16 p-12 h-100'
             data-aos='fade-up'
@@ -183,15 +190,20 @@ const BlogTwo = () => {
               <Link href='/blog-details' className='w-100 h-100'>
                 <img
                   src='assets/images/thumbs/blog-two-img3.webp'
-                  alt='Course Image'
+                  alt='Online Learning Tips'
                   className='scale-hover-item__img rounded-12 cover-img transition-2'
+                  style={{ width: "100%", height: "250px", objectFit: "cover", display: "block" }}
                 />
               </Link>
-              <div className='position-absolute inset-inline-end-0 inset-block-end-0 me-16 mb-16 py-12 px-24 rounded-8 bg-main-three-600 text-white fw-medium'>
-                <h3 className='mb-0 text-white fw-medium'>21</h3>
-                DEC
+              <div
+                className='position-absolute inset-inline-end-0 inset-block-end-0 me-16 mb-16 py-12 px-24 rounded-8 text-white fw-medium'
+                style={{ backgroundColor: "#002366" }}
+              >
+                <h3 className='mb-0 text-white fw-medium'>10</h3>
+                FEB
               </div>
             </div>
+
             <div className='pt-32 pb-24 px-16 position-relative'>
               <h4 className='mb-28'>
                 <Link href='/blog-details' className='link text-line-2'>
@@ -210,79 +222,21 @@ const BlogTwo = () => {
                   <span className='text-neutral-500 text-2xl d-flex'>
                     <i className='ph-bold ph-eye' />
                   </span>
-                  <span className='text-neutral-500 text-lg'>1.6k</span>
+                  <span className='text-neutral-500 text-lg'>900</span>
                 </div>
                 <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
                 <div className='flex-align gap-8'>
                   <span className='text-neutral-500 text-2xl d-flex'>
                     <i className='ph ph-chat-dots' />
                   </span>
-                  <span className='text-neutral-500 text-lg'>24</span>
+                  <span className='text-neutral-500 text-lg'>12</span>
                 </div>
               </div>
+
               <div className='flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0'>
                 <Link
                   href='/blog-details'
                   className='flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold'
-                  tabIndex={0}
-                >
-                  Read More
-                  <i className='ph ph-arrow-right' />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            className='scale-hover-item bg-white rounded-16 p-12 h-100'
-            data-aos='fade-up'
-            data-aos-duration={800}
-          >
-            <div className='course-item__thumb rounded-12 overflow-hidden position-relative'>
-              <Link href='/blog-details' className='w-100 h-100'>
-                <img
-                  src='assets/images/thumbs/blog-two-img2.webp'
-                  alt='Course Image'
-                  className='scale-hover-item__img rounded-12 cover-img transition-2'
-                />
-              </Link>
-              <div className='position-absolute inset-inline-end-0 inset-block-end-0 me-16 mb-16 py-12 px-24 rounded-8 bg-main-three-600 text-white fw-medium'>
-                <h3 className='mb-0 text-white fw-medium'>21</h3>
-                DEC
-              </div>
-            </div>
-            <div className='pt-32 pb-24 px-16 position-relative'>
-              <h4 className='mb-28'>
-                <Link href='/blog-details' className='link text-line-2'>
-                  The Importance of Diversity in Higher Education
-                </Link>
-              </h4>
-              <div className='flex-align gap-14 flex-wrap my-20'>
-                <div className='flex-align gap-8'>
-                  <span className='text-neutral-500 text-2xl d-flex'>
-                    <i className='ph ph-user-circle' />
-                  </span>
-                  <span className='text-neutral-500 text-lg'>By Admin</span>
-                </div>
-                <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
-                <div className='flex-align gap-8'>
-                  <span className='text-neutral-500 text-2xl d-flex'>
-                    <i className='ph-bold ph-eye' />
-                  </span>
-                  <span className='text-neutral-500 text-lg'>1.6k</span>
-                </div>
-                <span className='w-8 h-8 bg-neutral-100 rounded-circle' />
-                <div className='flex-align gap-8'>
-                  <span className='text-neutral-500 text-2xl d-flex'>
-                    <i className='ph ph-chat-dots' />
-                  </span>
-                  <span className='text-neutral-500 text-lg'>24</span>
-                </div>
-              </div>
-              <div className='flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0'>
-                <Link
-                  href='/blog-details'
-                  className='flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold'
-                  tabIndex={0}
                 >
                   Read More
                   <i className='ph ph-arrow-right' />
@@ -291,12 +245,13 @@ const BlogTwo = () => {
             </div>
           </div>
         </Slider>
+
         <div className='flex-align gap-16 mt-40 justify-content-center'>
           <button
             type='button'
             id='blog-two-prev'
             onClick={() => sliderRef.current.slickPrev()}
-            className=' slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1 w-48 h-48'
+            className='slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1 w-48 h-48'
           >
             <i className='ph ph-caret-left' />
           </button>
@@ -304,7 +259,7 @@ const BlogTwo = () => {
             type='button'
             id='blog-two-next'
             onClick={() => sliderRef.current.slickNext()}
-            className=' slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1 w-48 h-48'
+            className='slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1 w-48 h-48'
           >
             <i className='ph ph-caret-right' />
           </button>

@@ -12,6 +12,7 @@ import InfoTwo from "@/components/InfoTwo";
 import TestimonialsThree from "@/components/TestimonialsThree";
 import VideoOne from "@/components/VideoOne";
 import Animation from "@/helper/Animation";
+import InstructorOne from "@/components/InstructorOne";
 
 export const metadata = {
   title: "E-ILM-ACADEMY",
@@ -45,6 +46,10 @@ const page = () => {
 
       {/* FacultyOne */}
       <FacultyOne />
+
+
+      {/* InstructorOne */}
+      <InstructorOne />
 
       {/* ChooseUsTwo */}
       <ChooseUsTwo />

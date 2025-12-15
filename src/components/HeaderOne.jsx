@@ -65,80 +65,60 @@ const HeaderOne = () => {
       label: "Home",
       href: "/",
       icon: true,
-      // links: [
-      //   { href: "/", label: "Home University" },
-      //   //# { href: "/index-2", label: "Home Online Course" },
-      //   // { href: "/index-3", label: "Home LMS" },
-      //   // { href: "/index-4", label: "Home Tutor" },
-      //   // { href: "/index-5", label: "Home Kindergarten" },
-      //   // { href: "/index-6", label: " Home Kindergarten two" },
-      // ],
     },
     {
       label: "Courses",
       href: "/course",
       icon: true,
-      // links: [
-      //   { href: "/course", label: "Course Grid View" },
-      //   { href: "/course-list-view", label: "Course List View" },
-      //   { href: "/course-details", label: "Course Details" },
-      //   { href: "/lesson-details", label: "Lesson Details" },
-      // ],
-    },
-    {
-      label: "Pages",
-      links: [
-        { href: "/about", label: "About" },
-        // { href: "/about-two", label: "About Two" },
-        // { href: "/about-three", label: "About Three" },
-        // { href: "/about-four", label: "About Four" },
-        // { href: "/product", label: "Product" },
-        // { href: "/product-details", label: "Product Details" },
-        // { href: "/cart", label: "Cart" },
-        // { href: "/checkout", label: "Checkout" },
-        // { href: "/pricing-plan", label: "Pricing Plan" },
-        // { href: "/instructor", label: "Instructor" },
-        { href: "/instructor-two", label: "Instructor Two" },
-        { href: "/instructor-details", label: "Instructor Details" },
-        { href: "/tutor", label: "Premium Tutors" },
-        { href: "/tutor-details", label: "Premium Tutors Details" },
-        { href: "/faq", label: "FAQ" },
-        { href: "/tuition-jobs", label: "Tuition Jobs" },
-        { href: "/events", label: "Events" },
-        { href: "/event-details", label: "Event Details" },
-        { href: "/apply-admission", label: "Apply Admission" },
-        { href: "/gallery", label: "Gallery" },
-        { href: "/privacy-policy", label: "Privacy Policy" },
-        { href: "/favorite-course", label: "Favorite Course" },
-        { href: "/find-tutors", label: "Find Best Tutors" },
-        { href: "/book-online-class", label: "Book Online Class" },
-      ],
     },
 
+    // Pages dropdown hidden for now – can be reactivated later if needed
     // {
-    //   label: "Blog",
+    //   label: "Pages",
     //   links: [
-    //     { href: "/blog", label: "Blog Grid" },
-    //     // { href: "/blog-list", label: "Blog List" },
-    //     // { href: "/blog-classic", label: "Blog Classic" },
-    //     // { href: "/blog-details", label: "Blog Details" },
+    //     { href: "/about", label: "About" },
+    //     { href: "/about-two", label: "About Two" },
+    //     { href: "/about-three", label: "About Three" },
+    //     { href: "/about-four", label: "About Four" },
+    //     { href: "/product", label: "Product" },
+    //     { href: "/product-details", label: "Product Details" },
+    //     { href: "/cart", label: "Cart" },
+    //     { href: "/checkout", label: "Checkout" },
+    //     { href: "/pricing-plan", label: "Pricing Plan" },
+    //     { href: "/instructor", label: "Instructor" },
+    //     { href: "/instructor-two", label: "Instructor Two" },
+    //     { href: "/instructor-details", label: "Instructor Details" },
+    //     { href: "/tutor", label: "Premium Tutors" },
+    //     { href: "/tutor-details", label: "Premium Tutors Details" },
+    //     { href: "/faq", label: "FAQ" },
+    //     { href: "/tuition-jobs", label: "Tuition Jobs" },
+    //     { href: "/events", label: "Events" },
+    //     { href: "/event-details", label: "Event Details" },
+    //     { href: "/apply-admission", label: "Apply Admission" },
+    //     { href: "/gallery", label: "Gallery" },
+    //     { href: "/privacy-policy", label: "Privacy Policy" },
+    //     { href: "/favorite-course", label: "Favorite Course" },
+    //     { href: "/find-tutors", label: "Find Best Tutors" },
+    //     { href: "/book-online-class", label: "Book Online Class" },
     //   ],
     // },
+
+    // Directly showing About in main menu
+    {
+      label: "About",
+      href: "/about",
+      icon: true,
+    },
+
     {
       label: "Blog",
       href: "/blog",
       icon: true,
-      // links: [
-      //   { href: "/", label: "Home University" },
-      //   //# { href: "/index-2", label: "Home Online Course" },
-      //   // { href: "/index-3", label: "Home LMS" },
-      //   // { href: "/index-4", label: "Home Tutor" },
-      //   // { href: "/index-5", label: "Home Kindergarten" },
-      //   // { href: "/index-6", label: " Home Kindergarten two" },
-      // ],
     },
-    { href: "/contact", label: "Contact" },
+
+    { label: "Contact", href: "/contact" },
   ];
+
 
   return (
     <>
@@ -215,7 +195,7 @@ const HeaderOne = () => {
             </div>
             {/* Header Right start */}
             <div className="header-right flex-align">
-              <form
+              {/* <form
                 action="#"
                 className="search-form position-relative d-xl-block d-none"
               >
@@ -230,7 +210,7 @@ const HeaderOne = () => {
                 >
                   <i className="ph-bold ph-magnifying-glass" />
                 </button>
-              </form>
+              </form> */}
               {/* User Icon */}
               <div className="flex flex-col me-2">
                 <Link

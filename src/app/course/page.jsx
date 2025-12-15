@@ -21,7 +21,7 @@ const page = () => {
       <HeaderOne />
 
       {/* Breadcrumb */}
-      <Breadcrumb title={"Courses Grid View"} />
+      <Breadcrumb title={"Courses"} />
 
       {/* CourseGridView */}
       <CourseGridView />

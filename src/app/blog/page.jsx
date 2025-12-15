@@ -20,7 +20,7 @@ const page = () => {
       <HeaderOne />
 
       {/* Breadcrumb */}
-      <Breadcrumb title={"Blog Grid"} />
+      <Breadcrumb title={"Blogs"} />
 
       {/* BlogGridInner */}
       <BlogGridInner />

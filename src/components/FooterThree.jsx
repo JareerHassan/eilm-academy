@@ -13,11 +13,11 @@ const FooterThree = () => {
         alt=''
         className='shape one animation-scalation'
       />
-      <div className='py-120 '>
+      <div className='py-120  '>
         <div className='container container-two'>
-          <div className='row gy-5'>
+          <div className='row gy-5 d-flex justify-content-between'>
             <div
-              className='col-lg-3 col-sm-6 col-xs-6'
+              className='col-lg-3 col-sm-6  col-xs-6'
               data-aos='fade-up'
               data-aos-duration={400}
             >
@@ -81,42 +81,42 @@ const FooterThree = () => {
                 <ul className='footer-menu'>
                   <li className='mb-16'>
                     <Link
-                      href='/courses'
+                      href='/course'
                       className='text-white hover-text-main-600 hover-text-decoration-underline'
                     >
-                      UI/UX Design
+                      Tafseer-ul-Quran
                     </Link>
                   </li>
                   <li className='mb-16'>
                     <Link
-                      href='/courses'
+                      href='/course'
                       className='text-white hover-text-main-600 hover-text-decoration-underline'
                     >
-                      Web Development
+                      Seerat-un-Nabi (ﷺ)
                     </Link>
                   </li>
                   <li className='mb-16'>
                     <Link
-                      href='/courses'
+                      href='/course'
                       className='text-white hover-text-main-600 hover-text-decoration-underline'
                     >
-                      Python Development
+                      Hadith Courses
                     </Link>
                   </li>
                   <li className='mb-16'>
                     <Link
-                      href='/courses'
+                      href='/course'
                       className='text-white hover-text-main-600 hover-text-decoration-underline'
                     >
-                      Digital Marketing
+                      Fiqh & Islamic Jurisprudence
                     </Link>
                   </li>
                   <li className='mb-16'>
                     <Link
-                      href='/courses'
+                      href='/course'
                       className='text-white hover-text-main-600 hover-text-decoration-underline'
                     >
-                      Graphic Design
+                      Islamic History
                     </Link>
                   </li>
                 </ul>
@@ -184,7 +184,7 @@ const FooterThree = () => {
                 </div>
               </div>
             </div>
-            <div
+            {/* <div
               className='col-lg-3 col-sm-6 col-xs-6'
               data-aos='fade-up'
               data-aos-duration={1200}
@@ -211,7 +211,7 @@ const FooterThree = () => {
                   </button>
                 </form>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -223,7 +223,7 @@ const FooterThree = () => {
               <div className='footer-item__logo mb-0' data-aos='zoom-in-right'>
                 <Link href='/'>
                   {" "}
-                  <img src='assets/images/logo/logo2.png' alt='' />
+                  <img src='assets/images/logo/logo3.png' alt='' />
                 </Link>
               </div>
               <p

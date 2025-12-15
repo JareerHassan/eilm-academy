@@ -12,7 +12,6 @@ const TestimonialsOne = () => {
         const mainSlider = $(".testimonials__slider");
 
         if (thumbsSlider.length && mainSlider.length) {
-          // Initialize the sliders
           thumbsSlider.slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -42,12 +41,12 @@ const TestimonialsOne = () => {
     return () => {
       if (typeof window !== "undefined") {
         const $ = require("jquery");
-        // Destroy sliders on unmount
         $(".testimonials__thumbs-slider").slick("unslick");
         $(".testimonials__slider").slick("unslick");
       }
     };
   }, []);
+
   return (
     <section className='testimonials py-120 position-relative z-1 bg-main-25'>
       <img
@@ -60,8 +59,10 @@ const TestimonialsOne = () => {
         alt=''
         className='shape four animation-rotation'
       />
+
       <div className='container'>
         <div className='row gy-5'>
+          {/* LEFT IMAGES */}
           <div className='col-lg-6'>
             <div className='testimonials__thumbs-slider pe-lg-5 me-xxl-5'>
               <div
@@ -86,21 +87,31 @@ const TestimonialsOne = () => {
               </div>
             </div>
           </div>
+
+          {/* RIGHT CONTENT */}
           <div className='col-lg-6'>
             <div className='testimonials__content'>
               <div className='section-heading style-left'>
                 <div className='flex-align gap-8 mb-16 wow bounceInDown'>
                   <span className='w-8 h-8 bg-main-600 rounded-circle' />
-                  <h5 className='text-main-600 mb-0'>What Our Students Say</h5>
+                  <h5 className='text-main-600 mb-0'>
+                    What Our Students Say
+                  </h5>
                 </div>
+
                 <h2 className='mb-24 wow bounceIn'>
-                  Testimonials from Happy Learners for EduAll
+                  Testimonials From Successful Learners of E-ILM-Academy
                 </h2>
+
                 <p className='text-neutral-500 text-line-2 wow bounceInUp'>
-                  16+ million Students are already learning on EduAll Platform
+                  Over 16+ million students trust E-ILM-Academy to shape their
+                  future with modern skills and quality learning.
                 </p>
               </div>
+
+              {/* SLIDER START */}
               <div className='testimonials__slider'>
+                {/* ITEM 1 */}
                 <div className='testimonials-item'>
                   <ul
                     className='flex-align gap-8 mb-16'
@@ -123,23 +134,27 @@ const TestimonialsOne = () => {
                       <i className='ph-fill ph-star-half' />
                     </li>
                   </ul>
+
                   <p
                     className='text-neutral-700'
                     data-aos='fade-left'
                     data-aos-duration={1200}
                   >
-                    "Enrolling in courses at EduAll was one of the best
-                    decisions I've made for my career. The flexibility of the
-                    online learning platform allowed me to study at my own pace
-                    while balancing my work”
+                    “E-ILM-Academy helped me upgrade my skills with flexible,
+                    high-quality online courses. The teaching style, supportive
+                    mentors, and real-world projects made learning easier and
+                    more effective.”
                   </p>
+
                   <h4 className='mt-48 mb-8' data-aos='fade-left'>
-                    Kathryn Murphy
+                    Ayesha Khan
                   </h4>
                   <span className='text-neutral-700' data-aos='fade-left'>
-                    Software Developer
+                    Front-End Developer
                   </span>
                 </div>
+
+                {/* ITEM 2 */}
                 <div className='testimonials-item'>
                   <ul
                     className='flex-align gap-8 mb-16'
@@ -162,36 +177,41 @@ const TestimonialsOne = () => {
                       <i className='ph-fill ph-star-half' />
                     </li>
                   </ul>
+
                   <p
                     className='text-neutral-700'
                     data-aos='fade-left'
                     data-aos-duration={1200}
                   >
-                    "Signing up for courses at EduAll was quite possibly of the
-                    best choice I've made for my vocation. The adaptability of
-                    the internet learning stage permitted me to learn at my own
-                    speed while adjusting my work"
+                    “Joining E-ILM-Academy was a turning point for my career.
+                    Their practical approach and expert instructors helped me
+                    learn skills that immediately boosted my confidence and job
+                    opportunities.”
                   </p>
+
                   <h4 className='mt-48 mb-8' data-aos='fade-left'>
-                    John Doe
+                    Ali Raza
                   </h4>
                   <span className='text-neutral-700' data-aos='fade-left'>
-                    UX/UI Designer
+                    Graphic Designer
                   </span>
                 </div>
               </div>
+
+              {/* ARROWS */}
               <div className='flex-align gap-16 mt-40'>
                 <button
                   type='button'
                   id='testimonials-prev'
-                  className=' slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1 w-48 h-48'
+                  className='slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1 w-48 h-48'
                 >
                   <i className='ph ph-caret-left' />
                 </button>
+
                 <button
                   type='button'
                   id='testimonials-next'
-                  className=' slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1 w-48 h-48'
+                  className='slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1 w-48 h-48'
                 >
                   <i className='ph ph-caret-right' />
                 </button>

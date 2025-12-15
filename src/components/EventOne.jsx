@@ -2,48 +2,55 @@
 import Link from "next/link";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
+
 const EventOne = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <section className='event py-120 overflow-hidden'>
       <div className='container'>
         <div className='row gy-4'>
-          <div className='col-lg-8  '>
+          <div className='col-lg-8'>
             <div className='section-heading style-left'>
               <div className='flex-align d-inline-flex gap-8 mb-16 wow bounceInDown'>
-                <span className='text-main-600 text-2xl d-flex '>
+                <span className='text-main-600 text-2xl d-flex'>
                   <i className='ph-bold ph-book-open' />
                 </span>
                 <h5 className='text-main-600 mb-0'>Upcoming Events</h5>
               </div>
               <h2 className='mb-24 wow bounceInRight'>
-                Join Our Upcoming Events{" "}
+                Be Part of Our Upcoming Community & Learning Events
               </h2>
               <p className='text-neutral-500 text-line-4 wow bounceInUp'>
-                Join us for a variety of exciting events that cater to your
-                interests and learning needs. Our events are designed to inspire
-                and educate
+                Explore a variety of events designed to inspire knowledge, personal growth, 
+                and community engagement. Join us to learn, share, and connect with like-minded peers.
               </p>
             </div>
+
             <div className='event-item-wrapper overflow-x-auto scroll-sm scroll-sm-horizontal pb-4'>
+
+              {/* Event 1 */}
               <div
-                className='event-item bg-main-25 rounded-12 p-24 d-flex  align-items-center border border-neutral-20 min-width-max-content hover-bg-main-600 hover-border-main-600 hover-text-white transition-1 mb-24'
+                className='event-item bg-main-25 rounded-12 d-flex align-items-center border border-neutral-20 hover-bg-main-600 hover-border-main-600 hover-text-white transition-1 mb-24'
+                style={{ minWidth: "500px", padding: "18px" }}
                 data-aos='fade-up-left'
                 data-aos-duration={200}
               >
-                <div className=''>
+                <div>
                   <h3 className='mb-8 text-main-600'>25</h3>
-                  <span className='text-neutral-500'>May, 2024</span>
+                  <span className='text-neutral-500'>May, 2025</span>
                 </div>
-                <span className='border border-neutral-40 border-dashed h-72' />
-                <div className=''>
-                  <div className='flex-between gap-16 flex-wrap mb-16'>
+
+                <span className='border border-neutral-40 border-dashed h-72 mx-16' />
+
+                <div>
+                  <div className='flex-between gap-16 flex-wrap mb-12'>
                     <div className='flex-align gap-8'>
                       <span className='text-neutral-700 text-lg d-flex'>
                         <i className='ph-bold ph-clock' />
                       </span>
                       <span className='text-neutral-700 text-lg fw-normal'>
-                        02:30:am to 04:25:pm
+                        10:00 AM to 12:30 PM
                       </span>
                     </div>
                     <div className='flex-align gap-8'>
@@ -51,13 +58,16 @@ const EventOne = () => {
                         <i className='ph-bold ph-map-trifold' />
                       </span>
                       <span className='text-neutral-700 text-lg fw-normal'>
-                        New York
+                        Islamabad, Pakistan
                       </span>
                     </div>
                   </div>
-                  <h4 className='mt-12 mb-0'>Community Service Events</h4>
+
+                  <h4 className='mt-12 mb-0'>Community Service & Awareness</h4>
                 </div>
-                <span className='border border-neutral-40 border-dashed h-72' />
+
+                <span className='border border-neutral-40 border-dashed h-72 mx-16' />
+
                 <div className='flex-shrink-0'>
                   <Link
                     href='/about'
@@ -68,24 +78,29 @@ const EventOne = () => {
                   </Link>
                 </div>
               </div>
+
+              {/* Event 2 */}
               <div
-                className='event-item bg-main-25 rounded-12 p-24 d-flex align-items-center border border-neutral-20 min-width-max-content hover-bg-main-600 hover-border-main-600 hover-text-white transition-1 mb-24'
+                className='event-item bg-main-25 rounded-12 d-flex align-items-center border border-neutral-20 hover-bg-main-600 hover-border-main-600 hover-text-white transition-1 mb-24'
+                style={{ minWidth: "500px", padding: "18px" }}
                 data-aos='fade-up-left'
                 data-aos-duration={400}
               >
-                <div className=''>
+                <div>
                   <h3 className='mb-8 text-main-600'>12</h3>
-                  <span className='text-neutral-500'>Jun, 2024</span>
+                  <span className='text-neutral-500'>Jun, 2025</span>
                 </div>
-                <span className='border border-neutral-40 border-dashed h-72' />
-                <div className=''>
-                  <div className='flex-between gap-16 flex-wrap mb-16'>
-                    <div className='flex-align gap-8'>
+
+                <span className='border border-neutral-40 border-dashed h-72 mx-16' />
+
+                <div>
+                  <div className='flex-between gap-16 flex-wrap mb-12'>
+                    <div className='flex-align gap-8 '>
                       <span className='text-neutral-700 text-lg d-flex'>
                         <i className='ph-bold ph-clock' />
                       </span>
                       <span className='text-neutral-700 text-lg fw-normal'>
-                        02:30:am to 04:25:pm
+                        02:00 PM to 04:30 PM
                       </span>
                     </div>
                     <div className='flex-align gap-8'>
@@ -93,13 +108,16 @@ const EventOne = () => {
                         <i className='ph-bold ph-map-trifold' />
                       </span>
                       <span className='text-neutral-700 text-lg fw-normal'>
-                        New York
+                        Lahore, Pakistan
                       </span>
                     </div>
                   </div>
-                  <h4 className='mt-12 mb-0'>Sports &amp; Health Promotion</h4>
+
+                  <h4 className='mt-12 mb-0'>Sports & Health Awareness</h4>
                 </div>
-                <span className='border border-neutral-40 border-dashed h-72' />
+
+                <span className='border border-neutral-40 border-dashed h-72 mx-16' />
+
                 <div className='flex-shrink-0'>
                   <Link
                     href='/about'
@@ -110,24 +128,29 @@ const EventOne = () => {
                   </Link>
                 </div>
               </div>
+
+              {/* Event 3 */}
               <div
-                className='event-item bg-main-25 rounded-12 p-24 d-flex align-items-center border border-neutral-20 min-width-max-content hover-bg-main-600 hover-border-main-600 hover-text-white transition-1 mb-0'
+                className='event-item bg-main-25 rounded-12 d-flex align-items-center border border-neutral-20 hover-bg-main-600 hover-border-main-600 hover-text-white transition-1 mb-0'
+                style={{ minWidth: "500px", padding: "18px" }}
                 data-aos='fade-up-left'
                 data-aos-duration={500}
               >
-                <div className=''>
+                <div>
                   <h3 className='mb-8 text-main-600'>29</h3>
-                  <span className='text-neutral-500'>Jul, 2024</span>
+                  <span className='text-neutral-500'>Jul, 2025</span>
                 </div>
-                <span className='border border-neutral-40 border-dashed h-72' />
-                <div className=''>
-                  <div className='flex-between gap-16 flex-wrap mb-16'>
+
+                <span className='border border-neutral-40 border-dashed h-72 mx-16' />
+
+                <div>
+                  <div className='flex-between gap-16 flex-wrap mb-12'>
                     <div className='flex-align gap-8'>
                       <span className='text-neutral-700 text-lg d-flex'>
                         <i className='ph-bold ph-clock' />
                       </span>
                       <span className='text-neutral-700 text-lg fw-normal'>
-                        02:30:am to 04:25:pm
+                        11:00 AM to 03:00 PM
                       </span>
                     </div>
                     <div className='flex-align gap-8'>
@@ -135,13 +158,16 @@ const EventOne = () => {
                         <i className='ph-bold ph-map-trifold' />
                       </span>
                       <span className='text-neutral-700 text-lg fw-normal'>
-                        New York
+                        Karachi, Pakistan
                       </span>
                     </div>
                   </div>
-                  <h4 className='mt-12 mb-0'>Career Fair Festivals</h4>
+
+                  <h4 className='mt-12 mb-0'>Career & Educational Fair</h4>
                 </div>
-                <span className='border border-neutral-40 border-dashed h-72' />
+
+                <span className='border border-neutral-40 border-dashed h-72 mx-16' />
+
                 <div className='flex-shrink-0'>
                   <Link
                     href='/about'
@@ -153,6 +179,7 @@ const EventOne = () => {
                 </div>
               </div>
             </div>
+
             <Link
               href='/course'
               className='btn btn-outline-main rounded-pill flex-align d-inline-flex gap-8 mt-40'
@@ -161,12 +188,13 @@ const EventOne = () => {
               <i className='ph-bold ph-arrow-up-right d-flex text-lg' />
             </Link>
           </div>
+
           <div className='col-lg-4'>
             <div className='event-video rounded-16 overflow-hidden position-relative h-100 wow bounceIn'>
               <img
                 src='assets/images/thumbs/event-video-img.webp'
                 className='rounded-16 cover-img'
-                alt=''
+                alt='Event Video'
                 data-tilt=''
                 data-tilt-max={8}
                 data-tilt-speed={500}
@@ -174,6 +202,7 @@ const EventOne = () => {
                 data-tilt-transition='1s'
                 data-tilt-full-page-listening=''
               />
+
               <span
                 onClick={() => setIsOpen(true)}
                 className='play-button position-absolute start-50 top-50 translate-middle z-1 w-72 h-72 flex-center bg-main-two-600 text-white rounded-circle text-2xl'
@@ -184,6 +213,7 @@ const EventOne = () => {
           </div>
         </div>
       </div>
+
       <ModalVideo
         channel='youtube'
         autoplay

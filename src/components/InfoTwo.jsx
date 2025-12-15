@@ -4,6 +4,8 @@ const InfoTwo = () => {
       <div className='container'>
         <div className='bg-white box-shadow-md rounded-16 p-16'>
           <div className='row gy-4 justify-content-center'>
+
+            {/* Item 1 */}
             <div
               className='col-xl-4 col-sm-6'
               data-aos='fade-up'
@@ -18,13 +20,15 @@ const InfoTwo = () => {
                   />
                 </span>
                 <div>
-                  <h4 className='mb-16'>Scholarship Facility</h4>
+                  <h4 className='mb-16'>Islamic Scholarship Support</h4>
                   <p className='text-neutral-700'>
-                    These facilities provide students with an inspiring{" "}
+                    E-ILM-Academy offers opportunities for deserving students to study Qur’an, Hadith, and Islamic sciences.
                   </p>
                 </div>
               </div>
             </div>
+
+            {/* Item 2 */}
             <div
               className='col-xl-4 col-sm-6'
               data-aos='fade-up'
@@ -39,13 +43,15 @@ const InfoTwo = () => {
                   />
                 </span>
                 <div>
-                  <h4 className='mb-16'>Esteemed Faculty</h4>
+                  <h4 className='mb-16'>Qualified Islamic Teachers</h4>
                   <p className='text-neutral-700'>
-                    Our university boasts a team of renowned faculty members
+                    Learn from experienced Ustaz, Aalims, and certified Islamic educators dedicated to authentic knowledge.
                   </p>
                 </div>
               </div>
             </div>
+
+            {/* Item 3 */}
             <div
               className='col-xl-4 col-sm-6'
               data-aos='fade-up'
@@ -60,13 +66,14 @@ const InfoTwo = () => {
                   />
                 </span>
                 <div>
-                  <h4 className='mb-16'>Diverse Programs</h4>
+                  <h4 className='mb-16'>Wide Range of Islamic Courses</h4>
                   <p className='text-neutral-700'>
-                    From undergraduate degrees to postgraduate research{" "}
+                    Explore Qur’an, Tajweed, Hadith, Fiqh, Arabic language, Islamic studies, and more tailored programs.
                   </p>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
