@@ -32,7 +32,7 @@ const EventOne = () => {
               {/* Event 1 */}
               <div
                 className='event-item bg-main-25 rounded-12 d-flex align-items-center border border-neutral-20 hover-bg-main-600 hover-border-main-600 hover-text-white transition-1 mb-24'
-                style={{ minWidth: "500px", padding: "18px" }}
+                style={{ minWidth: "700px", padding: "18px" }}
                 data-aos='fade-up-left'
                 data-aos-duration={200}
               >
@@ -82,7 +82,7 @@ const EventOne = () => {
               {/* Event 2 */}
               <div
                 className='event-item bg-main-25 rounded-12 d-flex align-items-center border border-neutral-20 hover-bg-main-600 hover-border-main-600 hover-text-white transition-1 mb-24'
-                style={{ minWidth: "500px", padding: "18px" }}
+                style={{ minWidth: "700px", padding: "18px" }}
                 data-aos='fade-up-left'
                 data-aos-duration={400}
               >
@@ -132,7 +132,7 @@ const EventOne = () => {
               {/* Event 3 */}
               <div
                 className='event-item bg-main-25 rounded-12 d-flex align-items-center border border-neutral-20 hover-bg-main-600 hover-border-main-600 hover-text-white transition-1 mb-0'
-                style={{ minWidth: "500px", padding: "18px" }}
+                style={{ minWidth: "700px", padding: "18px" }}
                 data-aos='fade-up-left'
                 data-aos-duration={500}
               >

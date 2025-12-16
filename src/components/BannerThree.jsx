@@ -41,47 +41,47 @@ const BannerThree = () => {
     }
   };
 
-  const settings = {
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 2000,
-    speed: 900,
-    dots: false,
-    pauseOnHover: true,
-    arrows: false,
-    draggable: true,
-    infinite: true,
-    fade: true,
+const settings = {
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: false, // ❌ Desktop par off
+  autoplaySpeed: 3000,
+  speed: 900,
+  dots: false,
+  pauseOnHover: true,
+  arrows: false,
+  draggable: true,
+  infinite: true,
+  fade: true,
 
-    beforeChange: handleBeforeChange,
-    afterChange: handleAfterChange,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
+  beforeChange: handleBeforeChange,
+  afterChange: handleAfterChange,
+
+  responsive: [
+    {
+      breakpoint: 992, // ✅ Tablet & below
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,        // ✅ ON
+        autoplaySpeed: 7000,
       },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
+    },
+    {
+      breakpoint: 768, // ✅ Mobile
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,        // ✅ ON
+        autoplaySpeed: 7000,
       },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+    },
+  ],
+};
+
   return (
     <section className='banner-three position-relative responsive-arrow overflow-hidden'>
+      <div className="d-none d-lg-block">
       {/* 1. Improved Arrow Responsiveness: Smaller size and margin on mobile (sm: and md: prefixes added) */}
       <button
         type='button'
@@ -101,6 +101,7 @@ const BannerThree = () => {
       >
         <i className='ph-bold ph-arrow-right' />
       </button>
+      </div>
       <Slider ref={sliderRef} {...settings} className='banner-three__slider '>
         <div>
           <div
