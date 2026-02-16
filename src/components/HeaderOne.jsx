@@ -66,6 +66,11 @@ const HeaderOne = () => {
       href: "/",
       icon: true,
     },
+      {
+      label: "About",
+      href: "/about",
+      icon: true,
+    },
     {
       label: "Courses",
       href: "/course",
@@ -104,11 +109,7 @@ const HeaderOne = () => {
     // },
 
     // Directly showing About in main menu
-    {
-      label: "About",
-      href: "/about",
-      icon: true,
-    },
+  
 
     {
       label: "Blog",
@@ -147,7 +148,7 @@ const HeaderOne = () => {
                 style={{ flex: 1, display: "flex", justifyContent: "center" }}
               >
                 <ul
-                  className="nav-menu flex-align"
+                  className="nav-menu fs-5 flex-align"
                   style={{ justifyContent: "center", gap: "50px" }}
                 >
                   {menuItems.map((item, index) =>
@@ -216,7 +217,7 @@ const HeaderOne = () => {
                 <Link
                   href="/sign-in"
                   className="info-action w-52 h-52 bg-main-25 hover-bg-main-600 
-    border border-neutral-30 rounded-circle flex-center text-2xl 
+    border border-neutral-500 rounded-circle flex-center text-3xl 
     text-neutral-500 hover-text-white hover-border-main-600"
                 >
                   <i className="ph ph-user-circle" />

@@ -40,17 +40,8 @@ export default function TeacherStudents() {
       });
   }, []);
 
-  if (loading) {
-    return (
-      <div className="loader-container">
-        <div className="loader"></div>
-      </div>
-    );
-  }
 
-  if (error) {
-    return <p style={{ color: "red", padding: "20px" }}>{error}</p>;
-  }
+
 
   return (
     <div>
@@ -66,9 +57,19 @@ export default function TeacherStudents() {
       >
         <h2 className="teacher-students-title">My Students</h2>
 
-        {students.length === 0 ? (
-          <p>No students found</p>
-        ) : (
+        {loading && (
+          <div className="loader-container">
+            <div className="loader"></div>
+          </div>
+        )}
+
+        {error && <p style={{ color: "red" }}>{error}</p>}
+
+        {!loading && !error && students.length === 0 && (
+          <p>No students found.</p>
+        )}
+
+        {!loading && !error && students.length > 0 && (
           <div className="students-grid">
             {students.map((student) => (
               <div key={student._id} className="student-card">

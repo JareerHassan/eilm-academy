@@ -22,7 +22,7 @@ const EventOne = () => {
                 Be Part of Our Upcoming Community & Learning Events
               </h2>
               <p className='text-neutral-500 text-line-4 wow bounceInUp'>
-                Explore a variety of events designed to inspire knowledge, personal growth, 
+                Explore a variety of events designed to inspire knowledge, personal growth,
                 and community engagement. Join us to learn, share, and connect with like-minded peers.
               </p>
             </div>
