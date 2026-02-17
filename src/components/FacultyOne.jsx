@@ -21,7 +21,9 @@ const FacultyOne = () => {
 
   // Badge color based on status
   const getBadgeStyle = (course) => {
-    return course.title === "Tafseer" ? "bg-main-three-600 text-white" : "bg-neutral-400 text-white";
+    return ["admission open", "launched", "lunched"].includes(course.status?.toLowerCase())
+      ? "bg-main-three-600 text-white"
+      : "bg-neutral-400 text-white";
   };
 
   return (
@@ -53,12 +55,23 @@ const FacultyOne = () => {
               >
                 <div className="scale-hover-item bg-white rounded-16 p-12 h-100 box-shadow-md">
                   <div className="course-item__thumb rounded-12 overflow-hidden position-relative">
-                    <Link href={`/course-details/${course._id}`} className="w-100 h-100">
+                    <Link href={`/course-details/${course._id}`} style={{
+                      aspectRatio: "4 / 3",
+                      width: "100%",
+                    }}>
                       <img
-                        src={course.image || "assets/images/thumbs/faculty-img1.webp"}
+                        src={
+                          course.imageLink
+                            ? course.imageLink
+                            : `https://ui-avatars.com/api/?name=${course.title}&background=ffd700&color=000`
+                        }
                         alt={course.title}
-                        className="scale-hover-item__img rounded-12 cover-img transition-2"
-                        style={{ width: "100%", height: "250px", objectFit: "cover", display: "block" }}
+                        style={{
+                          width: "100%",
+                          objectFit: "cover",
+                          display: "block",
+                          borderRadius: "12px",
+                        }}
                       />
                     </Link>
                   </div>
@@ -66,7 +79,7 @@ const FacultyOne = () => {
                   <div className="pt-32 pb-24 px-16 position-relative">
                     {/* Dynamic Status Badge */}
                     <span className={`text-up py-12 px-24 rounded-8 fw-medium ${getBadgeStyle(course)}`}>
-                      {course.title === "Tafseer" ? "Admission Open" : "Coming Soon"}
+                      {course.status || "Coming Soon"}
                     </span>
 
                     <div className="flex-between gap-8 flex-wrap mb-16">
@@ -96,8 +109,10 @@ const FacultyOne = () => {
                       </Link>
                     </h4>
 
+                    {/* Apply Now / Coming Soon */}
                     <div className="flex-between gap-8 pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
-                      {course.title === "Tafseer" ? (
+                      {course.status &&
+                        ["admission open", "launched", "lunched"].includes(course.status.toLowerCase()) ? (
                         <Link
                           href="/apply-admission"
                           className="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold"

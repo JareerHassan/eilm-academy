@@ -71,53 +71,53 @@ export default function TeacherCourses() {
           <p>No courses found.</p>
         )}
 
- <div className="courses-grid">
-  {teacher &&
-    teacher.courses.map((course) => (
-      <div key={course._id} className="course-card">
-        {/* Title */}
-        <div className="course-title">
-          <FaBook size={24} color="#458EFF" />
-          {course.title}
+        <div className="courses-grid">
+          {teacher &&
+            teacher.courses.map((course) => (
+              <div key={course._id} className="course-card">
+                {/* Title */}
+                <div className="course-title">
+                  <FaBook size={24} color="#458EFF" />
+                  {course.title}
+                </div>
+
+                {/* Description */}
+                {course.description && (
+                  <p className="course-description">
+                    <strong>Description:</strong> {course.description}
+                  </p>
+                )}
+
+                {/* Duration */}
+                {course.duration && (
+                  <div className="course-duration">
+                    <FaClock size={14} />
+                    <span>Duration: {course.duration}</span>
+                  </div>
+                )}
+
+                {/* CreatedAt */}
+                {course.createdAt && (
+                  <div className="course-duration">
+                    <FaCalendarAlt size={14} />
+                    <span>
+                      Created: {new Date(course.createdAt).toLocaleDateString()}
+                    </span>
+                  </div>
+                )}
+
+                {/* UpdatedAt */}
+                {course.updatedAt && (
+                  <div className="course-duration">
+                    <FaCalendarAlt size={14} />
+                    <span>
+                      Updated: {new Date(course.updatedAt).toLocaleDateString()}
+                    </span>
+                  </div>
+                )}
+              </div>
+            ))}
         </div>
-
-        {/* Description */}
-        {course.description && (
-          <p className="course-description">
-            <strong>Description:</strong> {course.description}
-          </p>
-        )}
-
-        {/* Duration */}
-        {course.duration && (
-          <div className="course-duration">
-            <FaClock size={14} />
-            <span>Duration: {course.duration}</span>
-          </div>
-        )}
-
-        {/* CreatedAt */}
-        {course.createdAt && (
-          <div className="course-duration">
-            <FaCalendarAlt size={14} />
-            <span>
-              Created: {new Date(course.createdAt).toLocaleDateString()}
-            </span>
-          </div>
-        )}
-
-        {/* UpdatedAt */}
-        {course.updatedAt && (
-          <div className="course-duration">
-            <FaCalendarAlt size={14} />
-            <span>
-              Updated: {new Date(course.updatedAt).toLocaleDateString()}
-            </span>
-          </div>
-        )}
-      </div>
-    ))}
-</div>
 
       </div>
     </div>

@@ -149,7 +149,7 @@ const InstructorAll = () => {
                     </div>
                   </div>
 
-                  <div className="pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
+                  {/* <div className="pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
                     <Link
                       href={`/instructor-details/${instructor._id}`}
                       className="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold"
@@ -158,7 +158,7 @@ const InstructorAll = () => {
                       View Profile
                       <i className="ph ph-arrow-right" />
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

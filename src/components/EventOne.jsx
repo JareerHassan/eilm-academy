@@ -16,14 +16,16 @@ const EventOne = () => {
                 <span className='text-main-600 text-2xl d-flex'>
                   <i className='ph-bold ph-book-open' />
                 </span>
-                <h5 className='text-main-600 mb-0'>Upcoming Events</h5>
+                <h5 className="text-main-600 mb-0">Upcoming Courses</h5>
               </div>
               <h2 className='mb-24 wow bounceInRight'>
-                Be Part of Our Upcoming Community & Learning Events
+                               Enroll in Our Upcoming Learning Programs
+
               </h2>
               <p className='text-neutral-500 text-line-4 wow bounceInUp'>
-                Explore a variety of events designed to inspire knowledge, personal growth,
-                and community engagement. Join us to learn, share, and connect with like-minded peers.
+   Explore our upcoming courses designed to enhance your Islamic knowledge,
+                language skills, and spiritual growth. Join today and start learning
+                with certified instructors.
               </p>
             </div>
 
@@ -63,7 +65,7 @@ const EventOne = () => {
                     </div>
                   </div>
 
-                  <h4 className='mt-12 mb-0'>Community Service & Awareness</h4>
+                  <h4 className='mt-12 mb-0'>Arabic Language Course</h4>
                 </div>
 
                 <span className='border border-neutral-40 border-dashed h-72 mx-16' />
@@ -108,12 +110,12 @@ const EventOne = () => {
                         <i className='ph-bold ph-map-trifold' />
                       </span>
                       <span className='text-neutral-700 text-lg fw-normal'>
-                        Lahore, Pakistan
+                        Islamabad, Pakistan
                       </span>
                     </div>
                   </div>
 
-                  <h4 className='mt-12 mb-0'>Sports & Health Awareness</h4>
+                  <h4 className='mt-12 mb-0'>Ilm-e-Deen Foundation Course</h4>
                 </div>
 
                 <span className='border border-neutral-40 border-dashed h-72 mx-16' />
@@ -158,12 +160,12 @@ const EventOne = () => {
                         <i className='ph-bold ph-map-trifold' />
                       </span>
                       <span className='text-neutral-700 text-lg fw-normal'>
-                        Karachi, Pakistan
+                        Islamabad, Pakistan
                       </span>
                     </div>
                   </div>
 
-                  <h4 className='mt-12 mb-0'>Career & Educational Fair</h4>
+                  <h4 className='mt-12 mb-0'>Seerat un Nabi (SAW) Course</h4>
                 </div>
 
                 <span className='border border-neutral-40 border-dashed h-72 mx-16' />
@@ -184,7 +186,7 @@ const EventOne = () => {
               href='/course'
               className='btn btn-outline-main rounded-pill flex-align d-inline-flex gap-8 mt-40'
             >
-              See All Events
+              See All Courses
               <i className='ph-bold ph-arrow-up-right d-flex text-lg' />
             </Link>
           </div>

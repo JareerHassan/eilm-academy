@@ -10,7 +10,7 @@ const ApplyForAdmission = () => {
     email: "",
     phone: "",
     gender: "",
-    dateOfBirth: "",
+    age: "",
     city: "",
     country: "",
     address: "",
@@ -55,13 +55,13 @@ const ApplyForAdmission = () => {
       await axios.post(ENDPOINTS.applyaddmision, formData);
 
       setSubmitSuccess(true);
-      setSubmitMessage("Application submitted successfully!");
+      setSubmitMessage("Application for Tafseer Class submitted successfully.");
       setFormData({
         studentName: "",
         email: "",
         phone: "",
         gender: "",
-        dateOfBirth: "",
+        age: "",
         city: "",
         country: "",
         address: "",
@@ -80,39 +80,30 @@ const ApplyForAdmission = () => {
     borderRadius: "8px",
     border: "1px solid #ddd",
     padding: "10px 14px",
-    fontSize: "15px"
+    fontSize: "15px",
   };
 
   const labelStyle = {
     fontWeight: 600,
-    marginBottom: "6px"
+    marginBottom: "6px",
   };
 
   return (
-    <section style={{ padding: "60px 0" }}>
+    <section style={{ marginTop: '30px' }}>
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8">
-
-            <div style={{
-              background: "#fff",
-              borderRadius: "12px",
-              boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
-              padding: "40px"
-            }}>
-
-
-
+            <div
+              style={{
+                background: "#fff",
+                borderRadius: "12px",
+                boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+                padding: "40px",
+              }}
+            >
               <form onSubmit={handleSubmit}>
 
-                {submitMessage && (
-                  <div className={`alert ${submitSuccess ? "alert-success" : "alert-danger"}`}>
-                    {submitMessage}
-                  </div>
-                )}
-
                 <div className="row g-3">
-
                   <div className="col-12">
                     <label style={labelStyle}>Student Name</label>
                     <input
@@ -122,11 +113,12 @@ const ApplyForAdmission = () => {
                       onChange={handleChange}
                       style={inputStyle}
                       className="form-control"
+                      required
                     />
                   </div>
 
                   <div className="col-md-6">
-                    <label style={labelStyle}>Email</label>
+                    <label style={labelStyle}>Email*</label>
                     <input
                       type="email"
                       name="email"
@@ -134,11 +126,12 @@ const ApplyForAdmission = () => {
                       onChange={handleChange}
                       style={inputStyle}
                       className="form-control"
+                      required
                     />
                   </div>
 
                   <div className="col-md-6">
-                    <label style={labelStyle}>Phone</label>
+                    <label style={labelStyle}>Phone* (WhatsApp No)</label>
                     <input
                       type="tel"
                       name="phone"
@@ -146,21 +139,21 @@ const ApplyForAdmission = () => {
                       onChange={handleChange}
                       style={inputStyle}
                       className="form-control"
+                      required
                     />
                   </div>
 
                   <div className="col-12">
-                    <label style={labelStyle}>Gender</label>
-
-                    <div style={{
-                      display: "flex",
-                      gap: "12px",
-                      marginTop: "6px"
-                    }}>
-
+                    <label style={labelStyle}>Gender*</label>
+                    <div
+                      style={{
+                        display: "flex",
+                        gap: "12px",
+                        marginTop: "6px",
+                      }}
+                    >
                       {["Male", "Female"].map((g) => {
                         const isSelected = formData.gender === g;
-
                         return (
                           <label
                             key={g}
@@ -170,11 +163,13 @@ const ApplyForAdmission = () => {
                               padding: "12px 0",
                               textAlign: "center",
                               borderRadius: "8px",
-                              border: isSelected ? "2px solid #002366" : "1px solid #ddd",
+                              border: isSelected
+                                ? "2px solid #002366"
+                                : "1px solid #ddd",
                               background: isSelected ? "#002366" : "#fff",
                               color: isSelected ? "#fff" : "#333",
                               fontWeight: 600,
-                              transition: "0.2s"
+                              transition: "0.2s",
                             }}
                           >
                             <input
@@ -184,30 +179,34 @@ const ApplyForAdmission = () => {
                               checked={isSelected}
                               onChange={handleRadioChange}
                               style={{ display: "none" }}
+                              required
                             />
                             {g}
                           </label>
                         );
                       })}
-
                     </div>
-
                     {errors.gender && (
-                      <div style={{ color: "red", fontSize: "13px", marginTop: "5px" }}>
+                      <div
+                        style={{ color: "red", fontSize: "13px", marginTop: "5px" }}
+                      >
                         {errors.gender}
                       </div>
                     )}
                   </div>
 
+                  {/* Age manually input */}
                   <div className="col-md-6">
-                    <label style={labelStyle}>Date of Birth</label>
+                    <label style={labelStyle}>Age*</label>
                     <input
-                      type="date"
-                      name="dateOfBirth"
-                      value={formData.dateOfBirth}
+                      type="number"
+                      name="age"
+                      value={formData.age}
                       onChange={handleChange}
                       style={inputStyle}
                       className="form-control"
+                      min={0}
+                      required
                     />
                   </div>
 
@@ -220,6 +219,7 @@ const ApplyForAdmission = () => {
                       onChange={handleChange}
                       style={inputStyle}
                       className="form-control"
+                      required
                     />
                   </div>
 
@@ -232,10 +232,12 @@ const ApplyForAdmission = () => {
                       onChange={handleChange}
                       style={inputStyle}
                       className="form-control"
+                      required
                     />
                   </div>
 
-                  <div className="col-12">
+                  <div className="col-md-6">
+
                     <label style={labelStyle}>Educational Qualification</label>
                     <input
                       type="text"
@@ -244,6 +246,7 @@ const ApplyForAdmission = () => {
                       onChange={handleChange}
                       style={inputStyle}
                       className="form-control"
+                      required
                     />
                   </div>
 
@@ -254,12 +257,12 @@ const ApplyForAdmission = () => {
                       value={formData.address}
                       onChange={handleChange}
                       className="form-control"
+                      required
                       style={{ ...inputStyle, height: "90px" }}
                     />
                   </div>
 
-
-                  <div className="col-12 ">
+                  <div className="col-12">
                     <button
                       type="submit"
                       disabled={loading}
@@ -272,17 +275,55 @@ const ApplyForAdmission = () => {
                         color: "#fff",
                         fontSize: "16px",
                         fontWeight: "600",
-                        marginTop: '20px'
-
+                        marginTop: "20px",
+                        zIndex: '9999'
                       }}
                     >
                       {loading ? "Submitting..." : "Submit Application"}
                     </button>
+
+                    {/* Submit message at the end */}
+                    {submitMessage && (
+                      <div
+                        style={{
+                          marginTop: "15px",
+                          padding: "12px 16px",
+                          borderRadius: "8px",
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "10px",
+                          backgroundColor: submitSuccess ? "#28a745" : "#dc3545", // green for success, red for error
+                          color: "#fff",
+                          fontWeight: 600,
+                          boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+                          animation: "fadeIn 0.5s ease",
+                        }}
+                      >
+                        {submitSuccess && (
+                          <span
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                              width: "24px",
+                              height: "24px",
+                              borderRadius: "50%",
+                              background: "#fff",
+                              color: "#28a745",
+                              fontSize: "16px",
+                            }}
+                          >
+                            ✓
+                          </span>
+                        )}
+                        <span>{submitMessage}</span>
+                      </div>
+                    )}
+
                   </div>
 
                 </div>
               </form>
-
             </div>
           </div>
         </div>

@@ -42,7 +42,9 @@ const AboutThree = () => {
                           </h2>
                         )}
                       </VisibilitySensor>
-                      <span className='text-white'>Students Learning at E-ILM-Academy</span>
+                      <span className='text-white'>
+                        Students Learning Worldwide
+                      </span>
 
                       <div className='enrolled-students style-two mt-12'>
                         <img src='assets/images/thumbs/enroll-student-img1.webp' alt='' className='w-32 h-32 rounded-circle object-fit-cove transition-2' />
@@ -77,15 +79,16 @@ const AboutThree = () => {
                     <span className='text-main-600 text-2xl d-flex'>
                       <i className='ph-bold ph-book-open' />
                     </span>
-                    <h5 className='text-main-600 mb-0'>About E-ILM-Academy</h5>
+                    <h5 className='text-main-600 mb-0'>About Eilm Academy</h5>
                   </div>
 
                   <h2 className='mb-24 wow bounceInRight'>
-                    Dedicated to Spreading Authentic Islamic Knowledge
+                    Authentic Islamic Learning Rooted in Qur’an & Sunnah
                   </h2>
 
-                  <p className='text-neutral-500 text-line-2 wow bounceInUp'>
-                    At E-ILM-Academy, our mission is to provide accessible, reliable, and spiritually uplifting Islamic education through modern teaching methods and qualified scholars.
+                  <p className='text-neutral-500  wow bounceInUp'>
+                    Eilm Academy is a global online Islamic learning platform offering a structured and authentic curriculum covering Qur’an, Hadith, Hanafi Fiqh, Arabic, and the complete Dars-e-Nizami. 
+                    Our goal is not only to provide knowledge but also to nurture Qur’anic understanding, practice of Sunnah, and Islamic character — guided by qualified scholars within a modern digital learning environment.
                   </p>
                 </div>
 
@@ -96,9 +99,11 @@ const AboutThree = () => {
                       <img src='assets/images/icons/choose-us-icon1.png' className='animate__swing' alt='' />
                     </span>
                     <div className='flex-grow-1'>
-                      <h6 className='text-neutral-800 text-xl fw-medium mb-8'>Qur’an Courses</h6>
+                      <h6 className='text-neutral-800 text-xl fw-medium mb-8'>
+                        Qur’an Nazra & Tajweed
+                      </h6>
                       <div className='flex-align gap-8 text-neutral-500'>
-                        <i className='d-flex text-lg ph-bold ph-clock' /> Onsite & Online
+                        Structured Recitation • Correct Pronunciation • Practical Training
                       </div>
                     </div>
                   </div>
@@ -108,9 +113,11 @@ const AboutThree = () => {
                       <img src='assets/images/icons/choose-us-icon2.png' className='animate__swing' alt='' />
                     </span>
                     <div className='flex-grow-1'>
-                      <h6 className='text-neutral-800 text-xl fw-medium mb-8'>Tajweed & Recitation</h6>
+                      <h6 className='text-neutral-800 text-xl fw-medium mb-8'>
+                        Islamic Beliefs & Fiqh
+                      </h6>
                       <div className='flex-align gap-8 text-neutral-500'>
-                        <i className='d-flex text-lg ph-bold ph-clock' /> Onsite & Online
+                        Aqeedah • Worship Guidance • Daily Life Rulings
                       </div>
                     </div>
                   </div>
@@ -120,9 +127,11 @@ const AboutThree = () => {
                       <img src='assets/images/icons/choose-us-icon3.png' className='animate__swing' alt='' />
                     </span>
                     <div className='flex-grow-1'>
-                      <h6 className='text-neutral-800 text-xl fw-medium mb-8'>Hadith & Fiqh Studies</h6>
+                      <h6 className='text-neutral-800 text-xl fw-medium mb-8'>
+                        Hadith & Islamic Sciences
+                      </h6>
                       <div className='flex-align gap-8 text-neutral-500'>
-                        <i className='d-flex text-lg ph-bold ph-clock' /> Onsite & Online
+                        Classical Texts • Research Methods • Authentic Sources
                       </div>
                     </div>
                   </div>
@@ -132,9 +141,11 @@ const AboutThree = () => {
                       <img src='assets/images/icons/choose-us-icon4.png' className='animate__swing' alt='' />
                     </span>
                     <div className='flex-grow-1'>
-                      <h6 className='text-neutral-800 text-xl fw-medium mb-8'>Arabic Language Courses</h6>
+                      <h6 className='text-neutral-800 text-xl fw-medium mb-8'>
+                        Arabic Language Studies
+                      </h6>
                       <div className='flex-align gap-8 text-neutral-500'>
-                        <i className='d-flex text-lg ph-bold ph-clock' /> Onsite & Online
+                        Grammar • Morphology • Qur’anic Understanding
                       </div>
                     </div>
                   </div>

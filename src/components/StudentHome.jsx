@@ -1,11 +1,12 @@
 "use client";
 import StudentSidebar from "@/components/StudentSidebar";
-import { FaBook, FaClipboardList, FaTasks, FaUser } from "react-icons/fa";
+import { FaVideo } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import "@styles/StudentHome.css";
 
 export default function StudentHome() {
   const [screenSize, setScreenSize] = useState("desktop");
+  const [studentName, setStudentName] = useState("Student");
 
   useEffect(() => {
     const handleResize = () => {
@@ -15,30 +16,105 @@ export default function StudentHome() {
     };
     handleResize();
     window.addEventListener("resize", handleResize);
+
+    // ✅ Helper: email -> Name
+    const emailToName = (email) => {
+      if (!email) return null;
+      return email
+        .split("@")[0]
+        .replace(/[._-]/g, " ")
+        .replace(/\b\w/g, (c) => c.toUpperCase());
+    };
+
+    // ✅ JWT decode helper
+    const getEmailFromToken = (token) => {
+      try {
+        const payload = token.split(".")[1];
+        const decoded = JSON.parse(atob(payload));
+        return decoded.email || decoded.user?.email || null;
+      } catch {
+        return null;
+      }
+    };
+
+    // ✅ Try localStorage user object
+    const userData = localStorage.getItem("user");
+    if (userData) {
+      try {
+        const user = JSON.parse(userData);
+        if (user.name || user.fullName) {
+          setStudentName(user.name || user.fullName);
+          return;
+        }
+        if (user.email) {
+          setStudentName(emailToName(user.email));
+          return;
+        }
+      } catch {}
+    }
+
+    // ✅ Try email key
+    const email = localStorage.getItem("email");
+    if (email) {
+      setStudentName(emailToName(email));
+      return;
+    }
+
+    // ✅ Try token
+    const token = localStorage.getItem("token");
+    if (token) {
+      const tokenEmail = getEmailFromToken(token);
+      if (tokenEmail) setStudentName(emailToName(tokenEmail));
+      return;
+    }
+
+    // ✅ Fallback
+    setStudentName("Student");
+
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const books = [
-    { title: "Tafseer Ibn Kathir", author: "Islami Scholar", icon: <FaBook size={28} /> },
-    { title: "Sahih Bukhari", author: "Imam Bukhari", icon: <FaClipboardList size={28} /> },
-    { title: "Riyadh-us-Saliheen", author: "Imam Nawawi", icon: <FaTasks size={28} /> },
-    { title: "Seerat-un-Nabi", author: "Shibli Nomani", icon: <FaUser size={28} /> },
+    {
+      title: "Join Tafseer Class",
+      author: "Live Online Session",
+      icon: <FaVideo size={28} />,
+      link: "https://meet.google.com/cmb-rjxq-ibd",
+      isMeeting: true
+    }
   ];
 
   return (
     <div className={`dashboard ${screenSize}`}>
       <StudentSidebar />
+
       <div className="content">
-        <h1 className="header">Student Dashboard</h1>
+        {/* ✅ Header with user name */}
+        <h1 className="header" style={{ fontSize: "26px", marginBottom: "20px" }}>
+          Welcome to your dashboard {studentName}!
+        </h1>
+
         <div className="card-grid">
           {books.map((book, index) => (
             <div key={index} className="card">
               <div className="card-title">
-                {book.icon}
-                {book.title}
+                {book.icon} {book.title}
               </div>
+
               <div className="card-author">{book.author}</div>
-              <button className="card-button">View Details</button>
+
+              {book.isMeeting ? (
+                <a
+                  href={book.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card-button"
+                >
+                  Join Now
+                </a>
+              ) : (
+                <button className="card-button">View Details</button>
+              )}
             </div>
           ))}
         </div>

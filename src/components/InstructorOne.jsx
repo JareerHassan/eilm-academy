@@ -59,11 +59,31 @@ const InstructorAll = () => {
                     href={`/instructor-details/${instructor._id}`}
                     className="w-100 h-100 d-flex align-items-end"
                   >
-                    <img
-                      src={`https://ui-avatars.com/api/?name=${instructor.name}&background=ffd700&color=000`}
-                      alt={instructor.name}
-                      className="scale-hover-item__img rounded-12 cover-img transition-2"
-                    />
+                    <div
+                      className="rounded-12 overflow-hidden position-relative bg-dark-yellow"
+                      style={{ width: "100%", height: "400px" }} // fixed height for all images
+                    >
+                      <Link
+                        href={`/instructor-details/${instructor._id}`}
+                        className="w-100 h-100 d-block"
+                      >
+                        <img
+                          src={
+                            instructor.imageLink
+                              ? instructor.imageLink
+                              : `https://ui-avatars.com/api/?name=${instructor.name}&background=ffd700&color=000`
+                          }
+                          alt={instructor.name}
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover", // makes image fill container without stretching
+                            display: "block",
+                          }}
+                        />
+                      </Link>
+                    </div>
+
                   </Link>
                 </div>
                 <div className="p-24 position-relative">
@@ -149,7 +169,7 @@ const InstructorAll = () => {
                     </div>
                   </div>
 
-                  <div className="pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
+                  {/* <div className="pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
                     <Link
                       href={`/instructor-details/${instructor._id}`}
                       className="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold"
@@ -158,7 +178,7 @@ const InstructorAll = () => {
                       View Profile
                       <i className="ph ph-arrow-right" />
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

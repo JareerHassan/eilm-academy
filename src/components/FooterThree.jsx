@@ -226,16 +226,11 @@ const FooterThree = () => {
                   <img src='assets/images/logo/logo3.png' alt='' />
                 </Link>
               </div>
-              <p
-                className='text-white text-line-1 fw-normal'
-                data-aos='zoom-in'
-              >
-                {" "}
-                Copyright © 2025 <span className='fw-semibold'>
-                  E-ILM-ACADEMY{" "}
-                </span>{" "}
-                All Rights Reserved.
+              <p className='text-white text-line-1 fw-normal' data-aos='zoom-in'>
+                Copyright © {new Date().getFullYear()}{" "}
+                <span className='fw-semibold'>E-ILM-ACADEMY</span> All Rights Reserved.
               </p>
+
               <ul
                 className='social-list flex-align gap-24'
                 data-aos='zoom-in-left'
