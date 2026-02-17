@@ -21,7 +21,7 @@ const CounterTwo = () => {
                 <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
                   {({ isVisible }) => (
                     <h2 className='display-four mb-16 text-neutral-700 counter'>
-                      {isVisible ? <CountUp end={10} /> : null}K
+                      {isVisible ? <CountUp end={20} /> : null}
                     </h2>
                   )}
                 </VisibilitySensor>
@@ -42,7 +42,7 @@ const CounterTwo = () => {
                 <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
                   {({ isVisible }) => (
                     <h2 className='display-four mb-16 text-neutral-700 counter'>
-                      {isVisible ? <CountUp end={55} /> : null}K
+                      {isVisible ? <CountUp end={500} /> : null}
                     </h2>
                   )}
                 </VisibilitySensor>
@@ -63,7 +63,7 @@ const CounterTwo = () => {
                 <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
                   {({ isVisible }) => (
                     <h2 className='display-four mb-16 text-neutral-700 counter'>
-                      {isVisible ? <CountUp end={48} /> : null}K
+                      {isVisible ? <CountUp end={100} /> : null}%
                     </h2>
                   )}
                 </VisibilitySensor>
@@ -84,7 +84,7 @@ const CounterTwo = () => {
                 <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
                   {({ isVisible }) => (
                     <h2 className='display-four mb-16 text-neutral-700 counter'>
-                      {isVisible ? <CountUp end={500} /> : null}K
+                      {isVisible ? <CountUp end={10} /> : null}
                     </h2>
                   )}
                 </VisibilitySensor>

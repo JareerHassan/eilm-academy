@@ -37,14 +37,13 @@ const page = () => {
       {/* ChooseUsOne */}
       <ChooseUsOne />
 
-      {/* CounterOne */}
-      <CounterOne />
+      {/* <CounterOne /> */}
 
       {/* TestimonialsOne */}
       <TestimonialsOne />
 
       {/* BrandTwo */}
-      <BrandTwo />
+      {/* <BrandTwo /> */}
 
       {/* CertificateOne */}
       <CertificateOne />

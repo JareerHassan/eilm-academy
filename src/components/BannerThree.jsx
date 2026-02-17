@@ -275,13 +275,13 @@ const BannerThree = () => {
                     <h1 className='text-4xl sm:text-5xl md:display2 mb-24 text-white fw-medium wow bounceInLeft'>
                       Online
                       <span
-                        className='text-yellow-600  wow bounceInRight'
+                        className='text-yellow-600 ms-5 wow bounceInRight'
                         data-wow-duration='2s'
                         data-wow-delay='.5s'
                       >
                         {" "}
-                        Dars-e-Nizami{" "}
-                      </span>{" "}
+                       Dars-e-Nizami {" "}
+                      </span> {" "}
                       Become an Alim / Alimah
                     </h1>
                     <p className='text-white  wow bounceInDown' style={{ lineHeight: "1.6", whiteSpace: "normal" }} >

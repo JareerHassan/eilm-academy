@@ -26,6 +26,14 @@ const FooterThree = () => {
                   Quick Link
                 </h4>
                 <ul className='footer-menu'>
+                    <li className='mb-16'>
+                    <Link
+                      href='/'
+                      className='text-white hover-text-main-600 hover-text-decoration-underline'
+                    >
+                      Home
+                    </Link>
+                  </li>
                   <li className='mb-16'>
                     <Link
                       href='/about'
@@ -42,15 +50,31 @@ const FooterThree = () => {
                       Courses
                     </Link>
                   </li>
-                  <li className='mb-16'>
+                   <li className='mb-16'>
+                    <Link
+                      href='/donor'
+                      className='text-white hover-text-main-600 hover-text-decoration-underline'
+                    >
+                      Donor
+                    </Link>
+                  </li>
+                       <li className='mb-16'>
+                    <Link
+                      href='/contact'
+                      className='text-white hover-text-main-600 hover-text-decoration-underline'
+                    >
+                      Contact
+                    </Link>
+                  </li>
+                  {/* <li className='mb-16'>
                     <Link
                       href='/instructor'
                       className='text-white hover-text-main-600 hover-text-decoration-underline'
                     >
                       Instructor
                     </Link>
-                  </li>
-                  <li className='mb-16'>
+                  </li> */}
+                  {/* <li className='mb-16'>
                     <Link
                       href='/faq'
                       className='text-white hover-text-main-600 hover-text-decoration-underline'
@@ -65,7 +89,7 @@ const FooterThree = () => {
                     >
                       Blogs
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

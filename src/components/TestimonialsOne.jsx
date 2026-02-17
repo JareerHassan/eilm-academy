@@ -147,11 +147,11 @@ const TestimonialsOne = () => {
                   </p>
 
                   <h4 className='mt-48 mb-8' data-aos='fade-left'>
-                    Ayesha Khan
+                    Noman Muneer
                   </h4>
-                  <span className='text-neutral-700' data-aos='fade-left'>
+                  {/* <span className='text-neutral-700' data-aos='fade-left'>
                     Front-End Developer
-                  </span>
+                  </span> */}
                 </div>
 
                 {/* ITEM 2 */}
@@ -192,9 +192,9 @@ const TestimonialsOne = () => {
                   <h4 className='mt-48 mb-8' data-aos='fade-left'>
                     Ali Raza
                   </h4>
-                  <span className='text-neutral-700' data-aos='fade-left'>
+                  {/* <span className='text-neutral-700' data-aos='fade-left'>
                     Graphic Designer
-                  </span>
+                  </span> */}
                 </div>
               </div>
 

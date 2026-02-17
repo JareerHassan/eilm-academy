@@ -76,6 +76,11 @@ const HeaderOne = () => {
       href: "/course",
       icon: true,
     },
+    {
+      label: "Donor",
+      href: "/donor",
+      icon: true,
+    },
 
     // Pages dropdown hidden for now – can be reactivated later if needed
     // {
@@ -111,11 +116,11 @@ const HeaderOne = () => {
     // Directly showing About in main menu
   
 
-    {
-      label: "Blog",
-      href: "/blog",
-      icon: true,
-    },
+    // {
+    //   label: "Blog",
+    //   href: "/blog",
+    //   icon: true,
+    // },
 
     { label: "Contact", href: "/contact" },
   ];

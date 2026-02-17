@@ -40,7 +40,7 @@ const EventOne = () => {
               >
                 <div>
                   <h3 className='mb-8 text-main-600'>25</h3>
-                  <span className='text-neutral-500'>May, 2025</span>
+                  <span className='text-neutral-500'>May, 2026</span>
                 </div>
 
                 <span className='border border-neutral-40 border-dashed h-72 mx-16' />
@@ -90,7 +90,7 @@ const EventOne = () => {
               >
                 <div>
                   <h3 className='mb-8 text-main-600'>12</h3>
-                  <span className='text-neutral-500'>Jun, 2025</span>
+                  <span className='text-neutral-500'>Jun, 2026</span>
                 </div>
 
                 <span className='border border-neutral-40 border-dashed h-72 mx-16' />
@@ -140,7 +140,7 @@ const EventOne = () => {
               >
                 <div>
                   <h3 className='mb-8 text-main-600'>29</h3>
-                  <span className='text-neutral-500'>Jul, 2025</span>
+                  <span className='text-neutral-500'>Jul, 2026</span>
                 </div>
 
                 <span className='border border-neutral-40 border-dashed h-72 mx-16' />
