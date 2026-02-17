@@ -135,51 +135,41 @@ const FooterThree = () => {
                   <span className='icon d-flex text-32 text-main-600'>
                     <i className='ph ph-phone' />
                   </span>
-                  <div className=''>
+                  <div>
                     <Link
-                      href='/tel:(207)555-0119'
-                      className='text-white d-block hover-text-main-600 mb-4'
+                      href="tel:03155090055"
+                      className="text-white d-block hover-text-main-600 mb-4"
+                      aria-label="Call us at 03155090055"
                     >
-                      (207) 555-0119
-                    </Link>
-                    <Link
-                      href='/tel:(704)555-0127'
-                      className='text-white d-block hover-text-main-600 mb-0'
-                    >
-                      (704) 555-0127
+                      +923155090055
                     </Link>
                   </div>
+
                 </div>
                 <div className='flex-align gap-20 mb-24'>
                   <span className='icon d-flex text-32 text-main-600'>
                     <i className='ph ph-envelope-open' />
                   </span>
-                  <div className=''>
+                  <div>
                     <Link
-                      href='/mailto:dwallo@gmail.com'
+                      href='mailto:Eilmacademy@gmail.com'
                       className='text-white d-block hover-text-main-600 mb-4'
+                      aria-label='Email us at Eilmacademy@gmail.com'
                     >
-                      dwallo@gmail.com
-                    </Link>
-                    <Link
-                      href='/mailto:eduAll@gmail.com'
-                      className='text-white d-block hover-text-main-600 mb-0'
-                    >
-                      eduAll@gmail.com
+                      Eilmacademy@gmail.com
                     </Link>
                   </div>
                 </div>
+
                 <div className='flex-align gap-20 mb-0'>
                   <span className='icon d-flex text-32 text-main-600'>
                     <i className='ph ph-map-trifold' />
                   </span>
                   <div className=''>
                     <span className='text-white d-block mb-4'>
-                      5488 srker Rd .
+                      Darul Iman, Mumtaz City, Islamabad
                     </span>
-                    <span className='text-white d-block mb-0'>
-                      8745 doer Dr.
-                    </span>
+
                   </div>
                 </div>
               </div>

@@ -35,12 +35,12 @@ const FacultyOne = () => {
               <i className="ph-bold ph-book-open" />
             </span>
             <h5 className="text-main-600 mb-0">
-              Explore Faculty of E-ILM-Academy
-            </h5>
+  Explore Courses of Eilm Academy
+              </h5>
           </div>
-          <h2 className="mb-24 wow bounceIn">Top Islamic Faculty</h2>
+          <h2 className="mb-24 wow bounceIn">Featured Islamic Courses</h2>
           <p className="wow bounceInUp">
-            Join our esteemed faculty offering authentic Islamic knowledge, Qur’an studies, Hadith, Fiqh, and modern Islamic sciences.
+    Discover structured Islamic courses designed for all levels, covering Qur’an recitation, Tajweed, Hadith studies, Hanafi Fiqh, Arabic language, and complete Dars-e-Nizami. Each course is guided by qualified scholars to build authentic knowledge, strong practice, and Islamic character.
           </p>
         </div>
 

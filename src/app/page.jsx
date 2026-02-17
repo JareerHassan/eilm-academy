@@ -38,33 +38,38 @@ const page = () => {
       {/* AboutThree */}
       <AboutThree />
 
+      {/* FacultyOne */}
+      <FacultyOne />
+
+   
+      {/* InstructorOne */}
+      <InstructorOne />
+
+      
+      {/* ChooseUsTwo */}
+      <ChooseUsTwo />
+
       {/* VideoOne */}
       <VideoOne />
 
       {/* CounterTwo */}
       <CounterTwo />
 
-      {/* FacultyOne */}
-      <FacultyOne />
 
-
-      {/* InstructorOne */}
-      <InstructorOne />
-
-      {/* ChooseUsTwo */}
-      <ChooseUsTwo />
-
-      {/* TestimonialsThree */}
-      <TestimonialsThree />
 
       {/* EventOne */}
       <EventOne />
 
+
+      {/* TestimonialsThree */}
+      <TestimonialsThree />
+
+
       {/* BlogTwo */}
-      <BlogTwo />
+      {/* <BlogTwo /> */}
 
       {/* BrandTwo */}
-      <BrandTwo />
+      {/* <BrandTwo /> */}
 
       {/* FooterThree */}
       <FooterThree />

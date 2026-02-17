@@ -4,6 +4,8 @@ import CourseGridView from "@/components/CourseGridView";
 import FooterThree from "@/components/FooterThree";
 import HeaderOne from "@/components/HeaderOne";
 import Animation from "@/helper/Animation";
+import FacultyOne from "@/components/FacultyOne";
+
 
 export const metadata = {
   title: "E-ILM-ACADEMY",
@@ -24,8 +26,8 @@ const page = () => {
       <Breadcrumb title={"Courses"} />
 
       {/* CourseGridView */}
-      <CourseGridView />
-
+      {/* <CourseGridView /> */}
+   <FacultyOne />
       {/* CertificateOne */}
       <CertificateOne />
 
