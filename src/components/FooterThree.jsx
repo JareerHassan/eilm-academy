@@ -238,7 +238,7 @@ const FooterThree = () => {
               <div className='footer-item__logo mb-0' data-aos='zoom-in-right'>
                 <Link href='/'>
                   {" "}
-                  <img src='assets/images/logo/logo3.png' alt='' />
+                  <img src='assets/images/logo/white-logo.png' alt='' />
                 </Link>
               </div>
               <p className='text-white text-line-1 fw-normal' data-aos='zoom-in'>
@@ -253,7 +253,7 @@ const FooterThree = () => {
                 <li className='social-list__item'>
                   <Link
                     href='https://www.facebook.com'
-                    className='text-white text-2xl hover-text-main-two-600'
+                    className='text-white text-2xl hover-text-main-two-100'
                   >
                     <i className='ph-bold ph-facebook-logo' />
                   </Link>
@@ -261,7 +261,7 @@ const FooterThree = () => {
                 <li className='social-list__item'>
                   <Link
                     href='https://www.twitter.com'
-                    className='text-white text-2xl hover-text-main-two-600'
+                    className='text-white text-2xl hover-text-main-two-100'
                   >
                     <i className='ph-bold ph-twitter-logo' />
                   </Link>
@@ -269,7 +269,7 @@ const FooterThree = () => {
                 <li className='social-list__item'>
                   <Link
                     href='https://www.linkedin.com'
-                    className='text-white text-2xl hover-text-main-two-600'
+                    className='text-white text-2xl hover-text-main-two-100'
                   >
                     <i className='ph-bold ph-instagram-logo' />
                   </Link>
@@ -277,7 +277,7 @@ const FooterThree = () => {
                 <li className='social-list__item'>
                   <Link
                     href='https://www.pinterest.com'
-                    className='text-white text-2xl hover-text-main-two-600'
+                    className='text-white text-2xl hover-text-main-two-100'
                   >
                     <i className='ph-bold ph-pinterest-logo' />
                   </Link>

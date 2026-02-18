@@ -1,94 +1,116 @@
 "use client";
 import { useEffect, useState } from "react";
-import { FaFilePdf } from "react-icons/fa";
 import { useParams } from "next/navigation";
-import axios from "axios";
+import Link from "next/link";
 
 const CourseDetails = () => {
   const params = useParams();
-  const { id } = params;
+  const slug = params?.slug?.toLowerCase(); // always lowercase
 
   const [course, setCourse] = useState(null);
-  const [lessons, setLessons] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // ✅ Image URL handler (FULL FIX)
-  const getImageUrl = (path) => {
-    if (!path) return null;
+  // Sample courses data
+  const sampleCourses = [
+    {
+      _id: "1",
+      title: "Tafseer",
+      category: "Qur'an",
+      status: "Launched",
+             imageLink: "https://res.cloudinary.com/dx0naofle/image/upload/v1771399319/WhatsApp_Image_2026-02-18_at_12.18.36_PM_tfqhhn.jpg",
 
-    // agar full URL ya base64 string hai
-    if (path.startsWith("http") || path.startsWith("data:image")) return path;
+      slug: "tafseer",
+       description: `
+      Tafseer course offers an in-depth understanding of the Qur'an, explaining the meaning, context, and wisdom behind each verse. 
+      Students will learn:
+      - Detailed interpretation of Qur'anic verses
+      - Historical context and revelation background (Asbab al-Nuzul)
+      - Key themes, morals, and lessons for daily life
+      - Tafseer methodology from classical and contemporary scholars
+      - Practical application of Qur'anic guidance in personal and social life
+      Ideal for beginners and advanced learners, this course strengthens both knowledge and practice of Islam.
+    `,
+  },
+    {
+      _id: "2",
+      title: "Fiqa",
+      category: "Fiqa",
+      status: "Coming Soon",
+        imageLink: "https://res.cloudinary.com/dx0naofle/image/upload/v1771399392/WhatsApp_Image_2026-02-18_at_12.18.37_PM_giyzf5.jpg",
 
-    // agar backend se relative path aa raha hai
-    return `https://eilmbackend.oxmite.com${path}`;
-  };
+      slug: "fiqa",
+        description: `
+      Fiqa course introduces students to the fundamentals of Islamic jurisprudence, focusing on daily worship, personal conduct, and community obligations.
+      Students will learn:
+      - Basic principles of Fiqh according to the Hanafi school
+      - Rules of prayer (Salah), fasting (Sawm), zakat, and hajj
+      - Ethical conduct and social responsibilities
+      - Understanding of permissible (Halal) and forbidden (Haram) actions
+      Suitable for beginners seeking to practice Islam correctly and gain a strong foundation in Islamic law.
+    `,
+  },
+    {
+      _id: "3",
+      title: "Arabic",
+      category: "Arabic",
+      status: "Coming Soon",
+          imageLink: "https://res.cloudinary.com/dx0naofle/image/upload/v1771399360/WhatsApp_Image_2026-02-18_at_12.18.36_PM_1_p0au1l.jpg",
+
+      slug: "arabic",
+        description: `
+      Arabic language course is designed to help students read, write, and communicate effectively in Arabic.
+      Students will learn:
+      - Arabic grammar and sentence structure
+      - Vocabulary for daily conversation and Islamic studies
+      - Reading comprehension of texts, including Qur'an and Hadith
+      - Writing skills for practical communication
+      - Conversational exercises to improve fluency
+      This course is ideal for beginners and intermediate learners aiming to understand classical and modern Arabic.
+    `,
+  },
+  ];
 
   useEffect(() => {
-    const fetchCourseAndLessons = async () => {
-      try {
-        // Course fetch
-        const courseRes = await axios.get(
-          `https://eilmbackend.oxmite.com/api/courses/${id}`
-        );
-        setCourse(courseRes.data);
+    if (!slug) return;
 
-        // Lessons fetch
-        const lessonsRes = await axios.get(
-          `https://eilmbackend.oxmite.com/api/courses/${id}/lessons`
-        );
-        setLessons(lessonsRes.data);
-      } catch (err) {
-        console.error("Error fetching course data:", err);
-      } finally {
-        setLoading(false);
-      }
-    };
+    const normalizedSlug = decodeURIComponent(slug).toLowerCase();
 
-    fetchCourseAndLessons();
-  }, [id]);
-
-  if (loading)
-    return (
-      <p style={{ textAlign: "center", marginTop: "50px" }}>Loading...</p>
+    const selectedCourse = sampleCourses.find(
+      (c) => c.slug && c.slug.toLowerCase() === normalizedSlug
     );
 
-  if (!course)
-    return (
-      <p style={{ textAlign: "center", marginTop: "50px" }}>
-        Course not found
-      </p>
-    );
+    setCourse(selectedCourse);
+    setLoading(false);
+  }, [slug]);
 
-  // ✅ First image from lessons OR course image OR fallback
-  let firstImage = null;
-  for (let lesson of lessons) {
-    const imageContent = lesson.contents?.find(
-      (content) => content.type === "image"
-    );
-    if (imageContent) {
-      firstImage = imageContent.value;
-      break;
-    }
-  }
-
-  const courseImage =
-    getImageUrl(firstImage) ||
-    getImageUrl(course.imageLink) ||
-    "/assets/images/thumbs/course-details-img.webp";
+  if (loading) return <p style={{ textAlign: "center" }}>Loading...</p>;
+  if (!course) return <p style={{ textAlign: "center" }}>Course not found</p>;
 
   return (
     <section className="course-details py-60">
       <div className="container">
         <div className="row gy-4">
-          {/* Main content */}
+          {/* Main Content */}
           <div className="col-xl-8">
             <div className="course-details__content border border-neutral-30 rounded-12 bg-main-25 p-12">
-              <img
-                src={courseImage}
-                alt={course.title}
-                className="rounded-8"
-                style={{ width: "100%", height: "900px", borderRadius: "12px" }}
-              />
+              <div
+                style={{
+                  width: "100%",
+                  height: "800px",
+                  overflow: "hidden",
+                  borderRadius: "12px",
+                }}
+              >
+                <img
+                  src={course.imageLink}
+                  alt={course.title}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover", // maintain aspect ratio
+                  }}
+                />
+              </div>
 
               <div className="p-20">
                 <h2 className="mt-24 mb-24">{course.title}</h2>
@@ -106,10 +128,29 @@ const CourseDetails = () => {
                   <span>{course.title}</span>
                 </div>
 
-                <div className="flex-between">
-                  <span>Lessons</span>
-                  <span>{lessons.length} Videos</span>
+                <div className="flex-between mb-24">
+                  <span>Status</span>
+                  <span>{course.status}</span>
                 </div>
+
+                {/* Apply Now button only if status is Launched */}
+                {course.status.toLowerCase() === "launched" && (
+                     <Link
+                href="/apply-admission"
+                className="btn d-none d-lg-inline-flex py-12"
+                style={{
+                  background: "#066AC9",
+                  color: "#fff",
+                  borderRadius: "999px",
+                  padding: "10px 22px",
+                  fontWeight: 600,
+                  letterSpacing: "0.3px",
+                  textTransform: "uppercase",
+                }}
+              >
+                Apply Now
+              </Link>
+                )}
               </div>
             </div>
           </div>

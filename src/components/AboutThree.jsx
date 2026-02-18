@@ -38,7 +38,7 @@ const AboutThree = () => {
                       <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
                         {({ isVisible }) => (
                           <h2 className='mb-16 text-white counter'>
-                            {isVisible ? <CountUp end={1} /> : null}K
+                            {isVisible ? <CountUp end={550} /> : null}+
                           </h2>
                         )}
                       </VisibilitySensor>

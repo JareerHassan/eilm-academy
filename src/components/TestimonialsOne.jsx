@@ -113,7 +113,7 @@ const TestimonialsOne = () => {
               <div className='testimonials__slider'>
                 {/* ITEM 1 */}
                 <div className='testimonials-item'>
-                  <ul
+                  {/* <ul
                     className='flex-align gap-8 mb-16'
                     data-aos='fade-left'
                     data-aos-duration={800}
@@ -133,7 +133,7 @@ const TestimonialsOne = () => {
                     <li className='text-warning-600 text-xl d-flex'>
                       <i className='ph-fill ph-star-half' />
                     </li>
-                  </ul>
+                  </ul> */}
 
                   <p
                     className='text-neutral-700'
@@ -156,7 +156,7 @@ const TestimonialsOne = () => {
 
                 {/* ITEM 2 */}
                 <div className='testimonials-item'>
-                  <ul
+                  {/* <ul
                     className='flex-align gap-8 mb-16'
                     data-aos='fade-left'
                     data-aos-duration={800}
@@ -176,7 +176,7 @@ const TestimonialsOne = () => {
                     <li className='text-warning-600 text-xl d-flex'>
                       <i className='ph-fill ph-star-half' />
                     </li>
-                  </ul>
+                  </ul> */}
 
                   <p
                     className='text-neutral-700'

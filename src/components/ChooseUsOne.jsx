@@ -97,19 +97,19 @@ const ChooseUsOne = () => {
                 <span className='flex-shrink-0 w-48 h-48 bg-dark-yellow text-white text-2xl flex-center rounded-circle'>
                   <img src='assets/images/icons/stars.png' alt='' />
                 </span>
-                <div>
+                {/* <div>
                   <span className='text-lg text-neutral-700 d-block'>
                     4.6 <span className='text-neutral-100'>(2.4k)</span>
                   </span>
                   <span className='text-neutral-500'>Average Reviews</span>
-                </div>
+                </div> */}
               </div>
 
               <div
                 className='banner-box one style-two px-24 py-12 rounded-12 bg-white fw-medium box-shadow-lg d-inline-block'
                 data-aos='fade-left'
               >
-                <span className='text-main-600'>36k+</span> Enrolled Students
+                <span className='text-main-600'>550+</span> Enrolled Students
                 <div className='enrolled-students mt-12'>
                   <img src='assets/images/thumbs/enroll-student-img1.webp' alt='' className='w-48 h-48 rounded-circle object-fit-cover transition-2' />
                   <img src='assets/images/thumbs/enroll-student-img2.webp' alt='' className='w-48 h-48 rounded-circle object-fit-cover transition-2' />

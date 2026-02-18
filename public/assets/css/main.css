@@ -9628,7 +9628,7 @@ button:focus {
 }
 
 .close-button:hover {
-  background-color: hsl(var(--black));
+  background-color: #0090D0 !important;
   color: hsl(var(--white));
 }
 

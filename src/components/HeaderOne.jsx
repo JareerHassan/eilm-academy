@@ -93,9 +93,8 @@ const HeaderOne = () => {
                   {menuItems.map((item, index) => (
                     <li
                       key={index}
-                      className={`nav-menu__item ${
-                        pathname === item.href ? "activePage" : ""
-                      }`}
+                      className={`nav-menu__item ${pathname === item.href ? "activePage" : ""
+                        }`}
                     >
                       <Link href={item.href} className="nav-menu__link">
                         {item.label}
@@ -112,19 +111,11 @@ const HeaderOne = () => {
               {/* Register Now Button */}
               <Link
                 href="/apply-admission"
-                className="btn d-none d-lg-inline-flex py-12"
-                style={{
-                  background: "linear-gradient(135deg, #000060, #0090D0)",
-                  color: "#fff",
-                  borderRadius: "999px",
-                  padding: "10px 22px",
-                  fontWeight: 600,
-                  letterSpacing: "0.3px",
-                  textTransform: "uppercase",
-                  boxShadow: "0 6px 16px rgba(0,144,208,0.25)",
-                }}
+                className="btn btn-main d-none rounded-pill d-lg-inline-flex py-12"
+
               >
-                Register Now
+                Apply Now
+                <i className='ph-bold ms-3 ph-arrow-up-right d-flex text-lg' />
               </Link>
 
               {/* User Icon */}
@@ -155,9 +146,8 @@ const HeaderOne = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`mobile-menu scroll-sm d-lg-none d-block ${
-          isMenuActive ? "active" : ""
-        }`}
+        className={`mobile-menu scroll-sm d-lg-none d-block ${isMenuActive ? "active" : ""
+          }`}
       >
         <button type="button" className="close-button" onClick={closeMenu}>
           <i className="ph ph-x" />{" "}
@@ -170,9 +160,8 @@ const HeaderOne = () => {
             <ul className="nav-menu flex-align nav-menu--mobile">
               {menuItems.map((item, index) => (
                 <li
-                  className={`nav-menu__item ${
-                    pathname === item.href ? "activePage" : ""
-                  }`}
+                  className={`nav-menu__item ${pathname === item.href ? "activePage" : ""
+                    }`}
                   key={index}
                 >
                   <Link href={item.href} className="nav-menu__link">
@@ -181,23 +170,31 @@ const HeaderOne = () => {
                 </li>
               ))}
               {/* Register Now for mobile */}
-              <li className="nav-menu__item mt-2">
+              <li className="nav-menu__item mt-32">
                 <Link
-                  href="/register"
+                  href="/apply-admission"
                   className="btn w-100 text-center"
                   style={{
-                    background: "linear-gradient(135deg, #000060, #0090D0)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "8px",
+                    background: " #066AC9",
                     color: "#fff",
                     borderRadius: "999px",
-                    padding: "10px 0",
+                    padding: "12px 0",
                     fontWeight: 600,
                     letterSpacing: "0.3px",
                     textTransform: "uppercase",
+                    fontSize: "14px",
+                    transition: "all 0.3s ease",
                   }}
                 >
-                  Register Now
+                  Apply Now
+                  <i className="ph-bold ph-arrow-up-right text-lg" />
                 </Link>
               </li>
+
             </ul>
           </div>
         </div>

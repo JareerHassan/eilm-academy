@@ -71,7 +71,7 @@ export default function StudentHome() {
                 <FaIdBadge className="info-icon" />
                 <div className="text-stack">
                   <label>Full Name</label>
-                  <p className='text-black fw-bold hover-text-main-600 '>Mufti Inamullah Sahab</p>
+                  <p className='text-black fw-bold hover-text-main-600 '>Ustad Mufti Inamullah</p>
                 </div>
               </div>
 

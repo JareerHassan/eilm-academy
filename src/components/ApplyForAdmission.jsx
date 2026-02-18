@@ -104,7 +104,6 @@ const ApplyForAdmission = () => {
               }}
             >
               <form onSubmit={handleSubmit}>
-               <h1 className="fs-3">Apply for admission in Tafseer course</h1>
 
 
                 <div className="row g-3">

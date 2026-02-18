@@ -75,7 +75,7 @@ const TestimonialsThree = () => {
                 <p className='text-neutral-500 my-24'>
                   "Joining E-ILM-Academy has transformed my understanding of Islamic knowledge and modern sciences. Truly a life-changing experience."
                 </p>
-                <ul className='flex-align gap-8 mb-16'>
+                {/* <ul className='flex-align gap-8 mb-16'>
                   <li className='text-warning-600 text-xl d-flex'>
                     <i className='ph-fill ph-star' />
                   </li>
@@ -91,7 +91,7 @@ const TestimonialsThree = () => {
                   <li className='text-warning-600 text-xl d-flex'>
                     <i className='ph-fill ph-star-half' />
                   </li>
-                </ul>
+                </ul> */}
                 <h4 className='mb-16 text-lg'>Ahmed Khan</h4>
                 <span className='text-neutral-500'>Student</span>
               </div>
@@ -111,7 +111,7 @@ const TestimonialsThree = () => {
                 <p className='text-neutral-500 my-24'>
                   "The faculty at E-ILM-Academy are not only scholars but mentors who inspire students with knowledge and wisdom."
                 </p>
-                <ul className='flex-align gap-8 mb-16'>
+                {/* <ul className='flex-align gap-8 mb-16'>
                   <li className='text-warning-600 text-xl d-flex'>
                     <i className='ph-fill ph-star' />
                   </li>
@@ -127,8 +127,8 @@ const TestimonialsThree = () => {
                   <li className='text-warning-600 text-xl d-flex'>
                     <i className='ph-fill ph-star-half' />
                   </li>
-                </ul>
-                <h4 className='mb-16 text-lg'>Sara Ali</h4>
+                </ul> */}
+                <h4 className='mb-16 text-lg'>Ali Hassan</h4>
                 <span className='text-neutral-500'>Student</span>
               </div>
 
@@ -147,7 +147,7 @@ const TestimonialsThree = () => {
                 <p className='text-neutral-500 my-24'>
                   "Being part of this academy has enhanced my confidence and understanding of contemporary issues along with Islamic values."
                 </p>
-                <ul className='flex-align gap-8 mb-16'>
+                {/* <ul className='flex-align gap-8 mb-16'>
                   <li className='text-warning-600 text-xl d-flex'>
                     <i className='ph-fill ph-star' />
                   </li>
@@ -163,7 +163,7 @@ const TestimonialsThree = () => {
                   <li className='text-warning-600 text-xl d-flex'>
                     <i className='ph-fill ph-star-half' />
                   </li>
-                </ul>
+                </ul> */}
                 <h4 className='mb-16 text-lg'>Hassan Raza</h4>
                 <span className='text-neutral-500'>Student</span>
               </div>

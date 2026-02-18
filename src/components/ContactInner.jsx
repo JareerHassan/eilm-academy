@@ -117,7 +117,7 @@ const ContactInner = () => {
                 </p>
               </div>
 
-              <div className='flex-align gap-40 flex-wrap'>
+              {/* <div className='flex-align gap-40 flex-wrap'>
                 <div className='enrolled-students mt-12 '>
                   <img src='assets/images/thumbs/enroll-student-img1.webp' alt='' className='w-48 h-48 rounded-circle object-fit-cover transition-2' />
                   <img src='assets/images/thumbs/enroll-student-img2.webp' alt='' className='w-48 h-48 rounded-circle object-fit-cover transition-2' />
@@ -139,7 +139,7 @@ const ContactInner = () => {
                     2.5k+ reviews (4.95 of 5)
                   </span>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* FORM */}

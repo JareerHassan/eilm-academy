@@ -21,7 +21,7 @@ const page = () => {
       <HeaderOne />
 
       {/* Breadcrumb */}
-      <Breadcrumb title={"Apply for Admission"} />
+      <Breadcrumb title={"Apply for admission in Tafseer course"} />
 
       {/* ApplyForAdmission */}
       <ApplyForAdmission />

@@ -43,7 +43,7 @@ const ChooseUsTwo = () => {
               <ul>
                 <li className='mb-24'>
                   <Link
-                    href='/contact'
+                    href='/coming-soon'
                     className='flex-align gap-12 text-white hover-text-decoration-underline'
                   >
                     Admission Announcement
@@ -52,7 +52,7 @@ const ChooseUsTwo = () => {
                 </li>
                 <li className='mb-24'>
                   <Link
-                    href='/contact'
+                   href='/coming-soon'
                     className='flex-align gap-12 text-white hover-text-decoration-underline'
                   >
                     Summer 2025 Enrollment
@@ -61,7 +61,7 @@ const ChooseUsTwo = () => {
                 </li>
                 <li className='mb-24'>
                   <Link
-                    href='/contact'
+                   href='/coming-soon'
                     className='flex-align gap-12 text-white hover-text-decoration-underline'
                   >
                     Upcoming Islamic Seminar
@@ -70,7 +70,7 @@ const ChooseUsTwo = () => {
                 </li>
                 <li className='mb-24'>
                   <Link
-                    href='/contact'
+                   href='/coming-soon'
                     className='flex-align gap-12 text-white hover-text-decoration-underline'
                   >
                     Download Syllabus
@@ -79,7 +79,7 @@ const ChooseUsTwo = () => {
                 </li>
                 <li className='mb-24'>
                   <Link
-                    href='/contact'
+                   href='/coming-soon'
                     className='flex-align gap-12 text-white hover-text-decoration-underline'
                   >
                     Alumni Talks & Events
@@ -88,7 +88,7 @@ const ChooseUsTwo = () => {
                 </li>
                 <li className='mb-0'>
                   <Link
-                    href='/contact'
+                   href='/coming-soon'
                     className='flex-align gap-12 text-white hover-text-decoration-underline'
                   >
                     Exam Schedules
