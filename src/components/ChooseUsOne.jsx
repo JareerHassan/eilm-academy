@@ -30,7 +30,7 @@ const ChooseUsOne = () => {
                 <h2 className='mb-24 wow bounceIn'>
                   Learn, Grow & Succeed with E-ILM Academy
                 </h2>
-                <p className='text-neutral-500 text-line-2 wow bounceInUp'>
+                <p className='text-neutral-500  wow bounceInUp'>
                   At E-ILM Academy, we empower students with high-quality,
                   skill-based learning. Our mission is to make modern education accessible,
                   practical, and career-focused for everyone.
@@ -111,12 +111,12 @@ const ChooseUsOne = () => {
               >
                 <span className='text-main-600'>36k+</span> Enrolled Students
                 <div className='enrolled-students mt-12'>
-                  <img src='assets/images/thumbs/enroll-student-img1.png' alt='' className='w-48 h-48 rounded-circle object-fit-cover' />
-                  <img src='assets/images/thumbs/enroll-student-img2.png' alt='' className='w-48 h-48 rounded-circle object-fit-cover' />
-                  <img src='assets/images/thumbs/enroll-student-img3.png' alt='' className='w-48 h-48 rounded-circle object-fit-cover' />
-                  <img src='assets/images/thumbs/enroll-student-img4.png' alt='' className='w-48 h-48 rounded-circle object-fit-cover' />
-                  <img src='assets/images/thumbs/enroll-student-img5.png' alt='' className='w-48 h-48 rounded-circle object-fit-cover' />
-                  <img src='assets/images/thumbs/enroll-student-img6.png' alt='' className='w-48 h-48 rounded-circle object-fit-cover' />
+                  <img src='assets/images/thumbs/enroll-student-img1.webp' alt='' className='w-48 h-48 rounded-circle object-fit-cover transition-2' />
+                  <img src='assets/images/thumbs/enroll-student-img2.webp' alt='' className='w-48 h-48 rounded-circle object-fit-cover transition-2' />
+                  <img src='assets/images/thumbs/enroll-student-img3.webp' alt='' className='w-48 h-48 rounded-circle object-fit-cover transition-2' />
+                  <img src='assets/images/thumbs/enroll-student-img4.webp' alt='' className='w-48 h-48 rounded-circle object-fit-cover transition-2' />
+                  <img src='assets/images/thumbs/enroll-student-img5.webp' alt='' className='w-48 h-48 rounded-circle object-fit-cover transition-2' />
+                  <img src='assets/images/thumbs/enroll-student-img6.webp' alt='' className='w-48 h-48 rounded-circle object-fit-cover transition-2' />
                 </div>
               </div>
 

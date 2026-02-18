@@ -92,7 +92,9 @@ const ApplyForAdmission = () => {
     <section style={{ marginTop: '30px' }}>
       <div className="container">
         <div className="row justify-content-center">
+
           <div className="col-lg-8">
+
             <div
               style={{
                 background: "#fff",
@@ -102,6 +104,8 @@ const ApplyForAdmission = () => {
               }}
             >
               <form onSubmit={handleSubmit}>
+               <h1 className="fs-3">Apply for admission in Tafseer course</h1>
+
 
                 <div className="row g-3">
                   <div className="col-12">

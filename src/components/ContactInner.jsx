@@ -21,66 +21,68 @@ const ContactInner = () => {
             </p>
           </div>
 
-        <div className='row gy-4'>
-  {/* Office */}
-  <div className='col-xl-4 col-md-6 d-flex'>
-    <div className='contact-item bg-main-25 border border-neutral-30 rounded-12 px-32 py-40 d-flex align-items-start gap-24 hover-bg-main-600 transition-2 hover-border-main-600 flex-grow-1'>
-      <span className='contact-item__icon w-60 h-60 text-32 flex-center rounded-circle bg-main-600 text-white flex-shrink-0'>
-        <i className='ph ph-map-pin-line' />
-      </span>
-      <div className='flex-grow-1'>
-        <h4 className='mb-12'>Main Campus</h4>
-        <p className='text-neutral-500'>Darul Iman, Mumtaz City, Islamabad</p>
-        <Link
-          href='https://maps.app.goo.gl/hACaC7N9ia5sr2Sf9'
-          target='_blank'
-          rel='noopener noreferrer'
-          className='text-main-600 fw-semibold text-decoration-underline mt-16 d-inline-block'
-        >
-          Find Location
-        </Link>
-      </div>
-    </div>
-  </div>
+          <div className='row gy-4'>
+            {/* Office */}
+            <div className='col-xl-4 col-md-6 d-flex'>
+              <div className='contact-item bg-main-25 border border-neutral-30 rounded-12 px-32 py-40 d-flex align-items-start gap-24 hover-bg-main-600 transition-2 hover-border-main-600 flex-grow-1'>
+                <span className='contact-item__icon w-60 h-60 text-32 flex-center rounded-circle bg-main-600 text-white flex-shrink-0'>
+                  <i className='ph ph-map-pin-line' />
+                </span>
+                <div className='flex-grow-1'>
+                  <h4 className='mb-12'>Main Campus</h4>
+                  <p className='text-neutral-500'>Darul Iman, Mumtaz City, Islamabad</p>
+                  <Link
+                    href='https://maps.app.goo.gl/hACaC7N9ia5sr2Sf9'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='text-main-600 fw-semibold text-decoration-underline mt-16 d-inline-block'
+                  >
+                    Find Location
+                  </Link>
+                </div>
+              </div>
+            </div>
 
-  {/* Email */}
-  <div className='col-xl-4 col-md-6 d-flex'>
-    <div className='contact-item bg-main-25 border border-neutral-30 rounded-12 px-32 py-40 d-flex align-items-start gap-24 hover-bg-main-600 transition-2 hover-border-main-600 flex-grow-1'>
-      <span className='contact-item__icon w-60 h-60 text-32 flex-center rounded-circle bg-main-600 text-white flex-shrink-0'>
-        <i className='ph ph-envelope-open' />
-      </span>
-      <div className='flex-grow-1'>
-        <h4 className='mb-12'>Email Address</h4>
-        <p className='text-neutral-500'>Eilmacademy@gmail.com</p>
-        <a
-          href='mailto:Eilmacademy@gmail.com'
-          className='text-main-600 fw-semibold text-decoration-underline mt-16 d-inline-block'
-        >
-          Get In Touch
-        </a>
-      </div>
-    </div>
-  </div>
+            {/* Email */}
+            <div className='col-xl-4 col-md-6 d-flex'>
+              <div className='contact-item bg-main-25 border border-neutral-30 rounded-12 px-32 py-40 d-flex align-items-start gap-24 hover-bg-main-600 transition-2 hover-border-main-600 flex-grow-1'>
+                <span className='contact-item__icon w-60 h-60 text-32 flex-center rounded-circle bg-main-600 text-white flex-shrink-0'>
+                  <i className='ph ph-envelope-open' />
+                </span>
+                <div className='flex-grow-1'>
+                  <h4 className='mb-12'>Email Address</h4>
+                  <p className='text-neutral-500'>Eilmacademy@gmail.com</p>
+                  <a
+                    href='mailto:Eilmacademy@gmail.com'
+                    className='text-main-600 fw-semibold text-decoration-underline mt-16 d-inline-block'
+                  >
+                    Get In Touch
+                  </a>
+                </div>
+              </div>
+            </div>
 
-  {/* Phone */}
-  <div className='col-xl-4 col-md-6 d-flex'>
-    <div className='contact-item bg-main-25 border border-neutral-30 rounded-12 px-32 py-40 d-flex align-items-start gap-24 hover-bg-main-600 transition-2 hover-border-main-600 flex-grow-1'>
-      <span className='contact-item__icon w-60 h-60 text-32 flex-center rounded-circle bg-main-600 text-white flex-shrink-0'>
-        <i className='ph ph-phone-call' />
-      </span>
-      <div className='flex-grow-1'>
-        <h4 className='mb-12'>Phone Number</h4>
-        <p className='text-neutral-500'>+923155090055</p>
-        <a
-          href='tel:+923155090055'
-          className='text-main-600 fw-semibold text-decoration-underline mt-16 d-inline-block'
-        >
-          Contact Us Today!
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+            {/* Phone */}
+            <div className='col-xl-4 col-md-6 d-flex'>
+              <div className='contact-item bg-main-25 border border-neutral-30 rounded-12 px-32 py-40 d-flex align-items-start gap-24 hover-bg-main-600 transition-2 hover-border-main-600 flex-grow-1'>
+                <span className='contact-item__icon w-60 h-60 text-32 flex-center rounded-circle bg-main-600 text-white flex-shrink-0'>
+                  <i className='ph ph-phone-call' />
+                </span>
+                <div className='flex-grow-1'>
+                  <h4 className='mb-12'>Phone Number</h4>
+                  <p className='text-neutral-500'>+923155090055</p>
+                  <Link
+                    href="https://wa.me/923155090055"
+                    target="_blank"
+                    className='text-main-600 fw-semibold text-decoration-underline mt-16 d-inline-block'
+                    aria-label="Chat on WhatsApp"
+                  >
+                    Contact Us Today!
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
       </section>

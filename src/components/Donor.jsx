@@ -13,8 +13,8 @@ import {
 import Link from "next/link";
 
 export default function DonorPageInline({
-  donateHref = "/contact",
-  sponsorHref = "/contact",
+  donateHref = "/coming-soon",
+  sponsorHref = "/coming-soon",
   contactHref = "/contact",
 }) {
   const BRAND_NAVY = "#000060";

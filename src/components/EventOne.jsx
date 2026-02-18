@@ -72,7 +72,7 @@ const EventOne = () => {
 
                 <div className='flex-shrink-0'>
                   <Link
-                    href='/about'
+                    href='/coming-soon'
                     className='btn btn-outline-main rounded-pill flex-align d-inline-flex gap-8'
                   >
                     Join Now
@@ -122,7 +122,7 @@ const EventOne = () => {
 
                 <div className='flex-shrink-0'>
                   <Link
-                    href='/about'
+                       href='/coming-soon'
                     className='btn btn-outline-main rounded-pill flex-align d-inline-flex gap-8'
                   >
                     Join Now
@@ -172,7 +172,7 @@ const EventOne = () => {
 
                 <div className='flex-shrink-0'>
                   <Link
-                    href='/about'
+                      href='/coming-soon'
                     className='btn btn-outline-main rounded-pill flex-align d-inline-flex gap-8'
                   >
                     Join Now

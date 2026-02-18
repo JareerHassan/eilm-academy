@@ -38,7 +38,7 @@ const AboutThree = () => {
                       <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
                         {({ isVisible }) => (
                           <h2 className='mb-16 text-white counter'>
-                            {isVisible ? <CountUp end={26} /> : null}K
+                            {isVisible ? <CountUp end={1} /> : null}K
                           </h2>
                         )}
                       </VisibilitySensor>
@@ -103,7 +103,7 @@ const AboutThree = () => {
                         Qur’an Nazra & Tajweed
                       </h6>
                       <div className='flex-align gap-8 text-neutral-500'>
-                        Structured Recitation • Correct Pronunciation • Practical Training
+                        Structured Recitation <br />  Correct Pronunciation <br /> Practical Training
                       </div>
                     </div>
                   </div>
@@ -117,7 +117,7 @@ const AboutThree = () => {
                         Islamic Beliefs & Fiqh
                       </h6>
                       <div className='flex-align gap-8 text-neutral-500'>
-                        Aqeedah • Worship Guidance • Daily Life Rulings
+                        Aqeedah <br/> Worship Guidance <br/> Daily Life Rulings
                       </div>
                     </div>
                   </div>
@@ -131,7 +131,7 @@ const AboutThree = () => {
                         Hadith & Islamic Sciences
                       </h6>
                       <div className='flex-align gap-8 text-neutral-500'>
-                        Classical Texts • Research Methods • Authentic Sources
+                        Classical Texts <br/> Research Methods <br/> Authentic Sources
                       </div>
                     </div>
                   </div>
@@ -145,7 +145,7 @@ const AboutThree = () => {
                         Arabic Language Studies
                       </h6>
                       <div className='flex-align gap-8 text-neutral-500'>
-                        Grammar • Morphology • Qur’anic Understanding
+                        Grammar <br/> Morphology <br/> Qur’anic Understanding
                       </div>
                     </div>
                   </div>
@@ -154,7 +154,7 @@ const AboutThree = () => {
 
                 <div className='pt-40 border-top border-neutral-50 mt-40 border-dashed border-0'>
                   <Link href='/about' className='btn btn-main rounded-pill flex-align d-inline-flex gap-8'>
-                    Learn More
+                    Explore More
                     <i className='ph-bold ph-arrow-up-right d-flex text-lg' />
                   </Link>
                 </div>

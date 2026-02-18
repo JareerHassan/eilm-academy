@@ -55,7 +55,7 @@ const AboutOne = () => {
                         >
                           {({ isVisible }) => (
                             <h1 className='mb-0 text-white counter'>
-                              {isVisible ? <CountUp end={10} /> : null}K
+                              {isVisible ? <CountUp end={1} /> : null}K
                             </h1>
                           )}
                         </VisibilitySensor>
@@ -73,7 +73,7 @@ const AboutOne = () => {
                         >
                           {({ isVisible }) => (
                             <h1 className='mb-0 text-white counter'>
-                              {isVisible ? <CountUp end={5} /> : null}K
+                              {isVisible ? <CountUp end={2} /> : null}K
                             </h1>
                           )}
                         </VisibilitySensor>

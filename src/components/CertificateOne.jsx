@@ -13,17 +13,17 @@ const CertificateOne = () => {
                     <div className='flex-align gap-8 mb-16 wow bounceInDown'>
                       <span className='w-8 h-8 bg-white rounded-circle' />
                       <h5 className='text-white mb-0'>
-                        E-Ilm Academy Certificates
+                        E-Ilm Academy
                       </h5>
                     </div>
 
                     <h2 className='text-white mb-40 fw-medium wow bounceIn'>
-                      Earn a Professional Skills Certificate From
-                      <br /> E-Ilm Academy
+                      Start Your Journey of Islamic Knowledge
+                    With   E-Ilm Academy
                     </h2>
 
                     <a
-                      href='/courses'
+                      href='/course'
                       className='btn btn-white rounded-pill flex-align d-inline-flex gap-8 hover-bg-main-800 wow bounceInUp'
                     >
                       Start Learning Now
@@ -46,7 +46,7 @@ const CertificateOne = () => {
                       data-tilt-speed={500}
                       data-tilt-perspective={5000}
                       data-tilt-full-page-listening=''
-                      style={{height:'438px', width:'350px'}}
+                      style={{ height: '390px', width: '350px' }}
                     />
                   </div>
                 </div>

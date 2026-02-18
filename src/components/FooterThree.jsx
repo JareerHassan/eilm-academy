@@ -26,7 +26,7 @@ const FooterThree = () => {
                   Quick Link
                 </h4>
                 <ul className='footer-menu'>
-                    <li className='mb-16'>
+                  <li className='mb-16'>
                     <Link
                       href='/'
                       className='text-white hover-text-main-600 hover-text-decoration-underline'
@@ -50,7 +50,7 @@ const FooterThree = () => {
                       Courses
                     </Link>
                   </li>
-                   <li className='mb-16'>
+                  <li className='mb-16'>
                     <Link
                       href='/donor'
                       className='text-white hover-text-main-600 hover-text-decoration-underline'
@@ -58,7 +58,7 @@ const FooterThree = () => {
                       Donor
                     </Link>
                   </li>
-                       <li className='mb-16'>
+                  <li className='mb-16'>
                     <Link
                       href='/contact'
                       className='text-white hover-text-main-600 hover-text-decoration-underline'
@@ -161,11 +161,12 @@ const FooterThree = () => {
                   </span>
                   <div>
                     <Link
-                      href="tel:03155090055"
+                      href="https://wa.me/923155090055"
+                      target="_blank"
                       className="text-white d-block hover-text-main-600 mb-4"
-                      aria-label="Call us at 03155090055"
+                      aria-label="Chat on WhatsApp"
                     >
-                      +923155090055
+                      +92 315 5090055
                     </Link>
                   </div>
 

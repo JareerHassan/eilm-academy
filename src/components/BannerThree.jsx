@@ -280,7 +280,7 @@ const BannerThree = () => {
                         data-wow-delay='.5s'
                       >
                         {" "}
-                       Dars-e-Nizami {" "}
+                        Dars-e-Nizami {" "}
                       </span> {" "}
                       Become an Alim / Alimah
                     </h1>
