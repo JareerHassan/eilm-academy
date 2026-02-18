@@ -2,6 +2,7 @@
 import StudentSidebar from "@/components/StudentSidebar";
 import { FaBookOpen, FaIdBadge, FaEnvelope, FaPhone } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function StudentHome() {
   const [screenSize, setScreenSize] = useState("desktop");
@@ -93,13 +94,14 @@ export default function StudentHome() {
                 <FaPhone className="info-icon" />
                 <div className="text-stack">
                   <label>Contact Number</label>
-                  <a
-                    href="tel:+923155090055"
+                  <Link
+                      href="https://wa.me/923155090055"
+                    target="_blank"
                     className="text-black fw-bold hover-text-main-600 "
-                    aria-label="Call us at 03155090055"
+                 aria-label="Chat on WhatsApp"
                   >
                     +92 315 5090055
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
