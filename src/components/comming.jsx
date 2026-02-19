@@ -112,7 +112,7 @@ export default function ComingSoon() {
           <div style={accentBar}></div>
 
           <img
-            src="/assets/images/logo/logo3.png"
+            src="/assets/images/logo/logo5.png"
             alt="E-Ilm Academy"
             style={logoStyle}
           />
