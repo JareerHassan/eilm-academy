@@ -96,20 +96,22 @@ export default function StudentSidebar() {
       )}
 
       <div className={`${styles.sidebar} ${!open ? styles.closed : ""}`}>
-        <h2
+        <h4
           style={{
             display: "flex",
             alignItems: "center", // vertical center
             gap: "8px",           // icon aur text ka gap
-            fontSize: "30px",
+            fontSize: "18px",
             fontWeight: "600",
             padding: "12px 16px",
-            color: "white"
+            color: "white",
+            flexWrap: "wrap",      // text agar lamba ho to next line me aa jaye
+            wordBreak: "break-word" // bohot lambi words ko break kar de
           }}
         >
-          <FaUser size={20} />  {/* icon size chota aur center */}
           <span style={{ lineHeight: 1 }}>{studentName}</span>
-        </h2>
+        </h4>
+
 
 
         <ul className={styles.navList}>
@@ -132,7 +134,7 @@ export default function StudentSidebar() {
               <FaBook /> Courses
             </Link>
           </li>
-          
+
           <li className={styles.navItem}>
             <Link
               href="/student-dashboard/forget-password"
