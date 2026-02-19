@@ -243,8 +243,14 @@ const FooterThree = () => {
               </div>
               <p className='text-white text-line-1 fw-normal' data-aos='zoom-in'>
                 Copyright © {new Date().getFullYear()}{" "}
-                <span className='fw-semibold'>E-ILM-ACADEMY</span> All Rights Reserved.
+                <span className='fw-semibold'>E-ILM-ACADEMY</span> All Rights Reserved.{" "}
+                <span>
+                  <Link href="https://oxmite.com" target="_blank" rel="noopener noreferrer">
+                    DEVELOPED BY OXMITE DIGITAL LTD
+                  </Link>
+                </span>
               </p>
+
 
               <ul
                 className='social-list flex-align gap-24'
@@ -260,7 +266,7 @@ const FooterThree = () => {
                 </li>
                 <li className='social-list__item'>
                   <Link
-                   href='/coming-soon'
+                    href='/coming-soon'
                     className='text-white text-2xl hover-text-main-two-100'
                   >
                     <i className='ph-bold ph-twitter-logo' />
@@ -276,7 +282,7 @@ const FooterThree = () => {
                 </li>
                 <li className='social-list__item'>
                   <Link
-                   href='/coming-soon'
+                    href='/coming-soon'
                     className='text-white text-2xl hover-text-main-two-100'
                   >
                     <i className='ph-bold ph-pinterest-logo' />
