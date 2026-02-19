@@ -96,7 +96,7 @@ const HeaderOne = () => {
                       className={`nav-menu__item ${pathname === item.href ? "activePage" : ""
                         }`}
                     >
-                      <Link href={item.href} className="nav-menu__link" style={{fontSize:'25px !important'}}>
+                      <Link href={item.href} className="nav-menu__link" style={{fontSize:'18px !important'}}>
                         {item.label}
                       </Link>
                     </li>
