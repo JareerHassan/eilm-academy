@@ -36,6 +36,13 @@ const SignInInner = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
+
+    // Front-end validation
+    if (!email.trim() || !password.trim()) {
+      setError("Please enter both email and password");
+      return; // Server call ko rok do
+    }
+
     setLoading(true);
 
     try {
@@ -57,11 +64,7 @@ const SignInInner = () => {
           localStorage.setItem("teacherId", res.data.teacher.id);
         }
 
-        if (role === "student") {
-          router.push("/student-dashboard");
-        } else {
-          router.push("/teacher-dashboard");
-        }
+        router.push(role === "student" ? "/student-dashboard" : "/teacher-dashboard");
       }
     } catch (err) {
       setError(err.response?.data?.message || "Login failed");
@@ -69,6 +72,7 @@ const SignInInner = () => {
       setLoading(false);
     }
   };
+
 
   return (
     <div className="account py-120 position-relative">

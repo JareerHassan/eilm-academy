@@ -52,10 +52,10 @@ const FooterThree = () => {
                   </li>
                   <li className='mb-16'>
                     <Link
-                      href='/donor'
+                      href='/donation'
                       className='text-white hover-text-main-600 hover-text-decoration-underline'
                     >
-                      Donor
+                      Donation
                     </Link>
                   </li>
                   <li className='mb-16'>
@@ -238,7 +238,7 @@ const FooterThree = () => {
               <div className='footer-item__logo mb-0' data-aos='zoom-in-right'>
                 <Link href='/'>
                   {" "}
-                  <img src='assets/images/logo/white-logo.png' alt='' />
+                  <img src='assets/images/logo/logo6.png' alt='' />
                 </Link>
               </div>
               <p className='text-white text-line-1 fw-normal' data-aos='zoom-in'>
@@ -252,7 +252,7 @@ const FooterThree = () => {
               >
                 <li className='social-list__item'>
                   <Link
-                    href='https://www.facebook.com'
+                    href='/coming-soon'
                     className='text-white text-2xl hover-text-main-two-100'
                   >
                     <i className='ph-bold ph-facebook-logo' />
@@ -260,7 +260,7 @@ const FooterThree = () => {
                 </li>
                 <li className='social-list__item'>
                   <Link
-                    href='https://www.twitter.com'
+                   href='/coming-soon'
                     className='text-white text-2xl hover-text-main-two-100'
                   >
                     <i className='ph-bold ph-twitter-logo' />
@@ -268,7 +268,7 @@ const FooterThree = () => {
                 </li>
                 <li className='social-list__item'>
                   <Link
-                    href='https://www.linkedin.com'
+                    href='/coming-soon'
                     className='text-white text-2xl hover-text-main-two-100'
                   >
                     <i className='ph-bold ph-instagram-logo' />
@@ -276,7 +276,7 @@ const FooterThree = () => {
                 </li>
                 <li className='social-list__item'>
                   <Link
-                    href='https://www.pinterest.com'
+                   href='/coming-soon'
                     className='text-white text-2xl hover-text-main-two-100'
                   >
                     <i className='ph-bold ph-pinterest-logo' />

@@ -132,6 +132,16 @@ export default function StudentSidebar() {
               <FaBook /> Courses
             </Link>
           </li>
+          
+          <li className={styles.navItem}>
+            <Link
+              href="/student-dashboard/forget-password"
+              className={styles.navLink}
+              onClick={() => isMobile && setOpen(false)}
+            >
+              <FaBook /> Forget Password
+            </Link>
+          </li>
 
           <li className={`${styles.navItem} ${styles.logout}`}>
             <Link href="/sign-in" className={styles.navLink} onClick={handleLogout}>

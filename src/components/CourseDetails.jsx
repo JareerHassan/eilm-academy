@@ -17,7 +17,7 @@ const CourseDetails = () => {
       title: "Tafseer",
       category: "Qur'an",
       status: "Launched",
-             imageLink: "https://res.cloudinary.com/dx0naofle/image/upload/v1771399319/WhatsApp_Image_2026-02-18_at_12.18.36_PM_tfqhhn.jpg",
+             imageLink: "https://res.cloudinary.com/dx0naofle/image/upload/v1771492980/Untitled-2-01.jpg_o8quto.jpg",
 
       slug: "tafseer",
        description: `
@@ -33,14 +33,14 @@ const CourseDetails = () => {
   },
     {
       _id: "2",
-      title: "Fiqa",
-      category: "Fiqa",
+      title: "Fiqh",
+      category: "Fiqh",
       status: "Coming Soon",
-        imageLink: "https://res.cloudinary.com/dx0naofle/image/upload/v1771399392/WhatsApp_Image_2026-02-18_at_12.18.37_PM_giyzf5.jpg",
+        imageLink: "https://res.cloudinary.com/dx0naofle/image/upload/v1771492979/Untitled-2-03.jpg_qpffqv.jpg",
 
-      slug: "fiqa",
+      slug: "fiqh",
         description: `
-      Fiqa course introduces students to the fundamentals of Islamic jurisprudence, focusing on daily worship, personal conduct, and community obligations.
+      Fiqh course introduces students to the fundamentals of Islamic jurisprudence, focusing on daily worship, personal conduct, and community obligations.
       Students will learn:
       - Basic principles of Fiqh according to the Hanafi school
       - Rules of prayer (Salah), fasting (Sawm), zakat, and hajj

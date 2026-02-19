@@ -11,7 +11,7 @@ export default function Eilm() {
       <>
          <HeaderOne />
 
- <Breadcrumb title={"Donor"} />
+ <Breadcrumb title={"Donation"} />
 
 
         <EilmAcademyDonorPage />

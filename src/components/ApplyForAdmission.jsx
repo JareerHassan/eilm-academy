@@ -69,8 +69,17 @@ const ApplyForAdmission = () => {
       });
     } catch (error) {
       setSubmitSuccess(false);
-      setSubmitMessage("Network error. Please try again.");
-    } finally {
+      console.log(error);
+
+      const msg =
+        error?.response?.data?.message ||
+        error?.response?.data?.error ||
+        error?.message ||
+        "Something went wrong. Please try again.";
+
+      setSubmitMessage(msg);
+    }
+    finally {
       setLoading(false);
     }
   };

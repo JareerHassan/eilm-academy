@@ -120,21 +120,21 @@ const BannerThree = () => {
                         <i className='ph-bold ph-book-open' />
                       </span>
                       <h5 className='text-yellow-600 mb-0 fw-medium'>
-                        Learn Qur’an & Sunnah with Authentic Scholars
+                    Eilm Academy
                       </h5>
                     </div>
                     {/* 3. Heading Size Responsiveness: Use a smaller class on mobile (text-4xl) and display2 on larger screens */}
                     <h1 className='text-4xl sm:text-5xl md:display2 mb-24 text-white fw-medium wow bounceInLeft'>
-                      Structured Islamic{" "}
+                       Learn Qur’an{" "}
                       <span
                         className='text-yellow-600 wow bounceInRight'
                         data-wow-duration='2s'
                         data-wow-delay='.5s'
                       >
                         {" "}
-                        for the{" "}
+                        & Sunnah{" "}
                       </span>{" "}
-                      Modern Ummah
+                     with Authentic Scholars
                     </h1>
 
                     <p className='text-white wow bounceInDown' style={{ lineHeight: "1.6", whiteSpace: "normal" }}>

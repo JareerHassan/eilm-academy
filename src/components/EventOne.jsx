@@ -75,7 +75,7 @@ const EventOne = () => {
                     href='/coming-soon'
                     className='btn btn-outline-main rounded-pill flex-align d-inline-flex gap-8'
                   >
-                    Join Now
+                     Coming Soon
                     <i className='ph-bold ph-arrow-up-right d-flex text-lg' />
                   </Link>
                 </div>
@@ -125,7 +125,7 @@ const EventOne = () => {
                        href='/coming-soon'
                     className='btn btn-outline-main rounded-pill flex-align d-inline-flex gap-8'
                   >
-                    Join Now
+                       Coming Soon
                     <i className='ph-bold ph-arrow-up-right d-flex text-lg' />
                   </Link>
                 </div>
@@ -175,7 +175,7 @@ const EventOne = () => {
                       href='/coming-soon'
                     className='btn btn-outline-main rounded-pill flex-align d-inline-flex gap-8'
                   >
-                    Join Now
+                      Coming Soon
                     <i className='ph-bold ph-arrow-up-right d-flex text-lg' />
                   </Link>
                 </div>

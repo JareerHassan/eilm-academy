@@ -58,7 +58,7 @@ const HeaderOne = () => {
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Courses", href: "/course" },
-    { label: "Donor", href: "/donor" },
+    { label: "Donation", href: "/donation " },
     { label: "Contact", href: "/contact" },
   ];
 
@@ -73,7 +73,7 @@ const HeaderOne = () => {
               <div className="logo">
                 <Link href="/" className="link">
                   <img
-                    src="/assets/images/logo/logo3.png"
+                    src="/assets/images/logo/logo5.png"
                     alt="Logo"
                     style={{ height: "100px" }}
                   />
@@ -87,7 +87,7 @@ const HeaderOne = () => {
                 style={{ flex: 1, display: "flex", justifyContent: "center" }}
               >
                 <ul
-                  className="nav-menu fs-5 flex-align"
+                  className="nav-menu fs-4 flex-align"
                   style={{ justifyContent: "center", gap: "50px" }}
                 >
                   {menuItems.map((item, index) => (
@@ -157,7 +157,7 @@ const HeaderOne = () => {
             <img src="assets/images/logo/logo3.png" alt="Logo" />
           </Link>
           <div className="mobile-menu__menu">
-            <ul className="nav-menu flex-align nav-menu--mobile">
+            <ul className="nav-menu  flex-align nav-menu--mobile">
               {menuItems.map((item, index) => (
                 <li
                   className={`nav-menu__item ${pathname === item.href ? "activePage" : ""

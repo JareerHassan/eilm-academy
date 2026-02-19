@@ -95,10 +95,10 @@ export default function StudentHome() {
                 <div className="text-stack">
                   <label>Contact Number</label>
                   <Link
-                      href="https://wa.me/923155090055"
+                    href="https://wa.me/923155090055"
                     target="_blank"
                     className="text-black fw-bold hover-text-main-600 "
-                 aria-label="Chat on WhatsApp"
+                    aria-label="Chat on WhatsApp"
                   >
                     +92 315 5090055
                   </Link>
@@ -123,7 +123,6 @@ export default function StudentHome() {
           flex: 1; 
           padding: 40px; 
           margin-left: ${screenSize === "mobile" ? "0" : "260px"}; 
-          transition: margin 0.3s ease-in-out, padding 0.3s; 
         }
 
         .content-container { 
