@@ -87,8 +87,8 @@ const HeaderOne = () => {
                 style={{ flex: 1, display: "flex", justifyContent: "center" }}
               >
                 <ul
-                  className="nav-menu fs-4 flex-align"
-                  style={{ justifyContent: "center", gap: "50px" }}
+                  className="nav-menu  flex-align"
+                  style={{ justifyContent: "center", gap: "50px",  }}
                 >
                   {menuItems.map((item, index) => (
                     <li
@@ -96,7 +96,7 @@ const HeaderOne = () => {
                       className={`nav-menu__item ${pathname === item.href ? "activePage" : ""
                         }`}
                     >
-                      <Link href={item.href} className="nav-menu__link">
+                      <Link href={item.href} className="nav-menu__link" style={{fontSize:'25px !important'}}>
                         {item.label}
                       </Link>
                     </li>
@@ -154,7 +154,7 @@ const HeaderOne = () => {
         </button>
         <div className="mobile-menu__inner">
           <Link href="/" className="mobile-menu__logo">
-            <img src="assets/images/logo/logo3.png" alt="Logo" />
+            <img src="assets/images/logo/logo5.png" alt="Logo" />
           </Link>
           <div className="mobile-menu__menu">
             <ul className="nav-menu  flex-align nav-menu--mobile">
