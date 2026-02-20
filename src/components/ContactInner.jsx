@@ -67,7 +67,7 @@ const ContactInner = () => {
             </p>
           </div>
 
-          <div className='row gy-4'>
+          <div className='row gy-4'>    
             {/* Office */}
             <div className='col-xl-4 col-md-6 d-flex'>
               <div className='contact-item bg-main-25 border border-neutral-30 rounded-12 px-32 py-40 d-flex align-items-start gap-24 hover-bg-main-600 transition-2 hover-border-main-600 flex-grow-1'>
