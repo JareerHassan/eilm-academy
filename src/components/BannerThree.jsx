@@ -124,7 +124,7 @@ const BannerThree = () => {
                       </h5>
                     </div>
                     {/* 3. Heading Size Responsiveness: Use a smaller class on mobile (text-4xl) and display2 on larger screens */}
-                    <h1 className='text-4xl sm:text-5xl md:display2 mb-24 text-white fw-medium wow bounceInLeft'>
+                    <h2 className='text-4xl sm:text-5xl md:display2 mb-24 text-white fw-medium wow bounceInLeft'>
                       Learn Qur’an{" "}
                       <span
                         className='text-yellow-600 wow bounceInRight'
@@ -135,7 +135,7 @@ const BannerThree = () => {
                         & Sunnah{" "}
                       </span>{" "}
                       with Authentic Scholars
-                    </h1>
+                    </h2>
 
                     <p className='text-white wow bounceInDown' style={{ lineHeight: "1.6", whiteSpace: "normal" }}>
                       Eilm Academy is a global online Islamic learning platform that provides authentic and structured education in the Qur’an, Hadith, Hanafi Fiqh, Arabic, and Tajweed.
@@ -272,7 +272,7 @@ const BannerThree = () => {
                       </h5>
                     </div>
                     {/* 3. Heading Size Responsiveness: Use a smaller class on mobile (text-4xl) and display2 on larger screens */}
-                    <h2 className='text-4xl sm:text-5xl md:display2 mb-24 text-white fw-medium wow bounceInLeft'>
+                    <h1 className='text-4xl sm:text-5xl md:display2 mb-24 text-white fw-medium wow bounceInLeft'>
                       Online Islamic Courses – Qur’an,
                       <span
                         className='text-yellow-600 ms-5 wow bounceInRight'
@@ -283,7 +283,7 @@ const BannerThree = () => {
                         Fiqh & Dars-e-Nizami {" "}
                       </span> {" "}
                       | Eilm Academy
-                    </h2>
+                    </h1>
                     <p className='text-white  wow bounceInDown' style={{ lineHeight: "1.6", whiteSpace: "normal" }} >
                       A comprehensive Alim program based on Arabic grammar, Tafsir, Hadith, Usul al-Fiqh, and Hanafi jurisprudence.
                       Includes regular exams, mentorship, and certification.
