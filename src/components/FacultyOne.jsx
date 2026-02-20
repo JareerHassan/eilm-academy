@@ -69,7 +69,7 @@ const FacultyOne = () => {
               Explore Courses of Eilm Academy
             </h5>
           </div>
-          <h1 className="mb-24 wow bounceIn">Islamic Courses Online</h1>
+          <h2 className="mb-24 wow bounceIn">Islamic Courses Online</h2>
           <p className="wow bounceInUp">
             Discover structured Islamic courses designed for all levels, covering Qur’an recitation, Tajweed, Hadith studies, Hanafi Fiqh, Arabic language, and complete Dars-e-Nizami. Each course is guided by qualified scholars to build authentic knowledge, strong practice, and Islamic character.
           </p>
