@@ -54,12 +54,12 @@ const AboutOne = () => {
                           offset={{ bottom: 200 }}
                         >
                           {({ isVisible }) => (
-                            <h1 className='mb-0 text-white counter'>
+                            <h2 className='mb-0 text-white counter'>
                               {isVisible ? <CountUp end={550} /> : null}+
-                            </h1>
+                            </h2>
                           )}
                         </VisibilitySensor>
-                        <span className='text-white'>Students Learning Worldwide</span>
+                        <span className='text-white'>Learning Students</span>
 
                       </div>
 
@@ -72,9 +72,9 @@ const AboutOne = () => {
                           offset={{ bottom: 200 }}
                         >
                           {({ isVisible }) => (
-                            <h1 className='mb-0 text-white counter'>
+                            <h2 className='mb-0 text-white counter'>
                               {isVisible ? <CountUp end={2} /> : null}K
-                            </h1>
+                            </h2>
                           )}
                         </VisibilitySensor>
                         <span className='text-white'>Islamic Learning Resources</span>
@@ -107,9 +107,9 @@ const AboutOne = () => {
                     <h5 className='text-main-600 mb-0'>About E-Ilm Academy</h5>
                   </div>
 
-                  <h2 className='mb-24 wow bounceIn'>
-                    Authentic Islamic Learning for the Modern World
-                  </h2>
+                  <h1 className='mb-24 wow bounceIn'>
+                   Online Quran and Sunnah Education By Qualified Scholars
+                  </h1>
 
                   <p className='text-neutral-500  wow bounceInUp'>
                     E-Ilm Academy is an international online Islamic education platform that offers a structured and authentic curriculum covering Qur’an, Hadith, Hanafi Fiqh, Arabic Language, and the Dars-e-Nizami syllabus.

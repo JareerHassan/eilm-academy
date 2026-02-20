@@ -1,7 +1,53 @@
+"use client";
+import { useRef, useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 import Link from "next/link";
 
 
 const ContactInner = () => {
+  const formRef = useRef();
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState(""); // Success/Error message
+  const [showPopup, setShowPopup] = useState(false); // For popup
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatus("");
+
+    emailjs
+      .sendForm(
+        "service_9g82xz4",       // Your EmailJS Service ID
+        "template_pdgky6p",      // Your EmailJS Template ID
+        formRef.current,         // Form reference
+        "ghvhf0-VJcirjrCw5"     // Your EmailJS Public Key
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setLoading(false);
+          setStatus("Message sent successfully ✅");
+          setShowPopup(true);      // Show popup after success
+          formRef.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          setLoading(false);
+          setStatus("Failed to send message ❌");
+          setShowPopup(true);      // Show popup even on error
+        }
+      );
+  };
+
+  // Auto close popup after 5 seconds
+  useEffect(() => {
+    if (showPopup) {
+      const timer = setTimeout(() => setShowPopup(false), 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [showPopup]);
+
+
   return (
     <>
       <section className='contact py-120'>
@@ -13,7 +59,7 @@ const ContactInner = () => {
               </span>
               <h5 className='text-main-600 mb-0'>Get In Touch</h5>
             </div>
-            <h2 className='mb-24'>We Are Here To Guide You</h2>
+            <h1 className='mb-24'>Contact Eilm Academy </h1>
             <p className=''>
               E-ILM-Academy is dedicated to spreading authentic Islamic knowledge,
               guiding students towards spiritual growth, character building, and
@@ -146,7 +192,7 @@ const ContactInner = () => {
             <div className='col-xl-5 col-lg-6'>
               <div className='p-24 bg-white rounded-12 box-shadow-md'>
                 <div className='border border-neutral-30 rounded-8 bg-main-25 p-24'>
-                  <form action='#' id='commentForm'>
+                  <form ref={formRef} onSubmit={sendEmail}>
                     <h4 className='mb-0'>Send Us a Message</h4>
                     <span className='d-block border border-neutral-30 my-24 border-dashed' />
 
@@ -154,35 +200,52 @@ const ContactInner = () => {
                       <label htmlFor='name' className='text-neutral-700 text-lg fw-medium mb-12'>
                         Name
                       </label>
-                      <input type='text' className='common-input rounded-pill border-transparent focus-border-main-600' id='name' placeholder='Enter Name...' />
+                      <input type='text' name='name' className='common-input rounded-pill border-transparent focus-border-main-600' placeholder='Enter Name...' required />
                     </div>
 
                     <div className='mb-24'>
                       <label htmlFor='email' className='text-neutral-700 text-lg fw-medium mb-12'>
                         Email
                       </label>
-                      <input type='email' className='common-input rounded-pill border-transparent focus-border-main-600' id='email' placeholder='Enter Email...' />
+                      <input type='email' name='email' className='common-input rounded-pill border-transparent focus-border-main-600' placeholder='Enter Email...' required />
                     </div>
 
                     <div className='mb-24'>
                       <label htmlFor='phone' className='text-neutral-700 text-lg fw-medium mb-12'>
                         Phone
                       </label>
-                      <input type='tel' className='common-input rounded-pill border-transparent focus-border-main-600' id='phone' placeholder='Enter Your Number...' />
+                      <input type='tel' name='phone' className='common-input rounded-pill border-transparent focus-border-main-600' placeholder='Enter Your Number...' required />
                     </div>
 
                     <div className='mb-24'>
                       <label htmlFor='desc' className='text-neutral-700 text-lg fw-medium mb-12'>
                         Message
                       </label>
-                      <textarea id='desc' className='common-input rounded-24 border-transparent focus-border-main-600 h-110' placeholder='Enter Your Message...' />
+                      <textarea name='message' className='common-input rounded-24 border-transparent focus-border-main-600 h-110' placeholder='Enter Your Message...' required />
                     </div>
 
                     <div className='mb-0'>
-                      <button type='submit' className='btn btn-main rounded-pill flex-center gap-8 mt-40'>
-                        Send Message
+                      <button type='submit'
+                        disabled={loading} className='btn btn-main rounded-pill flex-center gap-8 mt-40'>
+                        {loading ? "Sending..." : "Send Message"}
                         <i className='ph-bold ph-arrow-up-right d-flex text-lg' />
                       </button>
+                      {showPopup && (
+                        <div
+                          style={{
+                            marginTop: "20px",
+                            padding: "10px 20px",
+                            background: status.includes("success") ? "#4CAF50" : "#F44336",
+                            color: "white",
+                            borderRadius: "8px",
+                            textAlign: "center",
+                            transition: "all 0.3s",
+                          }}
+                        >
+                          {status}
+
+                        </div>
+                      )}
                     </div>
                   </form>
                 </div>

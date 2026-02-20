@@ -92,6 +92,7 @@ export default function DonorPageInline({
         {/* Intro */}
         <div style={styles.card}>
           <div style={{ padding: 20 }}>
+            <h1 style={styles.h2} className="mb-3">Sponsor Islamic Education | Eilm Academy</h1>
             <p style={styles.p}>
               At Eilm Academy, we make authentic Islamic education accessible to students worldwide. Your support helps
               sponsor deserving students, expand programs, and preserve sacred knowledge.
@@ -145,7 +146,7 @@ export default function DonorPageInline({
           <div style={styles.card}>
             <div style={styles.cardHeader}>
               <div style={styles.iconTile}>
-                <Heart size={20} color={BRAND_NAVY} />
+                <Heart size={20} color={BRAND_CYAN} />
               </div>
               <h2 style={styles.h2}>What Your Donation Supports</h2>
             </div>

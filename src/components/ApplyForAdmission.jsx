@@ -101,8 +101,8 @@ const ApplyForAdmission = () => {
     <section style={{ marginTop: '30px' }}>
       <div className="container">
         <div className="row justify-content-center">
-
           <div className="col-lg-8">
+
 
             <div
               style={{
@@ -112,6 +112,8 @@ const ApplyForAdmission = () => {
                 padding: "40px",
               }}
             >
+              <h1 className="d-none">Enroll in Online Islamic Courses | Eilm Academy</h1>
+
               <form onSubmit={handleSubmit}>
 
 

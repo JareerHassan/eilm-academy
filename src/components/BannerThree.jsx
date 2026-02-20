@@ -120,12 +120,12 @@ const BannerThree = () => {
                         <i className='ph-bold ph-book-open' />
                       </span>
                       <h5 className='text-yellow-600 mb-0 fw-medium'>
-                    Eilm Academy
+                        Eilm Academy
                       </h5>
                     </div>
                     {/* 3. Heading Size Responsiveness: Use a smaller class on mobile (text-4xl) and display2 on larger screens */}
                     <h1 className='text-4xl sm:text-5xl md:display2 mb-24 text-white fw-medium wow bounceInLeft'>
-                       Learn Qur’an{" "}
+                      Learn Qur’an{" "}
                       <span
                         className='text-yellow-600 wow bounceInRight'
                         data-wow-duration='2s'
@@ -134,7 +134,7 @@ const BannerThree = () => {
                         {" "}
                         & Sunnah{" "}
                       </span>{" "}
-                     with Authentic Scholars
+                      with Authentic Scholars
                     </h1>
 
                     <p className='text-white wow bounceInDown' style={{ lineHeight: "1.6", whiteSpace: "normal" }}>
@@ -197,7 +197,7 @@ const BannerThree = () => {
                       </h5>
                     </div>
                     {/* 3. Heading Size Responsiveness: Use a smaller class on mobile (text-4xl) and display2 on larger screens */}
-                    <h1 className='text-4xl sm:text-5xl md:display2 mb-24 text-white fw-medium wow bounceInLeft'>
+                    <h2 className='text-4xl sm:text-5xl md:display2 mb-24 text-white fw-medium wow bounceInLeft'>
                       Learn from{" "}
                       <span
                         className='text-yellow-600 wow bounceInRight'
@@ -208,7 +208,7 @@ const BannerThree = () => {
                         Qualified Scholars{" "}
                       </span>{" "}
                       Build True Understanding
-                    </h1>
+                    </h2>
 
                     <p className='text-white  wow bounceInDown' style={{ lineHeight: "1.6", whiteSpace: "normal" }}>
                       The mission of Eilm Academy is not only to impart information but also to make understanding the Qur’an, following the Sunnah, and Islamic awareness an integral part of life.
@@ -272,18 +272,18 @@ const BannerThree = () => {
                       </h5>
                     </div>
                     {/* 3. Heading Size Responsiveness: Use a smaller class on mobile (text-4xl) and display2 on larger screens */}
-                    <h1 className='text-4xl sm:text-5xl md:display2 mb-24 text-white fw-medium wow bounceInLeft'>
-                      Online
+                    <h2 className='text-4xl sm:text-5xl md:display2 mb-24 text-white fw-medium wow bounceInLeft'>
+                      Online Islamic Courses – Qur’an,
                       <span
                         className='text-yellow-600 ms-5 wow bounceInRight'
                         data-wow-duration='2s'
                         data-wow-delay='.5s'
                       >
                         {" "}
-                        Dars-e-Nizami {" "}
+                        Fiqh & Dars-e-Nizami {" "}
                       </span> {" "}
-                      Become an Alim / Alimah
-                    </h1>
+                      | Eilm Academy
+                    </h2>
                     <p className='text-white  wow bounceInDown' style={{ lineHeight: "1.6", whiteSpace: "normal" }} >
                       A comprehensive Alim program based on Arabic grammar, Tafsir, Hadith, Usul al-Fiqh, and Hanafi jurisprudence.
                       Includes regular exams, mentorship, and certification.

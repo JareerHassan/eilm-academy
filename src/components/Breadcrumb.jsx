@@ -44,10 +44,10 @@ const Breadcrumb = ({ title }) => {
         <div className='row justify-content-center'>
           <div className='col-lg-8'>
             <div className='breadcrumb__wrapper'>
-              <h1 className='breadcrumb__title display-4 fw-semibold text-center'>
+              <h2 className='breadcrumb__title display-4 fw-semibold text-center'>
                 {" "}
                 {title}
-              </h1>
+              </h2>
               <ul className='breadcrumb__list d-flex align-items-center justify-content-center gap-4'>
                 <li className='breadcrumb__item'>
                   <Link

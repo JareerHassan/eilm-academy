@@ -86,6 +86,7 @@ const SignInInner = () => {
               style={{ minHeight: "400px" }}
             >
               <div className="mb-40">
+                <h1 className="d-none">Student Login Eilm Academy</h1>
                 <h3 className="mb-16 text-neutral-500">Welcome Back!</h3>
                 <p className="text-neutral-500">
                   Sign in to your account and join us

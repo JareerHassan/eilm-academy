@@ -113,7 +113,7 @@ const CourseDetails = () => {
               </div>
 
               <div className="p-20">
-                <h2 className="mt-24 mb-24">{course.title}</h2>
+                <h1 className="mt-24 mb-24 fs-2">{course.title}</h1>
                 <p className="text-neutral-700">{course.description}</p>
               </div>
             </div>
